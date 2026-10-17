@@ -148,6 +148,7 @@ class NotifyTests(unittest.TestCase):
         self.assertIn('### Вопросы для постов', body)
         self.assertIn('**LinkedIn**', body)
         self.assertIn('**Telegram**', body)
+        self.assertIn('**X / Twitter**', body)
         self.assertEqual(body.count('<!-- item:'), 3)
 
     def test_api_failure_does_not_mark_items(self):

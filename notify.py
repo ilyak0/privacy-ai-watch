@@ -18,7 +18,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 import editorial
-from post_ideas import select_ideas
+from post_ideas import CHANNEL_LABELS, select_ideas
 
 ROOT = Path(__file__).resolve().parent
 REPORT = ROOT / "data/latest.json"
@@ -203,7 +203,7 @@ def build_body(report: dict, selected: list[dict], day: dt.date,
         ideas = select_ideas(selected, as_of=report.get("generated_at"))
         if any(ideas.values()):
             lines += ["### Вопросы для постов", "", "Поводы по заголовкам; перед постом — проверка полного источника.", ""]
-            for channel, label in (("linkedin", "LinkedIn"), ("telegram", "Telegram")):
+            for channel, label in CHANNEL_LABELS.items():
                 if not ideas[channel]:
                     continue
                 lines += [f"**{label}**", ""]

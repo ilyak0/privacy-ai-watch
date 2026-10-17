@@ -1,6 +1,6 @@
 import unittest
 
-from post_ideas import select_ideas
+from post_ideas import CHANNEL_LABELS, select_ideas
 
 
 AS_OF = "2026-10-17T12:00:00Z"
@@ -21,8 +21,11 @@ class PostIdeasTests(unittest.TestCase):
         result = select_ideas(items, as_of=AS_OF)
         self.assertEqual(len(result["linkedin"]), 3)
         self.assertEqual(len(result["telegram"]), 3)
+        self.assertEqual(len(result["x"]), 3)
         self.assertEqual(result["linkedin"][0]["theme"], "cross_border")
         self.assertNotEqual(result["linkedin"][0]["question"], result["telegram"][0]["question"])
+        self.assertNotEqual(result["x"][0]["question"], result["linkedin"][0]["question"])
+        self.assertLessEqual(max(len(x["question"]) for x in result["x"]), 110)
         self.assertTrue(all(x["basis"] == "headline" for x in result["linkedin"] + result["telegram"]))
 
     def test_generic_ai_news_promotions_and_fine_tuning_are_excluded(self):
@@ -30,7 +33,7 @@ class PostIdeasTests(unittest.TestCase):
                  item("Join our course on AI Act fines and 152-FZ", n=2),
                  item("Fine-tuning model released", n=3)]
         result = select_ideas(items, as_of=AS_OF)
-        self.assertEqual(result, {"linkedin": [], "telegram": []})
+        self.assertEqual(result, {"linkedin": [], "telegram": [], "x": []})
 
     def test_undated_and_future_items_are_excluded(self):
         items = [item("Employee monitoring rules", date=None),
@@ -61,7 +64,7 @@ class PostIdeasTests(unittest.TestCase):
         items = [item("Cookie consent guidance", n=1), item("Cookie consent guidelines", n=2),
                  item("Biometric privacy", n=3), item("Employee monitoring policy", n=4)]
         result = select_ideas(items, limit_per_channel=2, as_of=AS_OF)
-        for channel in ("linkedin", "telegram"):
+        for channel in CHANNEL_LABELS:
             self.assertEqual(len(result[channel]), 2)
             self.assertEqual(len({x["theme"] for x in result[channel]}), len(result[channel]))
 
@@ -79,16 +82,16 @@ class PostIdeasTests(unittest.TestCase):
         credential_url = item("Cookie consent rules", url="https://user:pass@example.test/story")
         javascript = item("Employee monitoring policy", n=2, url="javascript:alert(1)")
         result = select_ideas([credential_url, javascript], as_of=AS_OF)
-        self.assertEqual(result, {"linkedin": [], "telegram": []})
+        self.assertEqual(result, {"linkedin": [], "telegram": [], "x": []})
 
     def test_title_triggers_are_strict_and_excerpt_cannot_supply_them(self):
         unrelated = item("A new platform launches", excerpt="Cookie consent rules and privacy choices")
-        self.assertEqual(select_ideas([unrelated], as_of=AS_OF), {"linkedin": [], "telegram": []})
+        self.assertEqual(select_ideas([unrelated], as_of=AS_OF), {"linkedin": [], "telegram": [], "x": []})
 
     def test_actual_archive_counterexamples_do_not_become_post_questions(self):
         rows = [item('Profiling web-edit with Python 3.15: flame graphs and source heatmaps'),
                 item('NOTICE OF DATA BREACH - State of California - Department of Justice', n=2)]
-        self.assertEqual(select_ideas(rows, as_of=AS_OF), {"linkedin": [], "telegram": []})
+        self.assertEqual(select_ideas(rows, as_of=AS_OF), {"linkedin": [], "telegram": [], "x": []})
 
     def test_ai_output_copyright_headline_does_not_imply_training_data_case(self):
         headline = item('Выход продолжения «Мертвых душ» от ИИ вызвал споры об авторском праве')
@@ -96,6 +99,37 @@ class PostIdeasTests(unittest.TestCase):
         for channel in ideas.values():
             self.assertNotIn('обуч', channel[0]['question'])
             self.assertNotIn('Обуч', channel[0]['angle'])
+
+    def test_x_is_question_channel_only_and_labels_are_public(self):
+        self.assertEqual(CHANNEL_LABELS, {"linkedin": "LinkedIn", "telegram": "Telegram", "x": "X / Twitter"})
+        ideas = select_ideas([item("Cross-border transfer of personal data")], as_of=AS_OF)
+        self.assertEqual(set(ideas), set(CHANNEL_LABELS))
+        self.assertIn("question", ideas["x"][0])
+        self.assertNotIn("post_text", ideas["x"][0])
+
+    def test_fine_without_breach_does_not_imply_incident(self):
+        headline = item("Norwegian DPA fines Xandr for unlawful processing of personal data")
+        ideas = select_ideas([headline], as_of=AS_OF)
+        for idea in (ideas["linkedin"] + ideas["telegram"] + ideas["x"]):
+            self.assertNotIn("инцидент", idea["question"].lower())
+            self.assertNotIn("инцидент", idea["angle"].lower())
+
+    def test_breach_headline_can_use_incident_framing(self):
+        headline = item("Data breach prompts regulator investigation")
+        ideas = select_ideas([headline], as_of=AS_OF)
+        self.assertIn("инцидент", ideas["telegram"][0]["question"].lower())
+
+    def test_copyright_case_does_not_force_supplier_contract(self):
+        headline = item("Nvidia sued over use of copyrighted music in AI training")
+        ideas = select_ideas([headline], as_of=AS_OF)
+        self.assertNotIn("договор", ideas["linkedin"][0]["question"].lower())
+        self.assertNotIn("поставщик", ideas["linkedin"][0]["question"].lower())
+
+    def test_bill_prompt_does_not_assume_rules_are_in_force(self):
+        headline = item("Предложен законопроект о регулировании искусственного интеллекта")
+        ideas = select_ideas([headline], as_of=AS_OF)
+        for idea in ideas["linkedin"] + ideas["telegram"] + ideas["x"]:
+            self.assertNotIn("когда бизнесу менять", idea["question"].lower())
 
 
 if __name__ == "__main__":

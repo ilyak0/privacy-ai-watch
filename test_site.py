@@ -77,6 +77,7 @@ class PublishSiteTests(unittest.TestCase):
         self.assertEqual(out['items'][0]['url'], practice['url'])
         self.assertEqual(out['items'][0]['editorial']['section'], 'practice')
         self.assertEqual(len(out['post_ideas']['linkedin']), 1)
+        self.assertEqual(len(out['post_ideas']['x']), 1)
         self.assertEqual(out['post_ideas']['linkedin'][0]['url'], practice['url'])
         self.assertIn('id="post-ideas"', publish_site.PAGE)
         self.assertIn('id="section"', publish_site.PAGE)

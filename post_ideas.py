@@ -8,13 +8,27 @@ from typing import Any
 
 from editorial import classify
 
+CHANNEL_LABELS = {"linkedin": "LinkedIn", "telegram": "Telegram", "x": "X / Twitter"}
+
+X_QUESTIONS = {
+    "workplace_monitoring": "Как ограничить мониторинг сотрудников, сохранив нужный работодателю контроль?",
+    "ai_copyright": "Кто контролирует права на материалы, использованные для обучения модели?",
+    "cross_border": "Что выбрать для передачи данных: общий поток или локальную обработку?",
+    "consent_cookies": "Как сохранить удобство интерфейса и реальный выбор пользователя?",
+    "biometrics": "Когда для задачи нужна биометрия, а когда достаточно менее чувствительных данных?",
+    "automated_decisions": "Когда результат автоматизированной оценки должен проверить человек?",
+    "breach_enforcement": "Какие контрольные процессы помогают снизить риск санкций за обработку данных?",
+    "ai_contracts_liability": "Кто должен проверять результат модели: поставщик, заказчик или оба?",
+    "ai_regulation": "Как соотнести планы бизнеса со стадией обсуждения правил об ИИ?",
+}
+
 
 THEMES = (
     ("workplace_monitoring", re.compile(r"\b(?:employee|workplace|worker|staff|employee monitoring|surveillance|monitoring at work|работник\w*|сотрудник\w*|рабоч\w+ мест\w*|слежк\w*|мониторинг\w*)\b", re.I),
      "Где проходит граница между рабочим контролем и приватностью сотрудников?",
      "Какие границы контроля стоит определить работодателю до внедрения мониторинга сотрудников?",
      "Мониторинг сотрудников поднимает вопрос о границах контроля и защите приватности на рабочем месте."),
-    ("ai_copyright", re.compile(r"\b(?:training data|train(?:ing)? (?:an? )?(?:ai|model)|copyright|authors?['’]? rights|расширенн\w* обучен\w*|обучен\w* (?:модел\w*|ии|нейросет\w*)|авторск\w+ прав\w*)\b", re.I),
+    ("ai_copyright", re.compile(r"\b(?:training data|train(?:ing)? (?:an? )?(?:ai|model)|copyright\w*|authors?['’]? rights|расширенн\w* обучен\w*|обучен\w* (?:модел\w*|ии|нейросет\w*)|авторск\w+ прав\w*)\b", re.I),
      "Как распределить права и ответственность за данные, использованные для обучения ИИ?",
      "Что проверить в договоре с AI-поставщиком: права на обучающие данные, гарантии и распределение ответственности?",
      "Обучающие данные и авторские права ставят вопрос о распределении рисков между поставщиком и заказчиком."),
@@ -43,8 +57,8 @@ THEMES = (
      "Какие условия о проверке, инцидентах и распределении ответственности нужны в договоре с AI-поставщиком?",
      "Договоры и ответственность за ИИ требуют заранее согласовать границы контроля и распределение рисков."),
     ("ai_regulation", re.compile(r"\b(?:ai act|ai regulation|ai bill|regulat\w*.{0,30}(?:ai|artificial intelligence)|законопроект\w*.{0,60}(?:ии|искусственн\w* интеллект\w*)|регулирован\w*.{0,50}(?:ии|искусственн\w* интеллект\w*))\b", re.I),
-     "Что предлагается в регулировании ИИ и кого это может затронуть?",
-     "Когда бизнесу менять процессы под регулирование ИИ: при обсуждении, принятии или начале применения правил?",
+     "Что предлагают изменить в регулировании ИИ и кого это может затронуть?",
+     "Какие положения инициативы по регулированию ИИ важны для бизнеса?",
      "Повод сопоставить стадию обсуждения правил с решениями, которые бизнесу предстоит принять."),
 )
 
@@ -107,7 +121,7 @@ def select_ideas(items: list[dict[str, Any]], limit_per_channel: int = 3,
                  as_of: dt.datetime | str | None = None) -> dict[str, list[dict[str, Any]]]:
     """Return bounded, deduplicated questions grounded in explicit headline terms."""
     if limit_per_channel <= 0:
-        return {"linkedin": [], "telegram": []}
+        return {channel: [] for channel in CHANNEL_LABELS}
     anchor = _as_of(as_of)
     cutoff = anchor - dt.timedelta(days=7)
     dated = [(item, _published(item)) for item in items]
@@ -129,22 +143,40 @@ def select_ideas(items: list[dict[str, Any]], limit_per_channel: int = 3,
             linkedin_q = "Кто автор результата работы ИИ и как распределить права между участниками?"
             telegram_q = "Какие права на созданный с ИИ контент можно обещать заказчику?"
             angle = "Спор об авторских правах даёт повод разобрать роли автора, пользователя и поставщика ИИ."
+            x_question = "Кому принадлежат права на контент, созданный с помощью ИИ?"
+        elif theme == "ai_copyright":
+            linkedin_q = "Кому принадлежат права на материалы, использованные для обучения ИИ?"
+            telegram_q = "Какие права на обучающие материалы нужно прояснить до использования модели?"
+            angle = "Заголовок об обучающих данных и авторских правах ставит вопрос о правах на использованные материалы."
+            x_question = X_QUESTIONS[theme]
+        else:
+            x_question = X_QUESTIONS[theme]
+        if theme == "breach_enforcement":
+            actual_breach = re.search(
+                r"\b(?:data breach|security breach|breach notification|утечк\w*|нарушен\w* безопасност\w*|уведомлен\w* об инцидент\w*)\b",
+                title, re.I)
+            if not actual_breach:
+                linkedin_q = "Какие контрольные процессы помогают снижать риск санкций за обработку данных?"
+                telegram_q = "Какие проверки могут заранее выявить нарушения в обработке данных?"
+                angle = "Заголовок о штрафе или санкции позволяет обсудить профилактику нарушений при обработке данных."
         kinds = _source_kinds(item)
         primary = any(kind.lower() == "primary" for kind in kinds)
         candidate = {"question": None, "angle": angle, "title": title, "url": url,
                      "published_utc": item["published_utc"], "basis": "headline",
                      "source_kind": kinds[0] if len(kinds) == 1 else "mixed" if kinds else "unknown",
                      "source_kinds": kinds, "theme": theme, "_date": published,
-                     "_primary": primary, "_questions": (linkedin_q, telegram_q)}
+                     "_primary": primary, "_questions": (linkedin_q, telegram_q),
+                     "_x_question": x_question}
         prev = by_theme.get(theme)
         # Prefer direct sources within the fresh window, then newer headlines.
         if prev is None or (primary, published, title) > (prev["_primary"], prev["_date"], prev["title"]):
             by_theme[theme] = candidate
-    result = {"linkedin": [], "telegram": []}
-    for channel, index in (("linkedin", 1), ("telegram", 0)):
+    result = {channel: [] for channel in CHANNEL_LABELS}
+    for channel, index in (("linkedin", 1), ("telegram", 0), ("x", None)):
         ordered = sorted(by_theme.values(), key=lambda c: (c["_primary"], c["_date"], c["theme"]), reverse=True)
         for candidate in ordered[:limit_per_channel]:
             clean = {k: v for k, v in candidate.items() if not k.startswith("_")}
-            clean["question"] = candidate["_questions"][index]
+            clean["question"] = (candidate["_x_question"] if channel == "x"
+                                  else candidate["_questions"][index])
             result[channel].append(clean)
     return result
