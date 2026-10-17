@@ -27,6 +27,31 @@ def source(transport="rss", **extra):
 
 
 class CollectorTests(unittest.TestCase):
+    def test_paged_official_archive_uses_local_dates_and_stops_at_window(self):
+        listing = source("html", url="http://example.test/news/", item_selector="article",
+                         title_selector="a", link_selector="a", date_selector="time",
+                         date_timezone="Europe/Moscow", page_url_template="http://example.test/news/page/{page}/")
+        pages = [b'<article><a href="/news/new">Privacy rules</a><time datetime="2026-10-17 09:00:00"></time></article>',
+                 b'<article><a href="/news/old">Privacy archive</a><time datetime="2026-09-16 09:00:00"></time></article>']
+        with patch.object(collect, "fetch", side_effect=[(p, "text/html") for p in pages]) as request:
+            rows, meta = collect.paged_html_items(listing, 30, dt.datetime(2026, 10, 17, 12, tzinfo=UTC))
+        self.assertEqual(meta["pages_fetched"], 2)
+        self.assertEqual(meta["window_coverage"], "boundary_reached")
+        self.assertEqual(rows[0]["published"], dt.datetime(2026, 10, 17, 6, tzinfo=UTC))
+        self.assertEqual(request.call_args_list[1].args[0], "http://example.test/news/page/2/")
+
+    def test_pagination_caps_and_repeated_pages_are_visible(self):
+        listing = source("html", item_selector="article", title_selector="a", link_selector="a",
+                         date_selector="time", page_url_template="https://example.test/page/{page}", max_pages=1)
+        data = b'<article><a href="/new">Privacy</a><time datetime="2026-10-17T06:00:00Z"></time></article>'
+        now = dt.datetime(2026, 10, 17, 12, tzinfo=UTC)
+        with patch.object(collect, "fetch", return_value=(data, "text/html")):
+            _, capped = collect.paged_html_items(listing, 30, now)
+            _, repeated = collect.paged_html_items({**listing, "max_pages": 4}, 30, now)
+        self.assertEqual(capped["window_coverage"], "capped")
+        self.assertEqual(repeated["window_coverage"], "repeated_page")
+        self.assertEqual(repeated["pages_fetched"], 2)
+
     def test_feed_relative_links_resolve_to_publisher(self):
         data = b'<rss><channel><item><title>Privacy news</title><link>/en/news/one</link></item></channel></rss>'
         with patch.object(collect, 'fetch', return_value=(data, 'application/rss+xml')):

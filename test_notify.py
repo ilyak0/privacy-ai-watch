@@ -41,6 +41,18 @@ class FakeGitHub:
 
 
 class NotifyTests(unittest.TestCase):
+    def test_bulk_email_links_reject_userinfo_and_malformed_hosts(self):
+        for url in ("https://user:pass@example.test/story", "https://[broken", "javascript:alert(1)"):
+            self.assertEqual(notify._safe_url(url), "")
+
+    def test_short_briefing_precedes_posts_and_full_archive(self):
+        row = {**make_item(title="CNIL fines Acme over cookie consent"), "source_kind": "primary"}
+        body = notify.build_body(report([row]), [row], DAY)
+        self.assertLess(body.index("### Сначала открыть"), body.index("### Вопросы для постов"))
+        self.assertLess(body.index("### Вопросы для постов"), body.index("<summary>Все новые публикации"))
+        self.assertEqual(body.count("<!-- item:"), 1)
+        self.assertIn("Кейс для проверки", body)
+
     def test_issue_creation_has_no_assignment_notification(self):
         client = notify.GitHub('example/repo', 'fake')
         with patch.object(client, 'request', return_value={'html_url': 'https://example.test/issue'}) as request:

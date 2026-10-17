@@ -17,11 +17,13 @@ import re
 import sqlite3
 import sys
 import tempfile
+import time
 import urllib.error
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 from bs4 import BeautifulSoup
 
@@ -162,7 +164,14 @@ def html_items(data: bytes, source: dict) -> list[dict]:
         raw_date = (date_node.get("datetime") or date_node.get_text(" ", strip=True)) if date_node else ""
         if raw_date and source.get("date_format"):
             try:
-                raw_date = dt.datetime.strptime(raw_date, source["date_format"]).replace(tzinfo=UTC).isoformat()
+                raw_date = dt.datetime.strptime(raw_date, source["date_format"]).isoformat()
+            except ValueError:
+                pass
+        if raw_date and source.get("date_timezone"):
+            try:
+                local = dt.datetime.fromisoformat(raw_date.replace("Z", "+00:00"))
+                if local.tzinfo is None:
+                    raw_date = local.replace(tzinfo=ZoneInfo(source["date_timezone"])).isoformat()
             except ValueError:
                 pass
         excerpt = selector_text(node, source.get("excerpt_selector"))
@@ -172,6 +181,40 @@ def html_items(data: bytes, source: dict) -> list[dict]:
     if nodes and not items:
         raise ValueError("HTML listing containers present but none had a parseable title and link")
     return items
+
+
+def paged_html_items(source: dict, days: int, checked: dt.datetime) -> tuple[list[dict], dict]:
+    """Read a verified newest-first listing until the date boundary or a hard cap."""
+    template = source["page_url_template"]
+    max_pages = min(16, max(1, int(source.get("max_pages", 16))))
+    deadline = time.monotonic() + 120
+    cutoff = checked - dt.timedelta(days=days)
+    items, seen = [], set()
+    meta = {"pages_fetched": 0, "bytes_received": 0, "window_coverage": "capped"}
+    for page in range(1, max_pages + 1):
+        if time.monotonic() >= deadline:
+            break
+        url = source["url"] if page == 1 else template.format(page=page)
+        if urllib.parse.urlsplit(url).netloc != urllib.parse.urlsplit(source["url"]).netloc:
+            raise ValueError("pagination must stay on the configured publisher host")
+        data, _ = fetch(url)
+        meta["pages_fetched"] += 1
+        meta["bytes_received"] += len(data)
+        rows = html_items(data, {**source, "url": url})
+        fresh = [row for row in rows if row["url"] not in seen]
+        if not fresh:
+            meta["window_coverage"] = "repeated_page"
+            break
+        items.extend(fresh)
+        seen.update(row["url"] for row in fresh)
+        dates = [row["published"] for row in rows if row["published"]]
+        if not dates:
+            meta["window_coverage"] = "unknown_dates"
+            break
+        if min(dates) < cutoff:
+            meta["window_coverage"] = "boundary_reached"
+            break
+    return items, meta
 
 
 def telegram_items(data: bytes) -> list[dict]:
@@ -220,6 +263,13 @@ def process_source(source: dict, config: dict, days: int) -> tuple[dict, list[di
         if transport == "x_cookies":
             from x_reader import fetch_posts
             parsed = fetch_posts(source)
+        elif transport == "html" and source.get("page_url_template"):
+            parsed, pagination = paged_html_items(source, days, checked)
+            health.update(pagination)
+        elif transport == "pravo_api":
+            from pravo_reader import fetch_documents
+            parsed, pagination = fetch_documents(source, days, checked, fetch)
+            health.update({key: value for key, value in pagination.items() if key != "undated"})
         else:
             data, _ = fetch(source["url"])
             health["bytes_received"] = len(data)
@@ -432,7 +482,7 @@ def load_config(path: Path) -> dict:
     if config.get("version") != 1 or not isinstance(config.get("sources"), list):
         raise ValueError("config must have version=1 and a sources array")
     for source in config["sources"]:
-        if source.get("transport") not in {"rss", "telegram", "html", "x_cookies"}:
+        if source.get("transport") not in {"rss", "telegram", "html", "x_cookies", "pravo_api"}:
             raise ValueError(f"invalid transport for source {source.get('id')}")
         if source.get("region") not in {"world", "ru"} or source.get("kind") not in {"primary", "commentary", "discovery"}:
             raise ValueError(f"invalid region/kind for source {source.get('id')}")

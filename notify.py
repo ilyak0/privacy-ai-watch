@@ -18,6 +18,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 import editorial
+from briefing import select_briefing
 from post_ideas import CHANNEL_LABELS, select_ideas
 
 ROOT = Path(__file__).resolve().parent
@@ -91,8 +92,11 @@ def _safe_title(value: str) -> str:
 
 def _safe_url(value: str) -> str:
     value = str(value).strip()
-    p = urllib.parse.urlsplit(value)
-    if p.scheme not in ("http", "https") or not p.netloc:
+    try:
+        p = urllib.parse.urlsplit(value)
+    except ValueError:
+        return ""
+    if p.scheme not in ("http", "https") or not p.hostname or p.username is not None or p.password is not None:
         return ""
     # Angle brackets and whitespace cannot escape a Markdown destination.
     return re.sub(r"[\s<>\\]", lambda m: urllib.parse.quote(m.group(0), safe=""), value)
@@ -155,6 +159,8 @@ def health_summary(report: dict) -> tuple[list[str], int]:
             if isinstance(value, dict):
                 status = str(value.get("status", "unknown"))
                 err = value.get("error") or value.get("errors")
+                if value.get("window_coverage") in {"capped", "repeated_page", "unknown_dates"}:
+                    rows.append(f"- `{_safe_title(source)}`: глубина архива ограничена; окно публикаций пройдено не полностью.")
                 if err:
                     errors += 1
                     msg = _safe_title(re.sub(r"[\r\n]+", " ", str(err))[:240])
@@ -178,6 +184,26 @@ def build_body(report: dict, selected: list[dict], day: dt.date,
     if selected:
         lines.append(f"Новых публикаций: **{len(selected)}**")
         lines.append("")
+        short = select_briefing(selected, as_of=report.get("generated_at"))
+        if short:
+            lines += ["### Сначала открыть", "", "До 5 поводов за неделю; отбор по заголовкам.", ""]
+            for item in short:
+                kind = {"primary": "первоисточник", "commentary": "комментарий / СМИ",
+                        "discovery": "поисковый индекс"}.get(item["source_kind"], "несколько типов источников")
+                lines += [f"- **{_safe_title(item['signal_label'])}** — [{_safe_title(item['title'])}](<{_safe_url(item['url'])}>) · {kind}",
+                          f"  {_safe_title(item['why_open'])} {_safe_title(item['verification_needed'])}", ""]
+        ideas = select_ideas(selected, as_of=report.get("generated_at"))
+        if any(ideas.values()):
+            lines += ["### Вопросы для постов", "", "Поводы по заголовкам; перед постом — проверка полного источника.", ""]
+            for channel, label in CHANNEL_LABELS.items():
+                if not ideas[channel]:
+                    continue
+                lines += [f"**{label}**", ""]
+                for idea in ideas[channel]:
+                    lines.append(f"- **{_safe_title(idea['question'])}** {_safe_title(idea['angle'])} "
+                                 f"Повод: [{_safe_title(idea['title'])}](<{_safe_url(idea['url'])}>).")
+                lines.append("")
+        lines += ["<details>", "<summary>Все новые публикации</summary>", ""]
         # One row per URL; editorial groups keep practice ahead of broad AI news.
         labels = {"privacy_world": "Данные · мир", "privacy_ru": "Данные · Россия",
                   "ai_world": "ИИ · мир", "ai_ru": "ИИ · Россия"}
@@ -200,17 +226,7 @@ def build_body(report: dict, selected: list[dict], day: dt.date,
                 kind = kinds.get(item.get("source_kind"), "тип источника не указан")
                 lines.append(f"- **{date}** — [{title}](<{url}>) — {kind}" + (f" · {tags}" if tags else ""))
             lines.append("")
-        ideas = select_ideas(selected, as_of=report.get("generated_at"))
-        if any(ideas.values()):
-            lines += ["### Вопросы для постов", "", "Поводы по заголовкам; перед постом — проверка полного источника.", ""]
-            for channel, label in CHANNEL_LABELS.items():
-                if not ideas[channel]:
-                    continue
-                lines += [f"**{label}**", ""]
-                for idea in ideas[channel]:
-                    lines.append(f"- **{_safe_title(idea['question'])}** {_safe_title(idea['angle'])} "
-                                 f"Повод: [{_safe_title(idea['title'])}](<{_safe_url(idea['url'])}>).")
-                lines.append("")
+        lines += ["</details>", ""]
     if health_rows:
         lines += ["", "### Состояние источников", "", *health_rows]
     if overflow:
@@ -288,13 +304,13 @@ def run(report_path=REPORT, state_path=STATE, publish=False, today=None,
         if len(selected) >= CAP_ITEMS:
             overflow = True
             continue
-        trial = build_body(report, selected + [item], day, False, health_rows if errors else None, pages_url)
+        trial = build_body(report, selected + [item], day, False, health_rows, pages_url)
         if len(trial) > CAP_CHARS:
             overflow = True
             continue
         selected.append(item)
     overflow = overflow or len(selected) < len(new)
-    body = build_body(report, selected, day, overflow, health_rows if errors else None, pages_url)
+    body = build_body(report, selected, day, overflow, health_rows, pages_url)
     should_publish = bool(selected or errors)
     if not publish:
         return {"prepared": True, "date": day.isoformat(), "items": len(selected),

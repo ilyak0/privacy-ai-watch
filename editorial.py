@@ -11,7 +11,7 @@ PRACTICE_PATTERNS = {
         r"\b(?:law|bill|legislation|regulat(?:ion|ory)|directive|act|statute|закон(?:опроект)?|регулирован\w*|законодательств\w*)\b",
         re.I),
     "enforcement_decision": re.compile(
-        r"\b(?:fined|fine(?![- ]tuning)[sd]?|penalt(?:y|ies)|sanction\w*|enforcement|court|lawsuit|sued|complaint filed|ruling|judgment|decision|штраф\w*|оштраф\w*|суд\w*|иск\w*|жалоб\w*|решени\w*|постановлен\w*|предписан\w*)\b",
+        r"\b(?:fined|fine(?![- ]tuning)[sd]?|penalt(?:y|ies)|sanction\w*|enforcement|court|lawsuit|sued|complaint filed|ruling|judgment|decision|штраф\w*|оштраф\w*|суд\w*|иск(?:а|у|ом|е|и|ов|ами|ах|ам)?|жалоб\w*|решени\w*|постановлен\w*|предписан\w*)\b",
         re.I),
     "privacy_guidance": re.compile(
         r"\b(?:guidance|guideline\w*|recommendation\w*|privacy|data protection|personal data|cross[- ]border|consent|cookie\w*|biometric\w*|facial recognition|employee monitoring|workplace monitoring|automated decision\w*|profiling|scoring|data breach\w*|security breach\w*|конфиденциальност\w*|персональн\w+ данн\w*|трансгранич\w*|соглас\w*|разъяснен\w*|рекомендац\w*|биометр\w*|распознавани\w* лиц|мониторинг\w* сотрудник\w*|слежк\w* за сотрудник\w*|автоматизированн\w* решени\w*|скоринг\w*|профилирован\w*|утечк\w*)\b",
