@@ -938,7 +938,13 @@
       "label": "Официальное опубликование · тематический поиск актов",
       "url": "http://publication.pravo.gov.ru/api/Documents",
       "transport": "pravo_api",
-      "title_queries": ["персональных данных", "биометрических", "искусственного интеллекта", "обезличивания", "трансграничной передачи"],
+      "title_queries": [
+        "персональных данных",
+        "биометрических",
+        "искусственного интеллекта",
+        "обезличивания",
+        "трансграничной передачи"
+      ],
       "region": "ru",
       "kind": "primary",
       "topics": [
@@ -976,6 +982,25 @@
         "OpenAI"
       ],
       "note": "Публичные посты семи отобранных аккаунтов через Twikit и runtime-сессию cookies. Общий поток ведомств, экспертов и разработчиков; тип не повышается до primary без отдельной проверки источника. Персональная лента и закрытые аккаунты не собираются."
+    },
+    {
+      "id": "noyb-discovery",
+      "label": "noyb — резервный поисковый индекс",
+      "title_suffix_pattern": "\\s+[-–—]\\s+noyb\\.eu$",
+      "url": "https://news.google.com/rss/search?q=site%3Anoyb.eu+when%3A30d&hl=en&gl=US&ceid=US%3Aen",
+      "transport": "rss",
+      "region": "world",
+      "kind": "discovery",
+      "topics": [
+        "privacy",
+        "ai"
+      ],
+      "force_topics": [
+        "privacy"
+      ],
+      "enabled": true,
+      "query": "site:noyb.eu when:30d",
+      "note": "Резервный индекс публичных публикаций noyb. Ссылка ведёт в Google News; доступность и содержание оригинала отдельно не подтверждены. Официальная RSS остаётся отдельным источником."
     }
   ],
   "exclude_patterns": [

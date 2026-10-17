@@ -27,6 +27,28 @@ def source(transport="rss", **extra):
 
 
 class CollectorTests(unittest.TestCase):
+    def test_discovery_publisher_suffix_does_not_duplicate_known_article(self):
+        data = b'<rss><channel><item><title>Privacy action - noyb.eu</title><link>https://news.google.com/a</link><pubDate>Fri, 16 Oct 2026 11:00:00 GMT</pubDate></item></channel></rss>'
+        index = source(id="noyb-discovery", kind="discovery", title_suffix_pattern=r"\s+[-–—]\s+noyb\.eu$")
+        with patch.object(collect, "fetch", return_value=(data, "application/rss+xml")), patch.object(
+                collect, "utcnow", return_value=dt.datetime(2026, 10, 17, 12, tzinfo=UTC)):
+            _, incoming = collect.process_source(index, CONFIG, 30)
+        self.assertEqual(incoming[0]["title"], "Privacy action")
+        original = dict(incoming[0], url="https://noyb.eu/original", source_id="noyb",
+                        source_label="noyb", source_kind="commentary",
+                        published=dt.datetime(2026, 10, 16, 10, tzinfo=UTC))
+        with tempfile.TemporaryDirectory() as folder:
+            db = collect.init_db(Path(folder) / "archive.sqlite3")
+            collect.merge_items(db, [original, *incoming])
+            with patch.object(collect, "utcnow", return_value=dt.datetime(2026, 10, 17, 12, tzinfo=UTC)):
+                rows = collect.read_recent(db, 30)
+            self.assertEqual(len(rows), 1)
+            self.assertEqual(rows[0]["canonical_url"], original["url"])
+            self.assertEqual(rows[0]["source_kind"], "mixed")
+            self.assertEqual(rows[0]["provenance"]["noyb-discovery"]["kind"], "discovery")
+            self.assertEqual(rows[0]["provenance"]["noyb-discovery"]["observations"][0]["url"], "https://news.google.com/a")
+            db.close()
+
     def test_paged_official_archive_uses_local_dates_and_stops_at_window(self):
         listing = source("html", url="http://example.test/news/", item_selector="article",
                          title_selector="a", link_selector="a", date_selector="time",

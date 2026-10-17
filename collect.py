@@ -279,6 +279,8 @@ def process_source(source: dict, config: dict, days: int) -> tuple[dict, list[di
         results = []
         cutoff = checked - dt.timedelta(days=days)
         for item in parsed:
+            if source.get("title_suffix_pattern"):
+                item["title"] = re.sub(source["title_suffix_pattern"], "", item["title"], flags=re.I).strip()
             item['url'] = urllib.parse.urljoin(source['url'], item['url'])
             item["published"] = item.get("published")
             published = item["published"]
