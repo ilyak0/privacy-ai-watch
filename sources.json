@@ -1,0 +1,887 @@
+{
+  "version": 1,
+  "scope": "Личный мониторинг privacy и AI: международные и российские источники, сбор сигналов без юридической квалификации.",
+  "topics": {
+    "privacy": [
+      "\\bprivacy\\b",
+      "\\bGDPR\\b",
+      "\\bCCPA\\b",
+      "\\bCPRA\\b",
+      "\\bDPDP\\b",
+      "data protection",
+      "personal (?:data|information)",
+      "automated decision",
+      "biometri",
+      "surveillance",
+      "cookie",
+      "data breach",
+      "donn[ée]es",
+      "privacidade",
+      "prote[çc][ãa]o de dados",
+      "персональн.{0,15}данн",
+      "\\bПДн\\b",
+      "152[ -]?(?:ФЗ|фз)",
+      "прайваси",
+      "приватност",
+      "обезлич",
+      "биометри",
+      "локализац.{0,20}данн",
+      "трансграничн",
+      "утечк.{0,20}данн",
+      "согласи.{0,30}обработ",
+      "個人情報",
+      "プライバシー",
+      "개인정보"
+    ],
+    "ai": [
+      "\\bAI\\b",
+      "\\bLLM\\b",
+      "\\bGPAI\\b",
+      "artificial intelligence",
+      "machine learning",
+      "generative",
+      "algorithmic",
+      "agentic",
+      "AI Act",
+      "\\bGPT\\b",
+      "\\bClaude\\b",
+      "\\bGemini\\b",
+      "\\bAnthropic\\b",
+      "\\bOpenAI\\b",
+      "intelligen[cz]a artificiale",
+      "intelig[êe]ncia artificial",
+      "intelligence artificielle",
+      "искусственн.{0,8}интеллект",
+      "\\bИИ\\b",
+      "нейросет",
+      "генеративн",
+      "машинн.{0,8}обучен",
+      "алгоритмическ",
+      "人工知能",
+      "生成AI",
+      "인공지능"
+    ]
+  },
+  "sources": [
+    {
+      "id": "edpb-news",
+      "label": "EDPB — новости",
+      "url": "https://www.edpb.europa.eu/feed/news_en",
+      "transport": "rss",
+      "region": "world",
+      "kind": "primary",
+      "topics": [
+        "privacy",
+        "ai"
+      ],
+      "force_topics": [
+        "privacy"
+      ],
+      "enabled": true,
+      "jurisdictions": [
+        "EU"
+      ]
+    },
+    {
+      "id": "edpb-publications",
+      "label": "EDPB — публикации",
+      "url": "https://www.edpb.europa.eu/feed/publications_en",
+      "transport": "rss",
+      "region": "world",
+      "kind": "primary",
+      "topics": [
+        "privacy",
+        "ai"
+      ],
+      "force_topics": [
+        "privacy"
+      ],
+      "enabled": true,
+      "jurisdictions": [
+        "EU"
+      ]
+    },
+    {
+      "id": "cnil",
+      "label": "CNIL",
+      "url": "https://www.cnil.fr/fr/rss.xml",
+      "transport": "rss",
+      "region": "world",
+      "kind": "primary",
+      "topics": [
+        "privacy",
+        "ai"
+      ],
+      "force_topics": [
+        "privacy"
+      ],
+      "enabled": true,
+      "jurisdictions": [
+        "FR"
+      ]
+    },
+    {
+      "id": "canada-news",
+      "label": "Canada OPC — новости",
+      "url": "https://www.priv.gc.ca/en/rss/news/",
+      "transport": "rss",
+      "region": "world",
+      "kind": "primary",
+      "topics": [
+        "privacy",
+        "ai"
+      ],
+      "force_topics": [
+        "privacy"
+      ],
+      "enabled": true,
+      "jurisdictions": [
+        "CA"
+      ]
+    },
+    {
+      "id": "canada-findings",
+      "label": "Canada OPC — расследования",
+      "url": "https://www.priv.gc.ca/en/rss/pipeda/",
+      "transport": "rss",
+      "region": "world",
+      "kind": "primary",
+      "topics": [
+        "privacy",
+        "ai"
+      ],
+      "force_topics": [
+        "privacy"
+      ],
+      "enabled": true,
+      "jurisdictions": [
+        "CA"
+      ]
+    },
+    {
+      "id": "eu-digital",
+      "label": "Еврокомиссия — цифровая политика",
+      "url": "https://digital-strategy.ec.europa.eu/en/news",
+      "transport": "html",
+      "region": "world",
+      "kind": "primary",
+      "topics": [
+        "privacy",
+        "ai"
+      ],
+      "force_topics": [],
+      "enabled": true,
+      "jurisdictions": [
+        "EU"
+      ],
+      "item_selector": ".ecl-content-item__content-block",
+      "title_selector": "[data-ecl-title-link]",
+      "link_selector": "[data-ecl-title-link]",
+      "date_selector": ".ecl-content-block__primary-meta-item:last-child",
+      "date_format": "%d %B %Y",
+      "excerpt_selector": ".ecl-content-block__description"
+    },
+    {
+      "id": "nist",
+      "label": "NIST — новости",
+      "url": "https://www.nist.gov/news-events/news/rss.xml",
+      "transport": "rss",
+      "region": "world",
+      "kind": "primary",
+      "topics": [
+        "privacy",
+        "ai"
+      ],
+      "force_topics": [],
+      "enabled": true,
+      "jurisdictions": [
+        "US"
+      ]
+    },
+    {
+      "id": "noyb",
+      "label": "noyb",
+      "url": "https://noyb.eu/en/rss/feed.xml",
+      "transport": "rss",
+      "region": "world",
+      "kind": "commentary",
+      "topics": [
+        "privacy",
+        "ai"
+      ],
+      "force_topics": [
+        "privacy"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "fpf",
+      "label": "Future of Privacy Forum",
+      "url": "https://fpf.org/feed/",
+      "transport": "rss",
+      "region": "world",
+      "kind": "commentary",
+      "topics": [
+        "privacy",
+        "ai"
+      ],
+      "force_topics": [
+        "privacy"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "hunton",
+      "label": "Hunton Privacy Blog",
+      "url": "https://www.hunton.com/privacy-and-information-security-law/feed",
+      "transport": "rss",
+      "region": "world",
+      "kind": "commentary",
+      "topics": [
+        "privacy",
+        "ai"
+      ],
+      "force_topics": [
+        "privacy"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "epic",
+      "label": "EPIC",
+      "url": "https://epic.org/feed/",
+      "transport": "rss",
+      "region": "world",
+      "kind": "commentary",
+      "topics": [
+        "privacy",
+        "ai"
+      ],
+      "force_topics": [
+        "privacy"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "artificial-lawyer",
+      "label": "Artificial Lawyer",
+      "url": "https://www.artificiallawyer.com/feed",
+      "transport": "rss",
+      "region": "world",
+      "kind": "commentary",
+      "topics": [
+        "privacy",
+        "ai"
+      ],
+      "force_topics": [],
+      "enabled": true
+    },
+    {
+      "id": "lawnext",
+      "label": "LawNext",
+      "url": "https://www.lawnext.com/feed",
+      "transport": "rss",
+      "region": "world",
+      "kind": "commentary",
+      "topics": [
+        "privacy",
+        "ai"
+      ],
+      "force_topics": [],
+      "enabled": true
+    },
+    {
+      "id": "ai-snake-oil",
+      "label": "AI Snake Oil",
+      "url": "https://www.aisnakeoil.com/feed",
+      "transport": "rss",
+      "region": "world",
+      "kind": "commentary",
+      "topics": [
+        "privacy",
+        "ai"
+      ],
+      "force_topics": [
+        "ai"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "one-useful-thing",
+      "label": "One Useful Thing",
+      "url": "https://www.oneusefulthing.org/feed",
+      "transport": "rss",
+      "region": "world",
+      "kind": "commentary",
+      "topics": [
+        "privacy",
+        "ai"
+      ],
+      "force_topics": [
+        "ai"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "simon-willison",
+      "label": "Simon Willison",
+      "url": "https://simonwillison.net/atom/everything/",
+      "transport": "rss",
+      "region": "world",
+      "kind": "commentary",
+      "topics": [
+        "privacy",
+        "ai"
+      ],
+      "force_topics": [],
+      "enabled": true
+    },
+    {
+      "id": "techcrunch-ai",
+      "label": "TechCrunch AI",
+      "url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+      "transport": "rss",
+      "region": "world",
+      "kind": "commentary",
+      "topics": [
+        "privacy",
+        "ai"
+      ],
+      "force_topics": [
+        "ai"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "iapp",
+      "label": "IAPP — поиск публикаций",
+      "url": "https://news.google.com/rss/search?q=site%3Aiapp.org%20(privacy%20OR%20%22data%20protection%22%20OR%20%22AI%20governance%22%20OR%20%22artificial%20intelligence%22)%20when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+      "transport": "rss",
+      "region": "world",
+      "kind": "discovery",
+      "topics": [
+        "privacy",
+        "ai"
+      ],
+      "force_topics": [],
+      "enabled": true,
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "query": "site:iapp.org (privacy OR \"data protection\" OR \"AI governance\" OR \"artificial intelligence\")",
+      "note": "Индекс Google News, неполное покрытие. Ссылка и дата из индекса; исходный юридический текст не проверен."
+    },
+    {
+      "id": "uk-ico",
+      "label": "UK ICO — поиск публикаций",
+      "url": "https://news.google.com/rss/search?q=site%3Aico.org.uk%20(privacy%20OR%20%22data%20protection%22%20OR%20AI%20OR%20enforcement)%20when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+      "transport": "rss",
+      "region": "world",
+      "kind": "discovery",
+      "topics": [
+        "privacy",
+        "ai"
+      ],
+      "force_topics": [],
+      "enabled": true,
+      "jurisdictions": [
+        "UK"
+      ],
+      "query": "site:ico.org.uk (privacy OR \"data protection\" OR AI OR enforcement)",
+      "note": "Индекс Google News, неполное покрытие. Ссылка и дата из индекса; исходный юридический текст не проверен."
+    },
+    {
+      "id": "us-ftc",
+      "label": "US FTC — поиск публикаций",
+      "url": "https://news.google.com/rss/search?q=site%3Aftc.gov%20(privacy%20OR%20%22personal%20data%22%20OR%20%22artificial%20intelligence%22%20OR%20biometric)%20when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+      "transport": "rss",
+      "region": "world",
+      "kind": "discovery",
+      "topics": [
+        "privacy",
+        "ai"
+      ],
+      "force_topics": [],
+      "enabled": true,
+      "jurisdictions": [
+        "US"
+      ],
+      "query": "site:ftc.gov (privacy OR \"personal data\" OR \"artificial intelligence\" OR biometric)",
+      "note": "Индекс Google News, неполное покрытие. Ссылка и дата из индекса; исходный юридический текст не проверен."
+    },
+    {
+      "id": "us-california",
+      "label": "California CPPA / AG — поиск публикаций",
+      "url": "https://news.google.com/rss/search?q=(site%3Acppa.ca.gov%20OR%20site%3Aoag.ca.gov)%20(privacy%20OR%20%22artificial%20intelligence%22%20OR%20%22automated%20decision%22)%20when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+      "transport": "rss",
+      "region": "world",
+      "kind": "discovery",
+      "topics": [
+        "privacy",
+        "ai"
+      ],
+      "force_topics": [],
+      "enabled": true,
+      "jurisdictions": [
+        "US-CA"
+      ],
+      "query": "(site:cppa.ca.gov OR site:oag.ca.gov) (privacy OR \"artificial intelligence\" OR \"automated decision\")",
+      "note": "Индекс Google News, неполное покрытие. Ссылка и дата из индекса; исходный юридический текст не проверен."
+    },
+    {
+      "id": "brazil-anpd",
+      "label": "Brazil ANPD — поиск публикаций",
+      "url": "https://news.google.com/rss/search?q=site%3Agov.br%2Fanpd%20(dados%20OR%20privacidade%20OR%20%22intelig%C3%AAncia%20artificial%22)%20when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+      "transport": "rss",
+      "region": "world",
+      "kind": "discovery",
+      "topics": [
+        "privacy",
+        "ai"
+      ],
+      "force_topics": [],
+      "enabled": true,
+      "jurisdictions": [
+        "BR"
+      ],
+      "query": "site:gov.br/anpd (dados OR privacidade OR \"inteligência artificial\")",
+      "note": "Индекс Google News, неполное покрытие. Ссылка и дата из индекса; исходный юридический текст не проверен."
+    },
+    {
+      "id": "australia-oaic",
+      "label": "Australia OAIC — поиск публикаций",
+      "url": "https://news.google.com/rss/search?q=site%3Aoaic.gov.au%20(privacy%20OR%20%22artificial%20intelligence%22%20OR%20enforcement)%20when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+      "transport": "rss",
+      "region": "world",
+      "kind": "discovery",
+      "topics": [
+        "privacy",
+        "ai"
+      ],
+      "force_topics": [],
+      "enabled": true,
+      "jurisdictions": [
+        "AU"
+      ],
+      "query": "site:oaic.gov.au (privacy OR \"artificial intelligence\" OR enforcement)",
+      "note": "Индекс Google News, неполное покрытие. Ссылка и дата из индекса; исходный юридический текст не проверен."
+    },
+    {
+      "id": "singapore-pdpc",
+      "label": "Singapore PDPC — поиск публикаций",
+      "url": "https://news.google.com/rss/search?q=site%3Apdpc.gov.sg%20(%22personal%20data%22%20OR%20%22artificial%20intelligence%22%20OR%20enforcement)%20when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+      "transport": "rss",
+      "region": "world",
+      "kind": "discovery",
+      "topics": [
+        "privacy",
+        "ai"
+      ],
+      "force_topics": [],
+      "enabled": true,
+      "jurisdictions": [
+        "SG"
+      ],
+      "query": "site:pdpc.gov.sg (\"personal data\" OR \"artificial intelligence\" OR enforcement)",
+      "note": "Индекс Google News, неполное покрытие. Ссылка и дата из индекса; исходный юридический текст не проверен."
+    },
+    {
+      "id": "india-meity",
+      "label": "India MeitY — поиск публикаций",
+      "url": "https://news.google.com/rss/search?q=site%3Ameity.gov.in%20(%22data%20protection%22%20OR%20%22artificial%20intelligence%22%20OR%20DPDP)%20when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+      "transport": "rss",
+      "region": "world",
+      "kind": "discovery",
+      "topics": [
+        "privacy",
+        "ai"
+      ],
+      "force_topics": [],
+      "enabled": true,
+      "jurisdictions": [
+        "IN"
+      ],
+      "query": "site:meity.gov.in (\"data protection\" OR \"artificial intelligence\" OR DPDP)",
+      "note": "Индекс Google News, неполное покрытие. Ссылка и дата из индекса; исходный юридический текст не проверен."
+    },
+    {
+      "id": "korea-pipc",
+      "label": "Korea PIPC — поиск публикаций",
+      "url": "https://news.google.com/rss/search?q=site%3Apipc.go.kr%20(privacy%20OR%20%22personal%20information%22%20OR%20AI)%20when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+      "transport": "rss",
+      "region": "world",
+      "kind": "discovery",
+      "topics": [
+        "privacy",
+        "ai"
+      ],
+      "force_topics": [],
+      "enabled": true,
+      "jurisdictions": [
+        "KR"
+      ],
+      "query": "site:pipc.go.kr (privacy OR \"personal information\" OR AI)",
+      "note": "Индекс Google News, неполное покрытие. Ссылка и дата из индекса; исходный юридический текст не проверен."
+    },
+    {
+      "id": "japan-ppc",
+      "label": "Japan PPC — поиск публикаций",
+      "url": "https://news.google.com/rss/search?q=site%3Appc.go.jp%20(privacy%20OR%20%22personal%20information%22%20OR%20AI)%20when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+      "transport": "rss",
+      "region": "world",
+      "kind": "discovery",
+      "topics": [
+        "privacy",
+        "ai"
+      ],
+      "force_topics": [],
+      "enabled": true,
+      "jurisdictions": [
+        "JP"
+      ],
+      "query": "site:ppc.go.jp (privacy OR \"personal information\" OR AI)",
+      "note": "Индекс Google News, неполное покрытие. Ссылка и дата из индекса; исходный юридический текст не проверен."
+    },
+    {
+      "id": "ru-rkn",
+      "label": "Роскомнадзор — поиск публикаций",
+      "url": "https://news.google.com/rss/search?q=site%3Arkn.gov.ru%20(%22%D0%BF%D0%B5%D1%80%D1%81%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5%22%20OR%20%22%D0%BF%D0%B5%D1%80%D1%81%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%22%20OR%20%D0%BE%D0%B1%D0%B5%D0%B7%D0%BB%D0%B8%D1%87%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20OR%20%22%D0%B8%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9%20%D0%B8%D0%BD%D1%82%D0%B5%D0%BB%D0%BB%D0%B5%D0%BA%D1%82%22)%20when%3A30d&hl=ru&gl=RU&ceid=RU%3Aru",
+      "transport": "rss",
+      "region": "ru",
+      "kind": "discovery",
+      "topics": [
+        "privacy",
+        "ai"
+      ],
+      "force_topics": [],
+      "enabled": true,
+      "jurisdictions": [
+        "RU"
+      ],
+      "query": "site:rkn.gov.ru (\"персональные данные\" OR \"персональных данных\" OR обезличивание OR \"искусственный интеллект\")",
+      "note": "Индекс Google News, неполное покрытие. Ссылка и дата из индекса; исходный юридический текст не проверен."
+    },
+    {
+      "id": "ru-official-publication",
+      "label": "РФ — официальное опубликование — поиск публикаций",
+      "url": "https://news.google.com/rss/search?q=(site%3Apublication.pravo.gov.ru%20OR%20site%3Apravo.gov.ru)%20(%22%D0%BF%D0%B5%D1%80%D1%81%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%22%20OR%20%22%D0%B8%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%B8%D0%BD%D1%82%D0%B5%D0%BB%D0%BB%D0%B5%D0%BA%D1%82%D0%B0%22%20OR%20%D0%BE%D0%B1%D0%B5%D0%B7%D0%BB%D0%B8%D1%87%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D1%8E%20OR%20%D0%B1%D0%B8%D0%BE%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D1%85)%20when%3A30d&hl=ru&gl=RU&ceid=RU%3Aru",
+      "transport": "rss",
+      "region": "ru",
+      "kind": "discovery",
+      "topics": [
+        "privacy",
+        "ai"
+      ],
+      "force_topics": [],
+      "enabled": true,
+      "jurisdictions": [
+        "RU"
+      ],
+      "query": "(site:publication.pravo.gov.ru OR site:pravo.gov.ru) (\"персональных данных\" OR \"искусственного интеллекта\" OR обезличиванию OR биометрических)",
+      "note": "Индекс Google News, неполное покрытие. Ссылка и дата из индекса; исходный юридический текст не проверен."
+    },
+    {
+      "id": "ru-duma",
+      "label": "Госдума — поиск публикаций",
+      "url": "https://news.google.com/rss/search?q=site%3Aduma.gov.ru%20(%22%D0%BF%D0%B5%D1%80%D1%81%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%22%20OR%20%22%D0%B8%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9%20%D0%B8%D0%BD%D1%82%D0%B5%D0%BB%D0%BB%D0%B5%D0%BA%D1%82%22%20OR%20%D0%B1%D0%B8%D0%BE%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D0%B8)%20when%3A30d&hl=ru&gl=RU&ceid=RU%3Aru",
+      "transport": "rss",
+      "region": "ru",
+      "kind": "discovery",
+      "topics": [
+        "privacy",
+        "ai"
+      ],
+      "force_topics": [],
+      "enabled": true,
+      "jurisdictions": [
+        "RU"
+      ],
+      "query": "site:duma.gov.ru (\"персональных данных\" OR \"искусственный интеллект\" OR биометрии)",
+      "note": "Индекс Google News, неполное покрытие. Ссылка и дата из индекса; исходный юридический текст не проверен."
+    },
+    {
+      "id": "ru-digital",
+      "label": "Минцифры — поиск публикаций",
+      "url": "https://news.google.com/rss/search?q=site%3Adigital.gov.ru%20(%22%D0%BF%D0%B5%D1%80%D1%81%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5%22%20OR%20%22%D0%B8%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9%20%D0%B8%D0%BD%D1%82%D0%B5%D0%BB%D0%BB%D0%B5%D0%BA%D1%82%22%20OR%20%D0%BE%D0%B1%D0%B5%D0%B7%D0%BB%D0%B8%D1%87%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5)%20when%3A30d&hl=ru&gl=RU&ceid=RU%3Aru",
+      "transport": "rss",
+      "region": "ru",
+      "kind": "discovery",
+      "topics": [
+        "privacy",
+        "ai"
+      ],
+      "force_topics": [],
+      "enabled": true,
+      "jurisdictions": [
+        "RU"
+      ],
+      "query": "site:digital.gov.ru (\"персональные данные\" OR \"искусственный интеллект\" OR обезличивание)",
+      "note": "Индекс Google News, неполное покрытие. Ссылка и дата из индекса; исходный юридический текст не проверен."
+    },
+    {
+      "id": "ru-courts",
+      "label": "РФ — ВС и КС — поиск публикаций",
+      "url": "https://news.google.com/rss/search?q=(site%3Avsrf.ru%20OR%20site%3Aksrf.ru)%20(%22%D0%BF%D0%B5%D1%80%D1%81%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%22%20OR%20%22%D0%B8%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9%20%D0%B8%D0%BD%D1%82%D0%B5%D0%BB%D0%BB%D0%B5%D0%BA%D1%82%22%20OR%20%D0%B1%D0%B8%D0%BE%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D1%85)%20when%3A30d&hl=ru&gl=RU&ceid=RU%3Aru",
+      "transport": "rss",
+      "region": "ru",
+      "kind": "discovery",
+      "topics": [
+        "privacy",
+        "ai"
+      ],
+      "force_topics": [],
+      "enabled": true,
+      "jurisdictions": [
+        "RU"
+      ],
+      "query": "(site:vsrf.ru OR site:ksrf.ru) (\"персональных данных\" OR \"искусственный интеллект\" OR биометрических)",
+      "note": "Индекс Google News, неполное покрытие. Ссылка и дата из индекса; исходный юридический текст не проверен."
+    },
+    {
+      "id": "ru-ai-news",
+      "label": "РФ — AI и регулирование — поиск публикаций",
+      "url": "https://news.google.com/rss/search?q=(%22%D0%B8%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9%20%D0%B8%D0%BD%D1%82%D0%B5%D0%BB%D0%BB%D0%B5%D0%BA%D1%82%22%20OR%20%D0%BD%D0%B5%D0%B9%D1%80%D0%BE%D1%81%D0%B5%D1%82%D0%B8%20OR%20%22AI%20governance%22)%20(%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F%20OR%20%D0%A0%D0%A4)%20(%D1%80%D0%B5%D0%B3%D1%83%D0%BB%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20OR%20%D0%B7%D0%B0%D0%BA%D0%BE%D0%BD%D0%BE%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20OR%20%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D1%8C%20OR%20%22%D0%B0%D0%B2%D1%82%D0%BE%D1%80%D1%81%D0%BA%D0%BE%D0%B5%20%D0%BF%D1%80%D0%B0%D0%B2%D0%BE%22%20OR%20%22%D0%BF%D0%B5%D1%80%D1%81%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5%22)%20when%3A30d&hl=ru&gl=RU&ceid=RU%3Aru",
+      "transport": "rss",
+      "region": "ru",
+      "kind": "discovery",
+      "topics": [
+        "privacy",
+        "ai"
+      ],
+      "force_topics": [],
+      "enabled": true,
+      "jurisdictions": [
+        "RU"
+      ],
+      "query": "(\"искусственный интеллект\" OR нейросети OR \"AI governance\") (Россия OR РФ) (регулирование OR законопроект OR ответственность OR \"авторское право\" OR \"персональные данные\")",
+      "note": "Индекс Google News, неполное покрытие. Ссылка и дата из индекса; исходный юридический текст не проверен."
+    },
+    {
+      "id": "rkn-public",
+      "label": "РоскомнадZор — публичный канал",
+      "url": "https://t.me/s/rkn_tg",
+      "transport": "telegram",
+      "region": "ru",
+      "kind": "primary",
+      "topics": [
+        "privacy",
+        "ai"
+      ],
+      "force_topics": [],
+      "enabled": true,
+      "jurisdictions": [
+        "RU"
+      ],
+      "note": "Публикация ведомства; исходный нормативный акт отдельно не проверен."
+    },
+    {
+      "id": "tg-gdprru",
+      "label": "GDPR.ru",
+      "url": "https://t.me/s/GDPRru",
+      "transport": "telegram",
+      "region": "ru",
+      "kind": "commentary",
+      "topics": [
+        "privacy",
+        "ai"
+      ],
+      "force_topics": [
+        "privacy"
+      ],
+      "enabled": true,
+      "jurisdictions": [
+        "RU"
+      ],
+      "note": "Публичная страница, ограниченная история. Регион обозначает русскоязычный/RF-канал; юрисдикция отдельного события требует проверки."
+    },
+    {
+      "id": "tg-data_privacy_office",
+      "label": "Data Privacy Office",
+      "url": "https://t.me/s/data_privacy_office",
+      "transport": "telegram",
+      "region": "ru",
+      "kind": "commentary",
+      "topics": [
+        "privacy",
+        "ai"
+      ],
+      "force_topics": [
+        "privacy"
+      ],
+      "enabled": true,
+      "jurisdictions": [
+        "RU"
+      ],
+      "note": "Публичная страница, ограниченная история. Регион обозначает русскоязычный/RF-канал; юрисдикция отдельного события требует проверки."
+    },
+    {
+      "id": "tg-lawyer_dataprivacy",
+      "label": "Lawyer Data Privacy",
+      "url": "https://t.me/s/lawyer_dataprivacy",
+      "transport": "telegram",
+      "region": "ru",
+      "kind": "commentary",
+      "topics": [
+        "privacy",
+        "ai"
+      ],
+      "force_topics": [
+        "privacy"
+      ],
+      "enabled": true,
+      "jurisdictions": [
+        "RU"
+      ],
+      "note": "Публичная страница, ограниченная история. Регион обозначает русскоязычный/RF-канал; юрисдикция отдельного события требует проверки."
+    },
+    {
+      "id": "tg-privacyexpert",
+      "label": "Privacy Expert",
+      "url": "https://t.me/s/privacyexpert",
+      "transport": "telegram",
+      "region": "ru",
+      "kind": "commentary",
+      "topics": [
+        "privacy",
+        "ai"
+      ],
+      "force_topics": [
+        "privacy"
+      ],
+      "enabled": true,
+      "jurisdictions": [
+        "RU"
+      ],
+      "note": "Публичная страница, ограниченная история. Регион обозначает русскоязычный/RF-канал; юрисдикция отдельного события требует проверки."
+    },
+    {
+      "id": "tg-persdata",
+      "label": "Persdata",
+      "url": "https://t.me/s/Persdata",
+      "transport": "telegram",
+      "region": "ru",
+      "kind": "commentary",
+      "topics": [
+        "privacy",
+        "ai"
+      ],
+      "force_topics": [
+        "privacy"
+      ],
+      "enabled": true,
+      "jurisdictions": [
+        "RU"
+      ],
+      "note": "Публичная страница, ограниченная история. Регион обозначает русскоязычный/RF-канал; юрисдикция отдельного события требует проверки."
+    },
+    {
+      "id": "tg-ai_and_law_rus",
+      "label": "ИИ & Право",
+      "url": "https://t.me/s/ai_and_law_rus",
+      "transport": "telegram",
+      "region": "ru",
+      "kind": "commentary",
+      "topics": [
+        "privacy",
+        "ai"
+      ],
+      "force_topics": [
+        "ai"
+      ],
+      "enabled": true,
+      "jurisdictions": [
+        "RU"
+      ],
+      "note": "Публичная страница, ограниченная история. Регион обозначает русскоязычный/RF-канал; юрисдикция отдельного события требует проверки."
+    },
+    {
+      "id": "tg-techlawlab",
+      "label": "TechLawLab",
+      "url": "https://t.me/s/techlawlab",
+      "transport": "telegram",
+      "region": "ru",
+      "kind": "commentary",
+      "topics": [
+        "privacy",
+        "ai"
+      ],
+      "force_topics": [],
+      "enabled": true,
+      "jurisdictions": [
+        "RU"
+      ],
+      "note": "Публичная страница, ограниченная история. Регион обозначает русскоязычный/RF-канал; юрисдикция отдельного события требует проверки."
+    },
+    {
+      "id": "tg-howtocomply_ai",
+      "label": "How to comply AI",
+      "url": "https://t.me/s/howtocomply_AI",
+      "transport": "telegram",
+      "region": "ru",
+      "kind": "commentary",
+      "topics": [
+        "privacy",
+        "ai"
+      ],
+      "force_topics": [
+        "ai"
+      ],
+      "enabled": true,
+      "jurisdictions": [
+        "RU"
+      ],
+      "note": "Публичная страница, ограниченная история. Регион обозначает русскоязычный/RF-канал; юрисдикция отдельного события требует проверки."
+    },
+    {
+      "id": "tg-ilovedocs",
+      "label": "ilovedocs — AI и юридическая практика",
+      "url": "https://t.me/s/ilovedocs",
+      "transport": "telegram",
+      "region": "ru",
+      "kind": "commentary",
+      "topics": [
+        "privacy",
+        "ai"
+      ],
+      "force_topics": [
+        "ai"
+      ],
+      "enabled": true,
+      "jurisdictions": [
+        "RU"
+      ],
+      "note": "Публичный авторский канал ilovedocs. Чат docsllm не имеет публичной веб-ленты. Русскоязычный поток не устанавливает юрисдикцию события."
+    },
+    {
+      "id": "tg-ai_safety_digest",
+      "label": "AI Safety Digest",
+      "url": "https://t.me/s/ai_safety_digest",
+      "transport": "telegram",
+      "region": "ru",
+      "kind": "commentary",
+      "topics": [
+        "privacy",
+        "ai"
+      ],
+      "force_topics": [
+        "ai"
+      ],
+      "enabled": true,
+      "jurisdictions": [
+        "RU"
+      ],
+      "note": "Публичная страница, ограниченная история. Регион обозначает русскоязычный/RF-канал; юрисдикция отдельного события требует проверки."
+    }
+  ],
+  "exclude_patterns": [
+    "\\bcrypto(?:currency|currencies)?\\b",
+    "\\bstablecoins?\\b",
+    "\\bblockchain\\b",
+    "\\bNFTs?\\b",
+    "криптовалют",
+    "стейблкоин",
+    "блокчейн",
+    "\\bЦФА\\b",
+    "майнинг"
+  ]
+}

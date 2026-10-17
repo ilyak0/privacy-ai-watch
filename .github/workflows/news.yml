@@ -1,0 +1,82 @@
+name: Privacy and AI news
+
+on:
+  schedule:
+    - cron: '37 3,9,15,21 * * *' # Collection every six hours, UTC.
+    - cron: '37 5 * * *'         # Daily email digest at 08:37 Moscow time.
+  workflow_dispatch:
+    inputs:
+      notify:
+        description: 'Create today’s email digest (at most one per day)'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  issues: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: privacy-ai-state
+  cancel-in-progress: false
+
+jobs:
+  news:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - name: Install feed parser dependency
+        run: python3 -m pip install -r requirements.txt
+      - name: Offline checks
+        run: python3 -m unittest discover -v
+      - name: Restore persistent archive
+        id: restore
+        run: python3 cloud_state.py restore
+      - name: Collect public sources
+        id: collect
+        continue-on-error: true
+        run: python3 -u collect.py --days 30
+      - name: Export public metadata
+        id: export
+        run: python3 cloud_state.py export
+      - name: Build news archive
+        run: python3 publish_site.py
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: site
+      - name: Publish GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+      - name: Daily digest to GitHub email notifications
+        if: github.event.schedule == '37 5 * * *' || (github.event_name == 'workflow_dispatch' && inputs.notify)
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          PAGES_URL: ${{ steps.deployment.outputs.page_url }}
+        run: python3 notify.py --publish
+      - name: Persist archive and delivery ledger
+        if: always() && steps.restore.outcome == 'success' && steps.export.outcome == 'success'
+        run: |
+          git config user.name 'privacy-ai-watch-bot'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add state/
+          if ! git diff --cached --quiet; then
+            git commit -m "Refresh news archive $(date -u +%F)"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+      - name: Fail visibly if every source failed
+        if: steps.collect.outcome == 'failure'
+        run: exit 1
