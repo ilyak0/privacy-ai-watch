@@ -1,6 +1,6 @@
-# Optional X cookie reader
+# X cookie reader
 
-`x-curated` is prepared but disabled in `sources.json`. The active RSS/Telegram
+`x-curated` is enabled in `sources.json`. The active RSS/Telegram
 monitor and all three post-question channels run independently of this option.
 
 The reader uses Twikit 2.3.3 and an existing X web session, rather than the paid
@@ -17,13 +17,11 @@ For local use, install `requirements-x.txt` in an isolated environment and set
 `X_READER_COOKIES_FILE` to an existing private cookie JSON file. Do not put
 session values in command arguments, chat, a committed dotenv file or logs.
 
-For autonomous cloud collection, the session owner must first approve moving
-these two cookies into the encrypted repository secret `X_READER_COOKIES_JSON`.
-After that approval, activation consists of installing that secret, setting the
-repository variable `X_READER_ENABLED=true`, enabling `x-curated` in the source
-registry and running the workflow with `notify=false` for a live check.
-Those activation steps have not been performed. Without them, no session is
-transferred and the cloud workflow does not install or run the optional reader.
+For autonomous cloud collection, the owner approved storing these two cookies
+in the encrypted repository secret `X_READER_COOKIES_JSON`. The repository
+variable `X_READER_ENABLED=true` installs the optional dependency, and the
+`x-curated` source is enabled in the registry. Changing or replacing this
+session remains separate from publishing code or public news metadata.
 
 The registry labels this combined stream as commentary because it includes
 regulators, experts and model suppliers; it does not infer jurisdiction or treat
