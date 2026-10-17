@@ -125,6 +125,10 @@ def select_ideas(items: list[dict[str, Any]], limit_per_channel: int = 3,
         if not matched:
             continue
         theme, linkedin_q, telegram_q, angle = matched
+        if theme == "ai_copyright" and not re.search(r"\b(?:training|train|обучен\w*)\b", title, re.I):
+            linkedin_q = "Кто автор результата работы ИИ и как распределить права между участниками?"
+            telegram_q = "Какие права на созданный с ИИ контент можно обещать заказчику?"
+            angle = "Спор об авторских правах даёт повод разобрать роли автора, пользователя и поставщика ИИ."
         kinds = _source_kinds(item)
         primary = any(kind.lower() == "primary" for kind in kinds)
         candidate = {"question": None, "angle": angle, "title": title, "url": url,

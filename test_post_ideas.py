@@ -90,6 +90,13 @@ class PostIdeasTests(unittest.TestCase):
                 item('NOTICE OF DATA BREACH - State of California - Department of Justice', n=2)]
         self.assertEqual(select_ideas(rows, as_of=AS_OF), {"linkedin": [], "telegram": []})
 
+    def test_ai_output_copyright_headline_does_not_imply_training_data_case(self):
+        headline = item('Выход продолжения «Мертвых душ» от ИИ вызвал споры об авторском праве')
+        ideas = select_ideas([headline], as_of=AS_OF)
+        for channel in ideas.values():
+            self.assertNotIn('обуч', channel[0]['question'])
+            self.assertNotIn('Обуч', channel[0]['angle'])
+
 
 if __name__ == "__main__":
     unittest.main()
