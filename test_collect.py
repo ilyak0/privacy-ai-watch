@@ -129,6 +129,14 @@ class CollectorTests(unittest.TestCase):
         self.assertEqual(collect.topic_matches({"title": "AI token governance", "excerpt": ""}, source(), config), ["ai"])
         self.assertEqual(collect.topic_matches({"title": "AI governance on blockchain", "excerpt": ""}, source(), config), [])
 
+    def test_general_official_feeds_require_data_context_for_cross_border(self):
+        config = collect.load_config(collect.DEFAULT_CONFIG)
+        official = next(s for s in config['sources'] if s['id'] == 'duma-direct')
+        railway = {"title": "Трансграничный участок железнодорожной колеи", "excerpt": ""}
+        transfer = {"title": "Трансграничная передача персональных данных", "excerpt": ""}
+        self.assertEqual(collect.topic_matches(railway, official, config), [])
+        self.assertEqual(collect.topic_matches(transfer, official, config), ['privacy'])
+
     def test_canonical_url_and_exact_title_merge_provenance(self):
         self.assertEqual(collect.canonical_url("https://E.test/a?utm_source=x&x=1#frag"), "https://e.test/a?x=1")
         now = collect.iso(collect.utcnow())

@@ -17,6 +17,9 @@ import urllib.request
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
+import editorial
+from post_ideas import select_ideas
+
 ROOT = Path(__file__).resolve().parent
 REPORT = ROOT / "data/latest.json"
 STATE = ROOT / "state/notifications.json"
@@ -138,7 +141,7 @@ def candidates(report: dict, state: dict, today: dt.date):
             continue
         item["_streams"] = sorted(memberships.get(key, set()))
         new.append(item)
-    new.sort(key=lambda i: (i.get("published_utc") or "", i["canonical_url"]), reverse=True)
+    new.sort(key=lambda i: (*editorial.sort_key(i), i["canonical_url"]), reverse=True)
     return new, baselines
 
 
@@ -175,17 +178,39 @@ def build_body(report: dict, selected: list[dict], day: dt.date,
     if selected:
         lines.append(f"Новых публикаций: **{len(selected)}**")
         lines.append("")
-        # One row per URL; stream membership is shown as tags.
+        # One row per URL; editorial groups keep practice ahead of broad AI news.
         labels = {"privacy_world": "Данные · мир", "privacy_ru": "Данные · Россия",
                   "ai_world": "ИИ · мир", "ai_ru": "ИИ · Россия"}
-        for item in selected:
-            url = _safe_url(item.get("url") or item.get("canonical_url", ""))
-            if not url:
+        for section, label in editorial.LABELS.items():
+            group = [i for i in sorted(selected, key=editorial.sort_key, reverse=True)
+                     if editorial.classify(i)["section"] == section]
+            if not group:
                 continue
-            title = _safe_title(item.get("title", ""))
-            date = item.get("published_utc") or "дата неизвестна"
-            tags = ", ".join(labels[s] for s in item.get("_streams", []) if s in labels)
-            lines.append(f"- **{date}** — [{title}](<{url}>)" + (f" — {tags}" if tags else ""))
+            lines += [f"### {label}", ""]
+            for item in group:
+                url = _safe_url(item.get("url") or item.get("canonical_url", ""))
+                if not url:
+                    continue
+                title = _safe_title(item.get("title", ""))
+                date = _date(item.get("published_utc"))
+                date = date.isoformat() if date else "дата неизвестна"
+                tags = ", ".join(labels[s] for s in item.get("_streams", []) if s in labels)
+                kinds = {"primary": "первоисточник", "commentary": "комментарий / СМИ",
+                         "discovery": "поисковый индекс", "mixed": "несколько типов источников"}
+                kind = kinds.get(item.get("source_kind"), "тип источника не указан")
+                lines.append(f"- **{date}** — [{title}](<{url}>) — {kind}" + (f" · {tags}" if tags else ""))
+            lines.append("")
+        ideas = select_ideas(selected, as_of=report.get("generated_at"))
+        if any(ideas.values()):
+            lines += ["### Вопросы для постов", "", "Поводы по заголовкам; перед постом — проверка полного источника.", ""]
+            for channel, label in (("linkedin", "LinkedIn"), ("telegram", "Telegram")):
+                if not ideas[channel]:
+                    continue
+                lines += [f"**{label}**", ""]
+                for idea in ideas[channel]:
+                    lines.append(f"- **{_safe_title(idea['question'])}** {_safe_title(idea['angle'])} "
+                                 f"Повод: [{_safe_title(idea['title'])}](<{_safe_url(idea['url'])}>).")
+                lines.append("")
     if health_rows:
         lines += ["", "### Состояние источников", "", *health_rows]
     if overflow:

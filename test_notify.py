@@ -135,6 +135,21 @@ class NotifyTests(unittest.TestCase):
         self.assertTrue(state["items"][items[2]["canonical_url"]]["notified"])
         self.assertNotIn(items[1]["canonical_url"], state["items"])
 
+    def test_practice_precedes_newer_industry_and_events_and_ideas_are_separate(self):
+        industry = make_item(2, 'Replit launches new AI coding model', '2026-10-17T07:00:00Z')
+        event = make_item(3, 'Register for AI Act fines webinar', '2026-10-17T08:00:00Z')
+        practice = make_item(1, 'CNIL fines company for cookie consent', '2026-10-16T08:00:00Z')
+        r = report([industry, event, practice])
+        rows, _ = notify.candidates(r, {}, DAY)
+        self.assertEqual([i['canonical_url'] for i in rows], [practice['url'], industry['url'], event['url']])
+        body = notify.build_body(r, rows, DAY)
+        self.assertLess(body.index('### Юридическая практика'), body.index('### Контекст ИИ'))
+        self.assertLess(body.index('### Контекст ИИ'), body.index('### События'))
+        self.assertIn('### Вопросы для постов', body)
+        self.assertIn('**LinkedIn**', body)
+        self.assertIn('**Telegram**', body)
+        self.assertEqual(body.count('<!-- item:'), 3)
+
     def test_api_failure_does_not_mark_items(self):
         class Broken(FakeGitHub):
             def create_issue(self, day, body):

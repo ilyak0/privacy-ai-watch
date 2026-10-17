@@ -67,6 +67,20 @@ class PublishSiteTests(unittest.TestCase):
         self.assertIsNone(out["generated_at"])
         self.assertEqual(out["publication_window_days"], 0)
 
+    def test_practice_order_and_separate_post_ideas_preserve_source_labels(self):
+        r = self.report()
+        practice = item('https://example.test/cookies', 'CNIL fines company over cookie consent', {})
+        practice['source_kind'] = 'primary'
+        industry = item('https://example.test/model', 'New AI coding model launches', {}, '2026-10-17T11:00:00Z')
+        r['buckets'] = {'privacy_world': [industry, practice]}
+        out = publish_site.public_report(r)
+        self.assertEqual(out['items'][0]['url'], practice['url'])
+        self.assertEqual(out['items'][0]['editorial']['section'], 'practice')
+        self.assertEqual(len(out['post_ideas']['linkedin']), 1)
+        self.assertEqual(out['post_ideas']['linkedin'][0]['url'], practice['url'])
+        self.assertIn('id="post-ideas"', publish_site.PAGE)
+        self.assertIn('id="section"', publish_site.PAGE)
+
 
 if __name__ == "__main__":
     unittest.main()
