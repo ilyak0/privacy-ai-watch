@@ -55,6 +55,8 @@ jobs:
       - name: Export public metadata
         id: export
         run: python3 cloud_state.py export
+      - name: Update persistent story timelines
+        run: python3 timelines.py
       - name: Build news archive
         run: python3 publish_site.py
       - uses: actions/configure-pages@v5

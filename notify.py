@@ -24,6 +24,7 @@ from post_ideas import CHANNEL_LABELS, select_ideas
 ROOT = Path(__file__).resolve().parent
 REPORT = ROOT / "data/latest.json"
 STATE = ROOT / "state/notifications.json"
+TIMELINES = ROOT / "state/timelines.json"
 TZ = ZoneInfo("Europe/Moscow")
 REPO_DEFAULT = "ilyak0/privacy-ai-watch"
 PAGES_DEFAULT = "https://ilyak0.github.io/privacy-ai-watch/"
@@ -175,6 +176,32 @@ def health_summary(report: dict) -> tuple[list[str], int]:
     return rows, errors
 
 
+def with_timeline_updates(new: list[dict], timeline_state: dict, state: dict, day: dt.date,
+                          window_days: int = 30) -> list[dict]:
+    from timelines import pending_updates
+    by_url = {item["canonical_url"]: dict(item) for item in new}
+    for update in pending_updates(timeline_state, state.get("timeline_events", {}), day, window_days):
+        key = update["canonical_url"]
+        if key not in by_url:
+            kinds = {source["kind"] for source in update.get("sources", [])}
+            by_url[key] = {"canonical_url": key, "url": update["url"], "title": update["title"],
+                "published_utc": update["published_utc"], "_streams": [], "topics": [],
+                "source_kind": next(iter(kinds)) if len(kinds) == 1 else "mixed" if kinds else "unknown"}
+        by_url[key]["_timeline_update"] = update
+    return sorted(by_url.values(), key=lambda i: (*editorial.sort_key(i), i["canonical_url"]), reverse=True)
+
+
+def _timeline_updates(selected: list[dict]) -> list[dict]:
+    return [item["_timeline_update"] for item in selected if item.get("_timeline_update")]
+
+
+def _timeline_kind(update: dict) -> str:
+    labels = {"primary": "первоисточник", "commentary": "комментарий / СМИ",
+              "discovery": "поисковый индекс", "unknown": "тип не указан"}
+    kinds = sorted({source.get("kind", "unknown") for source in update.get("sources", [])})
+    return ", ".join(labels.get(kind, labels["unknown"]) for kind in kinds) or labels["unknown"]
+
+
 def build_body(report: dict, selected: list[dict], day: dt.date,
                overflow: bool = False, health_rows: list[str] | None = None,
                pages_url: str | None = None) -> str:
@@ -192,6 +219,26 @@ def build_body(report: dict, selected: list[dict], day: dt.date,
                         "discovery": "поисковый индекс"}.get(item["source_kind"], "несколько типов источников")
                 lines += [f"- **{_safe_title(item['signal_label'])}** — [{_safe_title(item['title'])}](<{_safe_url(item['url'])}>) · {kind}",
                           f"  {_safe_title(item['why_open'])} {_safe_title(item['verification_needed'])}", ""]
+        updates = _timeline_updates(selected)
+        if updates:
+            lines += ["### Новое по сюжетам", "", "Даты ниже — даты публикаций; накопленная история доступна по ссылке сюжета.", ""]
+            grouped = {}
+            for update in updates:
+                grouped.setdefault(update["story_id"], []).append(update)
+            for story_id, entries in grouped.items():
+                label = _safe_title(entries[0]["story_label"])
+                anchor = _safe_url(pages_url.rstrip("/") + "/#story-" + story_id)
+                lines += [f"**[{label}](<{anchor}>)**", ""]
+                for update in sorted(entries, key=lambda entry: entry["published_utc"]):
+                    date = _date(update["published_utc"]).isoformat()
+                    url = _safe_url(update["url"])
+                    lines.append(f"- **{date}** — [{_safe_title(update['title'])}](<{url}>) — {_timeline_kind(update)}")
+                    alternatives = {(s.get("url"), s.get("label"), s.get("kind")) for s in update.get("sources", [])
+                                    if s.get("url") and s["url"] != update["url"]}
+                    for other_url, other_label, other_kind in sorted(alternatives):
+                        other_type = _timeline_kind({"sources": [{"kind": other_kind}]})
+                        lines.append(f"  - [{_safe_title(other_label)}](<{_safe_url(other_url)}>) · {other_type}")
+                lines.append("")
         ideas = select_ideas(selected, as_of=report.get("generated_at"))
         if any(ideas.values()):
             lines += ["### Вопросы для постов", "", "Поводы по заголовкам; перед постом — проверка полного источника.", ""]
@@ -208,7 +255,7 @@ def build_body(report: dict, selected: list[dict], day: dt.date,
         labels = {"privacy_world": "Данные · мир", "privacy_ru": "Данные · Россия",
                   "ai_world": "ИИ · мир", "ai_ru": "ИИ · Россия"}
         for section, label in editorial.LABELS.items():
-            group = [i for i in sorted(selected, key=editorial.sort_key, reverse=True)
+            group = [i for i in sorted(selected, key=editorial.sort_key, reverse=True) if not i.get("_timeline_update")
                      if editorial.classify(i)["section"] == section]
             if not group:
                 continue
@@ -234,6 +281,7 @@ def build_body(report: dict, selected: list[dict], day: dt.date,
                   f"[Посмотреть все публикации]({pages_url})."]
     lines += ["", daily_marker(day)]
     lines.extend(f"<!-- item:{item_marker(i['canonical_url'])} -->" for i in selected)
+    lines.extend(f"<!-- timeline:{update['delivery_key']} -->" for update in _timeline_updates(selected))
     return "\n".join(lines)
 
 
@@ -276,7 +324,7 @@ class GitHub:
             "body": body})
 
 
-def persist_recovery(state: dict, issue: dict, day: dt.date):
+def persist_recovery(state: dict, issue: dict, day: dt.date, timeline_state: dict | None = None):
     body = issue.get("body") or ""
     found = set(re.findall(r"<!-- item:([0-9a-f]{64}) -->", body))
     items = state.setdefault("items", {})
@@ -286,16 +334,30 @@ def persist_recovery(state: dict, issue: dict, day: dt.date):
             value["notified"] = True
     state.setdefault("days", {})[day.isoformat()] = {
         "issue_url": issue.get("html_url", ""), "markers": sorted(found)}
+    timeline_found = set(re.findall(r"<!-- timeline:([0-9a-f]{64}) -->", body))
+    if timeline_state is not None:
+        for story in timeline_state.get("stories", []):
+            for event in story.get("events", []):
+                key = hashlib.sha256(f"{story['id']}:{event['id']}".encode()).hexdigest()
+                if key in timeline_found:
+                    state.setdefault("timeline_events", {})[key] = {
+                        "story_id": story["id"], "event_id": event["id"], "notified_at": day.isoformat()}
+    if timeline_found:
+        state["days"][day.isoformat()]["timeline_markers"] = sorted(timeline_found)
 
 
 def run(report_path=REPORT, state_path=STATE, publish=False, today=None,
-        github_factory=GitHub, repo=None, pages_url=None):
+        github_factory=GitHub, repo=None, pages_url=None, timeline_path=None):
     day = today or today_moscow()
     report = load_json(Path(report_path), {})
     state = load_json(Path(state_path), {"items": {}, "days": {}})
     state.setdefault("items", {})
     state.setdefault("days", {})
     new, baselines = candidates(report, state, day)
+    timeline_state = load_json(Path(timeline_path), {}) if timeline_path is not None else None
+    if timeline_state:
+        new = with_timeline_updates(new, timeline_state, state, day,
+                                    max(1, int(report.get("publication_window_days") or 30)))
     health_rows, errors = health_summary(report)
     # First-run archive older than seven days is ledgered only upon a real publication
     # or existing issue recovery; today's new items remain the digest candidates.
@@ -315,7 +377,7 @@ def run(report_path=REPORT, state_path=STATE, publish=False, today=None,
     if not publish:
         return {"prepared": True, "date": day.isoformat(), "items": len(selected),
                 "overflow": max(0, len(new)-len(selected)), "source_errors": errors,
-                "would_publish": should_publish}
+                "would_publish": should_publish, "timeline_updates": len(_timeline_updates(selected))}
     token = os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN")
     if not token:
         raise RuntimeError("GH_TOKEN or GITHUB_TOKEN is required with --publish")
@@ -323,7 +385,7 @@ def run(report_path=REPORT, state_path=STATE, publish=False, today=None,
     gh = github_factory(repo, token)
     existing = gh.daily_issue(day)
     if existing:
-        persist_recovery(state, existing, day)
+        persist_recovery(state, existing, day, timeline_state)
         state.setdefault("initialized_at", report.get("generated_at"))
         # Existing markers are authoritative; do not mark unseen/capped URLs.
         marked = set(re.findall(r"<!-- item:([0-9a-f]{64}) -->", existing.get("body") or ""))
@@ -348,6 +410,11 @@ def run(report_path=REPORT, state_path=STATE, publish=False, today=None,
         state["items"][item["canonical_url"]] = {"first_seen": report.get("generated_at"), "notified": True}
     state["days"][day.isoformat()] = {"issue_url": issue.get("html_url", ""),
                                       "markers": [item_marker(i["canonical_url"]) for i in selected]}
+    for update in _timeline_updates(selected):
+        state.setdefault("timeline_events", {})[update["delivery_key"]] = {
+            "story_id": update["story_id"], "event_id": update["id"], "notified_at": day.isoformat()}
+    if _timeline_updates(selected):
+        state["days"][day.isoformat()]["timeline_markers"] = [u["delivery_key"] for u in _timeline_updates(selected)]
     state.setdefault("initialized_at", report.get("generated_at"))
     atomic_json(Path(state_path), state)
     return {"published": True, "url": issue.get("html_url", ""), "items": len(selected), "date": day.isoformat()}
@@ -358,9 +425,10 @@ def main(argv=None):
     parser.add_argument("--publish", action="store_true", help="create the daily GitHub issue")
     parser.add_argument("--report", type=Path, default=REPORT)
     parser.add_argument("--state", type=Path, default=STATE)
+    parser.add_argument("--timelines", type=Path, default=TIMELINES)
     args = parser.parse_args(argv)
     try:
-        result = run(args.report, args.state, args.publish)
+        result = run(args.report, args.state, args.publish, timeline_path=args.timelines)
         print(json.dumps(result, ensure_ascii=False))
     except Exception as exc:
         print(f"notify: {exc}", file=sys.stderr)

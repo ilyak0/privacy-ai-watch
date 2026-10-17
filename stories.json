@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "stories": [
+    {
+      "id": "thomson-ross-copyright",
+      "label": "Thomson Reuters и ROSS: спор об авторских правах",
+      "scope": "Публикации по конкретному спору об использовании материалов для юридического поиска.",
+      "all_of": [["Thomson Reuters"], ["\\bROSS\\b"], ["copyright|авторск|legal research|3rd circuit|supreme court"]],
+      "exclude": []
+    },
+    {
+      "id": "nvidia-music-training",
+      "label": "Nvidia: музыкальные данные для обучения ИИ",
+      "scope": "Публикации о споре вокруг музыкального датасета для обучения; общие новости Nvidia исключены.",
+      "all_of": [["\\bNvidia\\b"], ["music|музык"], ["training|обучен|copyright|lawsuit|подан иск"]],
+      "exclude": []
+    },
+    {
+      "id": "xandr-data-rights",
+      "label": "Xandr: права на данные и норвежское разбирательство",
+      "scope": "Публикации о персональных данных, GDPR и правоприменении в отношении Xandr.",
+      "all_of": [["\\bXandr\\b"], ["GDPR|privacy|personal data|Norwegian|персональн|норвеж|fines?|штраф"]],
+      "exclude": []
+    },
+    {
+      "id": "grok-privacy-deepfakes",
+      "label": "Grok: privacy и расследования о дипфейках",
+      "scope": "Публикации о персональных данных и расследованиях вокруг Grok и сексуализированных дипфейков.",
+      "all_of": [["\\bGrok\\b|Грок"], ["privacy|personal data|investigat|deepfake|персональн|расследован|дипфейк"]],
+      "exclude": []
+    },
+    {
+      "id": "google-location-ireland",
+      "label": "Google: данные о местоположении и ирландское дело",
+      "scope": "Публикации о конкретном ирландском разбирательстве вокруг обработки данных о местоположении.",
+      "all_of": [["\\bGoogle\\b"], ["location|местоположен|геолокац"], ["Irish|Ireland|DPC|ирланд"]],
+      "exclude": []
+    },
+    {
+      "id": "ru-supreme-court-ai-center",
+      "label": "ВС РФ: центр судебных компетенций по ИИ",
+      "scope": "Публикации о названном центре Верховного суда РФ; общие материалы про ИИ в судах не включаются.",
+      "all_of": [["Верховн.{0,15}Суд.{0,20}(?:Российск|РФ)|ВС РФ"], ["Центр.{0,30}судебн.{0,20}компетенц|Центр.{0,30}компетенц"], ["искусственн|\\bИИ\\b"]],
+      "exclude": []
+    },
+    {
+      "id": "eu-ai-act-implementation",
+      "label": "EU AI Act: внедрение требований",
+      "scope": "Публикации о внедрении AI Act, AI literacy, GPAI и сроках применения. Статус норм отдельно не определяется.",
+      "all_of": [["\\bAI ?Act\\b|европейск.{0,30}акт.{0,30}искусственн"], ["implement|operational|literacy|GPAI|rules|apply|enforc|omnibus|deadline|timeline|high.risk|compliance|грамотност|срок|внедрен|применен"]],
+      "exclude": []
+    }
+  ]
+}

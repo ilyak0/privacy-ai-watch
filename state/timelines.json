@@ -1,0 +1,328 @@
+{
+  "version": 1,
+  "generated_at": "2026-10-17T11:50:08Z",
+  "stories": [
+    {
+      "id": "thomson-ross-copyright",
+      "label": "Thomson Reuters и ROSS: спор об авторских правах",
+      "scope": "Публикации по конкретному спору об использовании материалов для юридического поиска.",
+      "enabled": true,
+      "initialized_at": "2026-10-17T11:50:08Z",
+      "baseline_event_ids": [
+        "0aaeac42818c6f81ce34b1ef0f05cf852d8e22365e6cdb1de280ed4a78d9e913",
+        "b24508deaae97ee6a5e5b00cb2ba0030df306824de5bb04c0bd0f56f11a0e223",
+        "c92861f5193f4b3171c1a1909daaa8dd40cead3979828f9f178f4c8e33da7fee"
+      ],
+      "events": [
+        {
+          "id": "b24508deaae97ee6a5e5b00cb2ba0030df306824de5bb04c0bd0f56f11a0e223",
+          "canonical_url": "https://www.lawnext.com/2026/09/3rd-circuit-issues-opinion-in-thomson-reuters-v-ross-case-but-for-now-it-is-sealed.html",
+          "url": "https://www.lawnext.com/2026/09/3rd-circuit-issues-opinion-in-thomson-reuters-v-ross-case-but-for-now-it-is-sealed.html",
+          "title": "3rd Circuit Issues Opinion in Thomson Reuters v. ROSS Case, But For Now It Is Sealed",
+          "published_utc": "2026-09-29T16:53:18Z",
+          "first_seen_utc": "2026-10-17T08:20:49Z",
+          "sources": [
+            {
+              "label": "LawNext",
+              "kind": "commentary",
+              "url": "https://www.lawnext.com/2026/09/3rd-circuit-issues-opinion-in-thomson-reuters-v-ross-case-but-for-now-it-is-sealed.html"
+            }
+          ]
+        },
+        {
+          "id": "c92861f5193f4b3171c1a1909daaa8dd40cead3979828f9f178f4c8e33da7fee",
+          "canonical_url": "https://www.lawnext.com/2026/09/3rd-circuit-rules-for-thomson-reuters-in-its-copyright-fight-against-legal-research-startup-ross.html",
+          "url": "https://www.lawnext.com/2026/09/3rd-circuit-rules-for-thomson-reuters-in-its-copyright-fight-against-legal-research-startup-ross.html",
+          "title": "3rd Circuit Rules For Thomson Reuters In Its Copyright Fight Against Legal Research Startup ROSS",
+          "published_utc": "2026-09-30T19:29:33Z",
+          "first_seen_utc": "2026-10-17T08:20:49Z",
+          "sources": [
+            {
+              "label": "LawNext",
+              "kind": "commentary",
+              "url": "https://www.lawnext.com/2026/09/3rd-circuit-rules-for-thomson-reuters-in-its-copyright-fight-against-legal-research-startup-ross.html"
+            }
+          ]
+        },
+        {
+          "id": "0aaeac42818c6f81ce34b1ef0f05cf852d8e22365e6cdb1de280ed4a78d9e913",
+          "canonical_url": "https://www.lawnext.com/2026/10/ross-says-it-will-ask-supreme-court-to-review-3rd-circuit-ruling-for-thomson-reuters-in-copyright-case.html",
+          "url": "https://www.lawnext.com/2026/10/ross-says-it-will-ask-supreme-court-to-review-3rd-circuit-ruling-for-thomson-reuters-in-copyright-case.html",
+          "title": "ROSS Says It Will Ask Supreme Court to Review 3rd Circuit Ruling for Thomson Reuters in Copyright Case",
+          "published_utc": "2026-10-02T19:38:26Z",
+          "first_seen_utc": "2026-10-17T08:20:49Z",
+          "sources": [
+            {
+              "label": "LawNext",
+              "kind": "commentary",
+              "url": "https://www.lawnext.com/2026/10/ross-says-it-will-ask-supreme-court-to-review-3rd-circuit-ruling-for-thomson-reuters-in-copyright-case.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nvidia-music-training",
+      "label": "Nvidia: музыкальные данные для обучения ИИ",
+      "scope": "Публикации о споре вокруг музыкального датасета для обучения; общие новости Nvidia исключены.",
+      "enabled": true,
+      "initialized_at": "2026-10-17T11:50:08Z",
+      "baseline_event_ids": [
+        "f2196c413df263beb6f835397219740e9a7ffa77836c0f4c48c99399b80b3c94"
+      ],
+      "events": [
+        {
+          "id": "f2196c413df263beb6f835397219740e9a7ffa77836c0f4c48c99399b80b3c94",
+          "canonical_url": "https://t.me/ai_and_law_rus/1169",
+          "url": "https://t.me/ai_and_law_rus/1169",
+          "title": "🇺🇸 ⚖️ Против Nvidia подан иск за незаконное использование музыкального датасета для обучения ИИ Против Nvidia подан иск , в котором утверждается, что компания использовала музыкаль…",
+          "published_utc": "2026-10-16T07:04:04Z",
+          "first_seen_utc": "2026-10-17T08:20:55Z",
+          "sources": [
+            {
+              "label": "ИИ & Право",
+              "kind": "commentary",
+              "url": "https://t.me/ai_and_law_rus/1169"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "xandr-data-rights",
+      "label": "Xandr: права на данные и норвежское разбирательство",
+      "scope": "Публикации о персональных данных, GDPR и правоприменении в отношении Xandr.",
+      "enabled": true,
+      "initialized_at": "2026-10-17T11:50:08Z",
+      "baseline_event_ids": [
+        "71c98c4b120f03ec29b30f190fc755029303195d7fa892d13a8c895dcd5afb6b",
+        "cedf6bef1c082522c05f341dbdba63953240b334f471ce98f695f9b316532ceb",
+        "d1fefb7e3a67472b6a062fc612d6b87099fa159d7a95a7448757fc4f8b53d6b3"
+      ],
+      "events": [
+        {
+          "id": "71c98c4b120f03ec29b30f190fc755029303195d7fa892d13a8c895dcd5afb6b",
+          "canonical_url": "https://noyb.eu/en/microsofts-xandr-grants-gdpr-rights-rate-0",
+          "url": "https://noyb.eu/en/microsofts-xandr-grants-gdpr-rights-rate-0",
+          "title": "Microsoft's Xandr grants GDPR rights at a rate of 0%",
+          "published_utc": "2024-07-09T05:00:00Z",
+          "first_seen_utc": "2026-10-17T08:20:47Z",
+          "sources": [
+            {
+              "label": "noyb",
+              "kind": "commentary",
+              "url": "https://noyb.eu/en/microsofts-xandr-grants-gdpr-rights-rate-0"
+            }
+          ]
+        },
+        {
+          "id": "cedf6bef1c082522c05f341dbdba63953240b334f471ce98f695f9b316532ceb",
+          "canonical_url": "https://noyb.eu/en/privacy-win-norwegian-authority-fines-microsofts-xandr-eu-85-million",
+          "url": "https://noyb.eu/en/privacy-win-norwegian-authority-fines-microsofts-xandr-eu-85-million",
+          "title": "Privacy win: Norwegian Authority fines Microsoft’s Xandr € 8.5 Million",
+          "published_utc": "2026-10-12T05:15:00Z",
+          "first_seen_utc": "2026-10-17T08:20:47Z",
+          "sources": [
+            {
+              "label": "noyb",
+              "kind": "commentary",
+              "url": "https://noyb.eu/en/privacy-win-norwegian-authority-fines-microsofts-xandr-eu-85-million"
+            }
+          ]
+        },
+        {
+          "id": "d1fefb7e3a67472b6a062fc612d6b87099fa159d7a95a7448757fc4f8b53d6b3",
+          "canonical_url": "https://www.edpb.europa.eu/news/norwegian-dpa-fines-xandr-eur-8-600-000-for-unlawful-processing-of-personal-data_en",
+          "url": "https://www.edpb.europa.eu/news/norwegian-dpa-fines-xandr-eur-8-600-000-for-unlawful-processing-of-personal-data_en",
+          "title": "Norwegian DPA fines Xandr EUR 8 600 000 for unlawful processing of personal data",
+          "published_utc": "2026-10-16T12:00:00Z",
+          "first_seen_utc": "2026-10-17T08:20:47Z",
+          "sources": [
+            {
+              "label": "EDPB — новости",
+              "kind": "primary",
+              "url": "https://www.edpb.europa.eu/news/norwegian-dpa-fines-xandr-eur-8-600-000-for-unlawful-processing-of-personal-data_en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grok-privacy-deepfakes",
+      "label": "Grok: privacy и расследования о дипфейках",
+      "scope": "Публикации о персональных данных и расследованиях вокруг Grok и сексуализированных дипфейков.",
+      "enabled": true,
+      "initialized_at": "2026-10-17T11:50:08Z",
+      "baseline_event_ids": [
+        "0b6e4743632f9effb20dd3ab89e27be242dfb9ecc12e160614eb3acebc36023a",
+        "23b84f3b0c15c9a71f5175353d52eb3e7ad4955cecf6567e21e316c212f8757a",
+        "621517446dd5da32a3c3a8563399b196de23a2183f38e6619621790dc199e43d"
+      ],
+      "events": [
+        {
+          "id": "621517446dd5da32a3c3a8563399b196de23a2183f38e6619621790dc199e43d",
+          "canonical_url": "https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/ma_260610",
+          "url": "https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/ma_260610",
+          "title": "Media advisory: Privacy Commissioner of Canada to release findings of investigation into Grok chatbot and sexualized deepfakes",
+          "published_utc": "2026-06-10T04:00:00Z",
+          "first_seen_utc": "2026-10-17T08:20:47Z",
+          "sources": [
+            {
+              "label": "Canada OPC — новости",
+              "kind": "primary",
+              "url": "https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/ma_260610/"
+            }
+          ]
+        },
+        {
+          "id": "0b6e4743632f9effb20dd3ab89e27be242dfb9ecc12e160614eb3acebc36023a",
+          "canonical_url": "https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/nr-c_260611",
+          "url": "https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/nr-c_260611",
+          "title": "News release: Privacy Commissioner of Canada investigation into the Grok chatbot and sexualized deepfakes finds companies violated privacy law",
+          "published_utc": "2026-06-11T04:00:00Z",
+          "first_seen_utc": "2026-10-17T08:20:47Z",
+          "sources": [
+            {
+              "label": "Canada OPC — новости",
+              "kind": "primary",
+              "url": "https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/nr-c_260611/"
+            }
+          ]
+        },
+        {
+          "id": "23b84f3b0c15c9a71f5175353d52eb3e7ad4955cecf6567e21e316c212f8757a",
+          "canonical_url": "https://www.priv.gc.ca/en/opc-news/speeches-and-statements/2026/s-d_260611",
+          "url": "https://www.priv.gc.ca/en/opc-news/speeches-and-statements/2026/s-d_260611",
+          "title": "Statement by the Privacy Commissioner of Canada on investigation into Grok chatbot and sexualized deepfakes",
+          "published_utc": "2026-06-11T04:00:00Z",
+          "first_seen_utc": "2026-10-17T08:20:47Z",
+          "sources": [
+            {
+              "label": "Canada OPC — новости",
+              "kind": "primary",
+              "url": "https://www.priv.gc.ca/en/opc-news/speeches-and-statements/2026/s-d_260611/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "google-location-ireland",
+      "label": "Google: данные о местоположении и ирландское дело",
+      "scope": "Публикации о конкретном ирландском разбирательстве вокруг обработки данных о местоположении.",
+      "enabled": true,
+      "initialized_at": "2026-10-17T11:50:08Z",
+      "baseline_event_ids": [
+        "23eccfb4303ce3c4385a3f5e2fb9d8898bf206bd863d5ce3375a3fd0961d3620"
+      ],
+      "events": [
+        {
+          "id": "23eccfb4303ce3c4385a3f5e2fb9d8898bf206bd863d5ce3375a3fd0961d3620",
+          "canonical_url": "https://www.edpb.europa.eu/news/the-irish-data-protection-commission-fines-google-403-000-000-eur-following-inquiry_en",
+          "url": "https://www.edpb.europa.eu/news/the-irish-data-protection-commission-fines-google-403-000-000-eur-following-inquiry_en",
+          "title": "The Irish Data Protection Commission fines Google EUR 403 000 000 following Inquiry into Google’s processing of location data",
+          "published_utc": "2026-09-23T12:00:00Z",
+          "first_seen_utc": "2026-10-17T08:20:47Z",
+          "sources": [
+            {
+              "label": "EDPB — новости",
+              "kind": "primary",
+              "url": "https://www.edpb.europa.eu/news/the-irish-data-protection-commission-fines-google-403-000-000-eur-following-inquiry_en"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ru-supreme-court-ai-center",
+      "label": "ВС РФ: центр судебных компетенций по ИИ",
+      "scope": "Публикации о названном центре Верховного суда РФ; общие материалы про ИИ в судах не включаются.",
+      "enabled": true,
+      "initialized_at": "2026-10-17T11:50:08Z",
+      "baseline_event_ids": [
+        "d079d705149ba69c0d32f95007fe40d70628f0a165d432654e621fe33ee13905"
+      ],
+      "events": [
+        {
+          "id": "d079d705149ba69c0d32f95007fe40d70628f0a165d432654e621fe33ee13905",
+          "canonical_url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBLSmQ4SnVoMHdmRGtybHdma0RiNm9OM3Z4ZERlQjhiS25XUFVwVlI4U0xSeWcwMGRyVm5RZ2UwUDNReE1US3NTUjlvX2prVTBZVzU2alMtNXk2TkNrazhnVno5T1k4cTVWNWhJeUhB?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBLSmQ4SnVoMHdmRGtybHdma0RiNm9OM3Z4ZERlQjhiS25XUFVwVlI4U0xSeWcwMGRyVm5RZ2UwUDNReE1US3NTUjlvX2prVTBZVzU2alMtNXk2TkNrazhnVno5T1k4cTVWNWhJeUhB?oc=5",
+          "title": "Положение о Центре судебных компетенций в сфере искусственного интеллекта - Верховный Суд Российской Федерации",
+          "published_utc": "2026-10-09T16:33:29Z",
+          "first_seen_utc": "2026-10-17T08:20:54Z",
+          "sources": [
+            {
+              "label": "РФ — ВС и КС — поиск публикаций",
+              "kind": "discovery",
+              "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5LTDg2M0ZuT05MQnFDM2VhbmdlMWhQbWlGRXB4ZmlqU1B1RTNOYW54WnVxNTlNSE5ZaW9tV0s4aENaSVN1ejByUUZGaXhVcGwxR1Q2cGlfQWJQSXFsSDVxdnotRG9aTXBMVXc?oc=5"
+            },
+            {
+              "label": "РФ — ВС и КС — поиск публикаций",
+              "kind": "discovery",
+              "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBLSmQ4SnVoMHdmRGtybHdma0RiNm9OM3Z4ZERlQjhiS25XUFVwVlI4U0xSeWcwMGRyVm5RZ2UwUDNReE1US3NTUjlvX2prVTBZVzU2alMtNXk2TkNrazhnVno5T1k4cTVWNWhJeUhB?oc=5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eu-ai-act-implementation",
+      "label": "EU AI Act: внедрение требований",
+      "scope": "Публикации о внедрении AI Act, AI literacy, GPAI и сроках применения. Статус норм отдельно не определяется.",
+      "enabled": true,
+      "initialized_at": "2026-10-17T11:50:08Z",
+      "baseline_event_ids": [
+        "1425d100183d9ceb9be17c68ebb3f6bc105956abe148ce8294c25d038e4fd63b",
+        "76b7945ee21aa7c2b4e3ed96387e1a21aa36660cc2f92bb0a8e089e56c0e49ad",
+        "b82bd2664d2fb7a6124bb476d37a687509b13a4b4644173fd83956159cf5f130"
+      ],
+      "events": [
+        {
+          "id": "76b7945ee21aa7c2b4e3ed96387e1a21aa36660cc2f92bb0a8e089e56c0e49ad",
+          "canonical_url": "https://x.com/EU_EDPS/status/2004839819675836804",
+          "url": "https://x.com/EU_EDPS/status/2004839819675836804",
+          "title": "Under #AIAct #EDPS acts as notified body and market surveillance authority for high-risk AI systems used by EU institutions. As new AI Act rules apply, we support innovation while …",
+          "published_utc": "2025-12-27T09:00:35Z",
+          "first_seen_utc": "2026-10-17T11:16:57Z",
+          "sources": [
+            {
+              "label": "X / Twitter · отобранные международные аккаунты",
+              "kind": "commentary",
+              "url": "https://x.com/EU_EDPS/status/2004839819675836804"
+            }
+          ]
+        },
+        {
+          "id": "1425d100183d9ceb9be17c68ebb3f6bc105956abe148ce8294c25d038e4fd63b",
+          "canonical_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNaUdhdFpUSFRScktuVjJNUk9PaTVTRTBKYmdGNDFBUzNIMVgweXJUeEMyLVBrd1dQM0tjQy0xZ2s0Rm5KVEVuaEl4YUcxd1g5MlRLUFZENjlyUWdpYlhIa2FaRmlzYUluVGVmUkZ6UVg5NXVIbVVLT1BqXzBIOXVhVFpxeC12NXRsVkEtLTRDclIxZXQtdk8tZDRCTQ?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNaUdhdFpUSFRScktuVjJNUk9PaTVTRTBKYmdGNDFBUzNIMVgweXJUeEMyLVBrd1dQM0tjQy0xZ2s0Rm5KVEVuaEl4YUcxd1g5MlRLUFZENjlyUWdpYlhIa2FaRmlzYUluVGVmUkZ6UVg5NXVIbVVLT1BqXzBIOXVhVFpxeC12NXRsVkEtLTRDclIxZXQtdk8tZDRCTQ?oc=5",
+          "title": "EU AI Act literacy changes may complicate, more than simplify, compliance - IAPP",
+          "published_utc": "2026-09-23T07:00:00Z",
+          "first_seen_utc": "2026-10-17T08:20:52Z",
+          "sources": [
+            {
+              "label": "IAPP — поиск публикаций",
+              "kind": "discovery",
+              "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNaUdhdFpUSFRScktuVjJNUk9PaTVTRTBKYmdGNDFBUzNIMVgweXJUeEMyLVBrd1dQM0tjQy0xZ2s0Rm5KVEVuaEl4YUcxd1g5MlRLUFZENjlyUWdpYlhIa2FaRmlzYUluVGVmUkZ6UVg5NXVIbVVLT1BqXzBIOXVhVFpxeC12NXRsVkEtLTRDclIxZXQtdk8tZDRCTQ?oc=5"
+            }
+          ]
+        },
+        {
+          "id": "b82bd2664d2fb7a6124bb476d37a687509b13a4b4644173fd83956159cf5f130",
+          "canonical_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5wVFZYdjg0czFOTzZxbHMyNG1la1pIQ2VFVnlTVjFvc2V1UlBFYWxGeDFYVHFKVm0yd0JDSW1KdlotcUR4TXZPV1NXeVk0aE5aNnJmTzlXTVRxY21OQ3k4amJFT0NodTRNQW9rWlpqVzlzTzZmaXczWUR1bWVzRGs?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5wVFZYdjg0czFOTzZxbHMyNG1la1pIQ2VFVnlTVjFvc2V1UlBFYWxGeDFYVHFKVm0yd0JDSW1KdlotcUR4TXZPV1NXeVk0aE5aNnJmTzlXTVRxY21OQ3k4amJFT0NodTRNQW9rWlpqVzlzTzZmaXczWUR1bWVzRGs?oc=5",
+          "title": "Italy's AI framework: Operationalizing the EU AI Act - IAPP",
+          "published_utc": "2026-09-23T07:00:00Z",
+          "first_seen_utc": "2026-10-17T08:20:52Z",
+          "sources": [
+            {
+              "label": "IAPP — поиск публикаций",
+              "kind": "discovery",
+              "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5wVFZYdjg0czFOTzZxbHMyNG1la1pIQ2VFVnlTVjFvc2V1UlBFYWxGeDFYVHFKVm0yd0JDSW1KdlotcUR4TXZPV1NXeVk0aE5aNnJmTzlXTVRxY21OQ3k4amJFT0NodTRNQW9rWlpqVzlzTzZmaXczWUR1bWVzRGs?oc=5"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
