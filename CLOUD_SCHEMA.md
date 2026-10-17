@@ -19,3 +19,4 @@
 - `publish_site.py --timelines` reads persistent history separately from the rolling report and includes `timelines` in public news.json. Story links use `#story-<stable-id>`, open the relevant history and retain entries older than 30 days. See TIMELINE_SCHEMA.md for the data contract.
 
 - `noyb-discovery` is an additional Google News backup with kind=discovery, alongside the unchanged official noyb RSS. It does not conceal the official feed failure or assert original availability. Its configured title_suffix_pattern strips only the terminal publisher suffix before the existing exact-headline/publication-day alias merge; source observations and their kinds remain separate.
+- Alias merges retain the first-seen canonical URL and main link to preserve timeline and delivery identities. If discovery arrives first, its link stays canonical; a later direct source retains its own URL and kind in provenance. Neither order promotes discovery to primary.
