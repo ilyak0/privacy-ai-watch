@@ -216,10 +216,14 @@ def process_source(source: dict, config: dict, days: int) -> tuple[dict, list[di
               "parsed": 0, "recent": 0, "undated": 0, "latest_publication": None,
               "error": None}
     try:
-        data, _ = fetch(source["url"])
-        health["bytes_received"] = len(data)
         transport = source["transport"]
-        parsed = rss_items(data) if transport == "rss" else html_items(data, source) if transport == "html" else telegram_items(data)
+        if transport == "x_cookies":
+            from x_reader import fetch_posts
+            parsed = fetch_posts(source)
+        else:
+            data, _ = fetch(source["url"])
+            health["bytes_received"] = len(data)
+            parsed = rss_items(data) if transport == "rss" else html_items(data, source) if transport == "html" else telegram_items(data)
         health["fetched"] = len(parsed)
         health["parsed"] = len(parsed)
         results = []
@@ -428,7 +432,7 @@ def load_config(path: Path) -> dict:
     if config.get("version") != 1 or not isinstance(config.get("sources"), list):
         raise ValueError("config must have version=1 and a sources array")
     for source in config["sources"]:
-        if source.get("transport") not in {"rss", "telegram", "html"}:
+        if source.get("transport") not in {"rss", "telegram", "html", "x_cookies"}:
             raise ValueError(f"invalid transport for source {source.get('id')}")
         if source.get("region") not in {"world", "ru"} or source.get("kind") not in {"primary", "commentary", "discovery"}:
             raise ValueError(f"invalid region/kind for source {source.get('id')}")

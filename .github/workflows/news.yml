@@ -38,6 +38,9 @@ jobs:
           cache: pip
       - name: Install feed parser dependency
         run: python3 -m pip install -r requirements.txt
+      - name: Install optional X reader
+        if: vars.X_READER_ENABLED == 'true'
+        run: python3 -m pip install -r requirements-x.txt
       - name: Offline checks
         run: python3 -m unittest discover -v
       - name: Restore persistent archive
@@ -46,6 +49,8 @@ jobs:
       - name: Collect public sources
         id: collect
         continue-on-error: true
+        env:
+          X_READER_COOKIES_JSON: ${{ secrets.X_READER_COOKIES_JSON }}
         run: python3 -u collect.py --days 30
       - name: Export public metadata
         id: export

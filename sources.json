@@ -943,6 +943,31 @@
         "RU"
       ],
       "note": "Прямая официальная RSS-лента последних 200 публикаций всех уровней. Отбор по заголовку и метаданным; не полнотекстовый поиск и не полный реестр актов. Дата публикации не означает дату вступления в силу."
+    },
+    {
+      "id": "x-curated",
+      "label": "X / Twitter · отобранные международные аккаунты",
+      "url": "https://x.com/",
+      "transport": "x_cookies",
+      "region": "world",
+      "kind": "commentary",
+      "topics": [
+        "privacy",
+        "ai"
+      ],
+      "force_topics": [],
+      "enabled": false,
+      "jurisdictions": [],
+      "accounts": [
+        "EU_EDPB",
+        "ICOnews",
+        "maxschrems",
+        "EU_EDPS",
+        "random_walker",
+        "AnthropicAI",
+        "OpenAI"
+      ],
+      "note": "Подготовлен для чтения публичных постов через отдельную сессию cookies. Сейчас отключён: перенос сессии в GitHub Secrets требует согласия владельца. Общий поток ведомств, экспертов и разработчиков; тип не повышается до primary без отдельной проверки источника."
     }
   ],
   "exclude_patterns": [

@@ -137,6 +137,17 @@ class CollectorTests(unittest.TestCase):
         self.assertEqual(collect.topic_matches(railway, official, config), [])
         self.assertEqual(collect.topic_matches(transfer, official, config), ['privacy'])
 
+    def test_optional_x_source_uses_exact_publication_date(self):
+        row = {'title': 'Privacy guidance', 'excerpt': 'privacy',
+               'url': 'https://x.com/official/status/123',
+               'published': dt.datetime(2026, 10, 17, 10, tzinfo=UTC)}
+        with patch('x_reader.fetch_posts', return_value=[row]), \
+             patch.object(collect, 'utcnow', return_value=dt.datetime(2026, 10, 17, 12, tzinfo=UTC)):
+            health, rows = collect.process_source(source('x_cookies'), CONFIG, 7)
+        self.assertEqual(health['status'], 'ok')
+        self.assertEqual(rows[0]['published'], row['published'])
+        self.assertEqual(rows[0]['url'], row['url'])
+
     def test_canonical_url_and_exact_title_merge_provenance(self):
         self.assertEqual(collect.canonical_url("https://E.test/a?utm_source=x&x=1#frag"), "https://e.test/a?x=1")
         now = collect.iso(collect.utcnow())
