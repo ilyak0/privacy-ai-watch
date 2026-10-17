@@ -23,6 +23,11 @@ class BriefingTests(unittest.TestCase):
                 item("New essay: To keep human judgment, we need AI courts and AI-generated filings")]
         self.assertEqual(select_briefing(rows, as_of=AS_OF), [])
 
+    def test_congress_announcement_and_generic_breach_mail_are_not_briefing(self):
+        rows = [item("C 19 по 22 октября пройдёт Eurasian Data Protection Congress! Конгресс о приватности и регулировании ИИ"),
+                item("Notice of Data Breach Dear Jane: school writes to inform you of an event")]
+        self.assertEqual(select_briefing(rows, as_of=AS_OF), [])
+
     def test_recent_primary_practice_items_are_curated_and_bounded(self):
         items = [
             item("EDPB adopts new binding corporate rules opinion", source="edpb"),

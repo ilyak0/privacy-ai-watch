@@ -26,8 +26,8 @@ SIGNALS = (
     ("privacy_operations", re.compile(r"\b(?:data processing agreement|DPA|privacy program|contractual terms|data retention|data minimization|договор\w* об обработк\w* данн\w*|соглашен\w* об обработк\w*|срок\w* хранен\w* данн\w*|минимизац\w* данн\w*)\b", re.I), "Практика обработки данных"),
 )
 
-EVENT_OR_SOFT = re.compile(r"\b(?:webinar|conference|workshop|course|masterclass|registration|join us|conversation with|interview with|podcast|chat with|приглаша\w*|вебинар\w*|конференц\w*|курс\w*|разговор с|беседа с|подкаст\w*)\b", re.I)
-GENERIC_NOTICE = re.compile(r"^\s*NOTICE OF DATA BREACH(?:\s*[-:—].*)?\s*$", re.I)
+EVENT_OR_SOFT = re.compile(r"\b(?:webinar|conference|congress|summit|workshop|course|masterclass|registration|join us|conversation with|interview with|podcast|chat with|приглаша\w*|вебинар\w*|конференц\w*|конгресс\w*|форум\w*|семинар\w*|курс\w*|разговор с|беседа с|подкаст\w*)\b", re.I)
+GENERIC_NOTICE = re.compile(r"^\s*NOTICE OF DATA BREACH\b", re.I)
 WEAK_CONVERSATION = re.compile(r"\b(?:conversation with|interview with|podcast with|chat with|a conversation|new essay|разговор с|беседа с|эксперт (?:назвал|о)|эксперт по.{0,40}:)\b", re.I)
 STOP = set("the a an and or of for in on to with from by over after under as at is are was were says said new its this that their about into according report reports news privacy personal data processing authority commission regulator dpa edpb court opinion decision fine fines fined euros euro eur dollars usd million m billion ai act law laws guide guidance on the eu uk us eu e p d b publication update statement".split())
 AUTHORITY_WORDS = {"edpb", "dpa", "cnil", "ico", "ftc", "oaic", "iapp", "pipc", "commission", "authority", "court", "regulator", "norwegian", "european", "federal", "privacy", "data", "protection", "minister", "ministry", "office", "board", "committee", "act", "ai", "eu", "us", "uk", "против", "суд", "новый", "новые"}
@@ -145,7 +145,7 @@ def _source_families(item: dict[str, Any], kinds: list[str]) -> list[str]:
 
 
 def _theme(title: str) -> tuple[str, str, list[str]] | None:
-    if GENERIC_NOTICE.fullmatch(title):
+    if GENERIC_NOTICE.search(title):
         return None
     if WEAK_CONVERSATION.search(title):
         return None

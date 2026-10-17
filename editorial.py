@@ -25,7 +25,7 @@ PRACTICE_PATTERNS = {
 }
 
 EVENT_PATTERN = re.compile(
-    r"\b(?:register|registration|save (?:your )?seat|book (?:your )?place|join us|webinar|conference|workshop|masterclass|master-class|course|training (?:course|session|workshop|program|programme)|event|приходите|приглаша\w*|регистрац\w*|вебинар\w*|конференц\w*|мастер[- ]класс\w*|курс\w*|обучени\w*|запись вебинар\w*)\b",
+    r"\b(?:register|registration|save (?:your )?seat|book (?:your )?place|join us|webinar|conference|congress|summit|workshop|masterclass|master-class|course|training (?:course|session|workshop|program|programme)|event|приходите|приглаша\w*|регистрац\w*|вебинар\w*|конференц\w*|конгресс\w*|форум\w*|семинар\w*|мастер[- ]класс\w*|курс\w*|обучени\w*|запись вебинар\w*)\b",
     re.I)
 SUBSTANTIVE_ACTION = re.compile(
     r"\b(?:fined|penali[sz]ed|imposed (?:a )?fine|ordered to pay (?:a )?fine|adopted|passed|enacted|issued (?:new )?(?:guidance|guidelines|rules)|published (?:new )?(?:guidance|guidelines)|filed (?:a )?(?:lawsuit|complaint)|court (?:rules|holds|orders)|внесен\w* законопроект|принял\w* закон|закон\w*.{0,24}принят\w*|оштраф\w*|наложил\w* штраф|наложен\w* штраф|опубликовал\w* (?:рекомендац|разъяснен|руководств)|подан\w* иск|суд вынес\w*|вынес\w* решени\w*)\b",
