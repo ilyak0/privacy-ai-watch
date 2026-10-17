@@ -41,6 +41,14 @@ class FakeGitHub:
 
 
 class NotifyTests(unittest.TestCase):
+    def test_issue_creation_has_no_assignment_notification(self):
+        client = notify.GitHub('example/repo', 'fake')
+        with patch.object(client, 'request', return_value={'html_url': 'https://example.test/issue'}) as request:
+            client.create_issue(DAY, 'body with @ilyak0')
+        payload = request.call_args.args[2]
+        self.assertNotIn('assignees', payload)
+        self.assertIn('@ilyak0', payload['body'])
+
     def setUp(self):
         self.tmp = tempfile.TemporaryDirectory()
         self.root = Path(self.tmp.name)

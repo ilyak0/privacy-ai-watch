@@ -232,7 +232,7 @@ class GitHub:
 
     def create_issue(self, day: dt.date, body: str):
         return self.request("POST", "/issues", {"title": f"Privacy & AI — {day.isoformat()}",
-            "body": body, "assignees": ["ilyak0"]})
+            "body": body})
 
 
 def persist_recovery(state: dict, issue: dict, day: dt.date):
