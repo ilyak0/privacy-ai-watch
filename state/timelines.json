@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-10-17T11:53:55Z",
+  "generated_at": "2026-10-17T12:09:16Z",
   "stories": [
     {
       "id": "thomson-ross-copyright",
@@ -127,6 +127,11 @@
               "label": "noyb",
               "kind": "commentary",
               "url": "https://noyb.eu/en/privacy-win-norwegian-authority-fines-microsofts-xandr-eu-85-million"
+            },
+            {
+              "label": "noyb — резервный поисковый индекс",
+              "kind": "discovery",
+              "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNXzZpMUNONnpFeWtpVDRId3ExNHpBSkpjV3BNbXFWTFVHSWFfTUVzUW1lLTBBMDdmZXo1T2tsMnZlMnBuaDhEV0dqamhyRzZqajl0cEo3M2xWZGRmZUhmMFF6c3pMV1NrVFhENmZYVzdoLTFaRDNJYmgzbm9HQmE4Y0N5T1NGNGdERTNvalRBZUQ?oc=5"
             }
           ]
         },
