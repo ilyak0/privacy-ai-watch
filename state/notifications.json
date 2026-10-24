@@ -508,6 +508,41 @@
         "4c468ef7a23e4fabe32d9ae194bf5aaededf85ca1f4f8ec369462cd8a3559afb",
         "0cc9e3a196f433467a55363b947f33348fdf7c61cc57af1cdaf4ab374718109e"
       ]
+    },
+    "2026-10-24": {
+      "issue_url": "https://github.com/ilyak0/privacy-ai-watch/issues/8",
+      "markers": [
+        "04412cb95e0b73320b3dd1fb910254e1e4ec0916ad84bd70162fd064a5e3db38",
+        "5af6a6b713a81dbca3b0eb3b6fa19a608e0ae7cfd3b502f9e4cbc89b297b563b",
+        "0c31688aefcb77b8dee099a2fe273cc41dd5bb7edc1e8f559bfb46a17a115ed9",
+        "e09cf9929d40ead89c1b432b7da0f7fe38c09f1a32dccf3f90d4b51b900b3bf5",
+        "752f8cd5a03e9cc5f55067c593830e09bf6065f393ad2cb078369401dd4d21a0",
+        "57543361c262883ab9956365b4e30f40b7e9fb69eec685cbe310b4664b391e97",
+        "30f1dcb204f111c961bc73d861b7c68354bb9790a1ec61d5ac24927855fe650a",
+        "ad07809f418a80ce626288b40b796d8905dafefc544624c1c901333bb00058f9",
+        "97fde1c6cff0d0dfbab4950447283733972a87077f4f72c3d4883235c54665d1",
+        "1360dcfdff79026540b2f5cb2e49b52a5ff92970269ee01a615c2b281accbe14",
+        "4b6d13b0e4ac3980bcebf6a900318efc24a27f89f82d29cc79323e95eca49e6f",
+        "390f14396808e2d1da82d9c07b2cae6a1b11fbba20e45e752256c962316bd86b",
+        "6ae1e8ef5456f9ad5ce78d3f5f2ef4d149d9eed9a220abf056a361b6f4bf7816",
+        "129e83bff7d7007d6155e3cc2b51f65e32560abc7df065420a072c2fbc5d3173",
+        "733bd390a02de5208c0993369fc35939ae327bf58890b1c0795990ee88f0e8cf",
+        "28215d3ad1f16bca43139d445f2061933f239caf257905a3d5b7f9dfc82597c5",
+        "c5ca02f764ba55256120905ce901c6f26e643b85a1df51bab9b03ef4ab268cf3",
+        "585ea363f084ac16178f201c1fb0bb8e6d4022bb3caad3f5d94111fc63508b0c",
+        "fb5dab5243cc11320d082c524739f485dfd0b82cc5ce00bc3a8f23d3c048159e",
+        "12cf0805f78b7a652a02d311f2fbd498e1931ff65668ad05bb9f98c16d736da0",
+        "aaeeeb02da86366ab53b52e9fe0b5da335b4a10fe56a958e6401e938f0e3ec59",
+        "4ab2443df7d8c8c27375191db38f50e66bc8720ec067806202b152427b8d6dc0",
+        "fbdaf90c9542ad85acda77ab629fb9aa32e625773342d482cbd5b4961571dd5d",
+        "3b7b18a8517cd62058bbf7b84bf507ce7a7693a2b1de229371010a5141ee1495",
+        "de23c441acbf0ed2fd4a0fedc52be4eddbe649ead9ce41917a0b35814b26e517",
+        "1e55c29e6e1a3d35fd9408ca3a175b371eb5aa07c792a81249d1aa42bdcb12ab",
+        "02a20fdf8ff0273fd6f5977e27c33dbc1bc90ffe5a90171e1cfb3af9ca132c93",
+        "b5619922e4bc775139e3d3c09d1f420c6b9a380258d3294779c65560a655b5e6",
+        "1b0475a3589aa0cbf536ce1bba8e3164c36664d69aa64ef741bf8c7f0df72204",
+        "e8fbd857a8b6b0ff954ad3e75e49798e7f2c1786eab173af672f7bbe77673372"
+      ]
     }
   },
   "initialized_at": "2026-10-17T08:36:33Z",
@@ -632,6 +667,14 @@
       "first_seen": "2026-10-17T08:36:33Z",
       "notified": false
     },
+    "https://epic.org/epic-joins-coalition-urging-new-york-governor-to-sign-and-strengthen-surveillance-pricing-law": {
+      "first_seen": "2026-10-24T09:47:21Z",
+      "notified": true
+    },
+    "https://epic.org/epic-tech-justice-law-and-scholars-urge-ninth-circuit-to-reject-big-techs-claim-that-addictive-surveillance-based-feeds-are-not-protected-speech": {
+      "first_seen": "2026-10-24T09:47:21Z",
+      "notified": true
+    },
     "https://epic.org/epic-tech-justice-law-and-scholars-urges-ninth-circuit-to-reject-big-techs-claim-that-addictive-surveillance-based-feeds-are-not-protected-speech": {
       "first_seen": "2026-10-22T10:37:38Z",
       "notified": true
@@ -640,9 +683,17 @@
       "first_seen": "2026-10-17T08:36:33Z",
       "notified": false
     },
+    "https://epic.org/epic-urges-d-c-council-to-protect-student-privacy-and-pass-strong-procurement-guidelines-for-edtech": {
+      "first_seen": "2026-10-24T09:47:21Z",
+      "notified": true
+    },
     "https://epic.org/looking-ahead-pixel-tracking-litigation-under-ecpa-and-cipa-can-provide-useful-guidelines-for-the-supreme-court-in-salazar-v-paramount-global": {
       "first_seen": "2026-10-17T08:36:33Z",
       "notified": false
+    },
+    "https://epic.org/meta-fined-25-billion-by-new-mexican-court-for-violating-privacy-during-cambridge-analytica-scandal": {
+      "first_seen": "2026-10-24T09:47:21Z",
+      "notified": true
     },
     "https://epic.org/metas-mass-data-collection-is-not-a-muse-ing": {
       "first_seen": "2026-10-17T08:36:33Z",
@@ -650,6 +701,10 @@
     },
     "https://epic.org/new-jersey-advances-strong-chatbot-regulations-based-on-epics-people-first-model": {
       "first_seen": "2026-10-21T10:34:17Z",
+      "notified": true
+    },
+    "https://epic.org/on-the-road-to-risk-connected-cars-put-drivers-privacy-and-safety-in-harms-way": {
+      "first_seen": "2026-10-24T09:47:21Z",
       "notified": true
     },
     "https://epic.org/pluribus-news-advocates-seek-state-guardrails-as-seniors-turn-to-ai-companions": {
@@ -718,6 +773,10 @@
     },
     "https://news.google.com/rss/articles/CBMi1ANBVV95cUxNTkxoUVVNYWNTbFE3WWN3R3FySERvXzNvejRfT0E4Sk9XVDBfUU1zc0JMOXhsc3VtNlhXSGI2TmhtLTVfa0ZweTZlaGVBZ0MyX0lnZzVKZHFGZlp5Q29jUHVBYlE5SjFwX2hTc2c5OXNmaGxtSXdZMFhZSnh5bkFEc1BncmRzRF9NRHhreTBZSndwRUlNd2pGT0p5aTJYaVQyWWw3V3VFVjBNMGI0eEZPbmxHUWJCNHV4VHVqVHpsbHB5TjBtS0lOcG1UVDR0eDlVUDhfQkI0aWgwNHhvd2Fkc1d4WVFwdTdSbVZPRTV1OWRFdHR4WnlmV2VSaGFZdkc4MF8waDBVWk5NY2xSNjdidGJJRVBKOTZQQU1mMmtPbFhhbUphWVJ0UHp5M1A1cUY3ZkhUUzZTbDRNeXZURFl6TkZxdEhjUnozMWJqRDVKQVlQVEFaSjlHV1Z2MlZ0TGFFclR4WWlmQ0ZSRElmcldxYW1iYUFMd244NUFTb1NmdXdLUGJ5Rnh4WjMxYWxCQm40bUxNUTFDTTZFNDhhVDdoQWF2MU0tQmJma1hXVU9VdXpOREFuT2pqQVpxaHJ0eW9QczJGQ3hxU2xXZndrb1A4Y045TVY?oc=5": {
       "first_seen": "2026-10-17T08:36:33Z",
+      "notified": true
+    },
+    "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNal9FLVFZT3BoZ0VHT1ZMZEJuZU41cmMybDAyRUI0NERvd1YzRkhEUVdwdldqMVowUUlhVERpd0Vvd2p2ZVdhc19NVjZVUVNRYUtSZDR5eXVFV0hBeU9XNjRjOGczQVdYNWFGbjd3MGs5ci1LSkZaQmgxNTdhWVg2S2R3UThId3EyYUtUT0w4N0FJakNhMDNXUC1WbnRNaEFEZzI2aTh1YndNVk85LV9ueVlFQXBQVXFZQnFCZ2h4Q2MtMHJLanhWTUNUS3JaUGVhaEIzT3JUZlg?oc=5": {
+      "first_seen": "2026-10-24T09:47:21Z",
       "notified": true
     },
     "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQMWFaMV83bFBocFdTYV9pWkNtZHVJejdUTVRzQ1VhdWhHa1JSM09VaGVtTGNEWFhPQ0s2eGxncDlCbHNoeFVXRVZJTXZndkl2SDNJS21CSzZyUlN3bldhdWFGNDhCTUNLaVBoUzFaMDV5dDFJM2JHVi1ENnBoa0laUEZwSzBTRWotSExKZ25Xazkyb2pqNDNXb0xGN1kwdlFqYV91QkFEU0E2cGdqejB6UWpPUFN2YUVjbm41RTdRbEowancwMy0zczhydTBvNU1OeWFyTG9DM2M4dw?oc=5": {
@@ -798,6 +857,10 @@
     },
     "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5JLU9qYjZBSlFWc3R4Z0pJbTMzcWZiVFNWU1VYWUpqUVFaZGFUQ2lSeV9KRkxqZTNfekxvNldhSFdqMnR5X2hzQkpzQdIBS0FVX3lxTE5JLU9qYjZBSlFWc3R4Z0pJbTMzcWZiVFNWU1VYWUpqUVFaZGFUQ2lSeV9KRkxqZTNfekxvNldhSFdqMnR5X2hzQkpzQQ?oc=5": {
       "first_seen": "2026-10-19T11:14:48Z",
+      "notified": true
+    },
+    "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5na2ZRdlhHTmVlUUt6bDM4WkNDUWNkSm9yaVFkd3IzakhId2dHTVkyTWhaZUZQeDlvUFVOWjFQNzlPc1kyVE9taUNzSQ?oc=5": {
+      "first_seen": "2026-10-24T09:47:21Z",
       "notified": true
     },
     "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9pRnc2Q0tOVkFMU25OanZ6OGVKRUN5Z0ZKbWt6TlhGZWIxcXQ0NlU3UjJscmlmazFZZGhuRU5PR2ZlekRpVW9SR3JTNNIBUEFVX3lxTE5mSTRka3dMTEhqcUtRdk85Wm9PSGFJRUV2UzJBclR5ZzA0VWkxVFI3YU5iam4wQzFMbTNPbHNpRXhLeU42M3FIZ3pvbTY0S001?oc=5": {
@@ -908,6 +971,10 @@
       "first_seen": "2026-10-17T08:36:33Z",
       "notified": false
     },
+    "https://news.google.com/rss/articles/CBMiWEFVX3lxTE51QXhQUlQ3LXVmdW9uVExVaE9vbm5GYnV2VFFLdzRVQ0U3QVhKeUpudWFYZk03S2M4Y0k3R3h6SzRkeVEyVUttcms4TmJoWEpZRS0tc2l3YXA?oc=5": {
+      "first_seen": "2026-10-24T09:47:21Z",
+      "notified": true
+    },
     "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9XZVlCZFVzbjdjbGFEbXdlSW40LTYtNFp0OVJteTZ4NVNxM1paZUJ4SmlQVHRra3RKNEpwQmJrendBOGlZTzhpQ19GRVZHSGJWeGQxTXR1WEs?oc=5": {
       "first_seen": "2026-10-17T08:36:33Z",
       "notified": false
@@ -955,6 +1022,10 @@
     "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9CS1JqRmJzZjh2RjRaWUZtVGNxcjZBaDhIMmNBY2l6bmI3QWF4OU1HajRQTERFNWNwU21KMTk5ekRhcTJXd1k1a29zNmwtOEpqbzBCSWZMWUhkOTU4QWZKbDRZUDdtUQ?oc=5": {
       "first_seen": "2026-10-17T08:36:33Z",
       "notified": false
+    },
+    "https://news.google.com/rss/articles/CBMi_wFBVV95cUxOQmhTUHRJMXVVMnZYbEo0eFF5UTVseGJJUHg3STQ2a0drWFJjV2Y1cnZhUEJ1WkdNbHJuMUtfLUZBem1SWlotSUxibjl2bTUwcEdNakZaeUQwX2pUNzNxSmpTdzE3ei12aWh1WGlyZFBwYlcxNEQzc1JnWWVWZFhCLUFzMGpwYmtfZnZyMnBpUTkzTVZiM3ByQ0l5bGpmRHZzbEREbk1lbDBPV3NFMmxpd2VTT0dDWEQzVTQ0UzFzdG1FSHl1YTJrcGQ0MGN2X3YtQXJRY01VY29sX1lIX2djVnp3UWN1eXJxeHpXM2VUa3EzR1pHV0dhWC1JZ0c0OGc?oc=5": {
+      "first_seen": "2026-10-24T09:47:21Z",
+      "notified": true
     },
     "https://news.google.com/rss/articles/CBMia0FVX3lxTE5VdGVXaUUyd014LXoteGVZNWZFNk03TUJqRGphTnpYaGxGQWpWLVJ5ZHcxTU9rUlp2d2k5MU8zb3lHQS16RUQ5LUJpRzYyaUVqa0NrZUt4WEdNcW1TNS1ZQVZBbW1TbHFuWEZj?oc=5": {
       "first_seen": "2026-10-17T08:36:33Z",
@@ -1024,6 +1095,10 @@
       "first_seen": "2026-10-17T08:36:33Z",
       "notified": false
     },
+    "https://news.google.com/rss/articles/CBMicEFVX3lxTE1vWWVRLUpxVXdMVk9wa2xiLVJwWkctQzZOQ21oWWE1cEhLdVNTMWhMSkVIWThQM2FlUG1oZ01Pa3BSX3Z2WVZTc2hhV2RmVjBNa3dsT2QwLVcwRzhBRjVNNXp2MVZndW5QRkw5MjUyWjI?oc=5": {
+      "first_seen": "2026-10-24T09:47:21Z",
+      "notified": true
+    },
     "https://news.google.com/rss/articles/CBMicEFVX3lxTE5lSUpXS2Uzc0ZxV0dTZ3VhdUhRc3Axb00ya3RiSXZjdy05TjlZbkpIZmFJZk1wUUJ0QkpMbFprT09sNW9LWXN4WG1hTzZTcG5wQW1HOU1fWkxqUkhMcEdNNnF6dENadmpqMGVHdTV4UzA?oc=5": {
       "first_seen": "2026-10-17T08:36:33Z",
       "notified": false
@@ -1056,6 +1131,14 @@
       "first_seen": "2026-10-17T08:36:33Z",
       "notified": false
     },
+    "https://news.google.com/rss/articles/CBMidEFVX3lxTFByZ291RXhaSW1NU2N1WW1UZUt4NHl0cVJ4SnRKZ3ROSGVDMWs0S2FUbUJXOWRXMFJkTGVGSi1oVFZKbV84eXhsVXhLeFVEaEpKSmhMYnlocTZkVjBMTGM3SUE0YjZ3VjdSWmFnd0FaN3Y5aUQ40gF0QVVfeXFMUHJnb3VFeFpJbU1TY3VZbVRlS3g0eXRxUnhKdEpndE5IZUMxazRLYVRtQlc5ZFcwUmRMZUZKLWhUVkptXzh5eGxVeEt4VURoSkpKaExieWhxNmRWMExMYzdJQTRiNndWN1JaYWd3QVo3djlpRDg?oc=5": {
+      "first_seen": "2026-10-24T09:47:21Z",
+      "notified": true
+    },
+    "https://news.google.com/rss/articles/CBMidkFVX3lxTE1EUm9uSmlzRFFBVl9IdzBQbHlyRFVaRVM5WjZtOWRQSkZHcUN0enVzZ0REMkF3c2VPSkhKZ0JsWV9WUW44b0RLZzJpaVBCT0NzRXo2ZXFfNE4weHQxV01lb3UyNnlXOVNLejB0LXdtU2tGcDVHZ3c?oc=5": {
+      "first_seen": "2026-10-24T09:47:21Z",
+      "notified": true
+    },
     "https://news.google.com/rss/articles/CBMidkFVX3lxTFBjem1YUWVES0E4a0VQTVpOX0ljSWIzTVVBampwanBIQl9tbkZWaS0zVTZtODMzRzBBcWxwZ0phNXBQZ1pCOWhYWVlfM19uMTUxRXFMVFQtY1o1NDRsSGMxcDh2ZW5fcWdCRm01ZXBrYUppQXFoM2c?oc=5": {
       "first_seen": "2026-10-17T08:36:33Z",
       "notified": false
@@ -1082,6 +1165,10 @@
     },
     "https://news.google.com/rss/articles/CBMif0FVX3lxTFBCUTRsT3Brc2trenl5RVo5Y0xMVzFjVVU1Tnh0QXBVam9BY0lVWkVNWXhrX0NwZ29lQTN6U1dYS3VNNFZDXzhPdDE5QzFNSU1Tc0g1ellodFJjT2xESEwzUm9rWmZHNTZmSDh6TTl4QXRibkxBMTZtNjhBVUpMeHc?oc=5": {
       "first_seen": "2026-10-17T08:36:33Z",
+      "notified": true
+    },
+    "https://news.google.com/rss/articles/CBMifEFVX3lxTE1DZ2c5bDZyc2haaFlEbVlHaFJ4RzEyYW1oaks3MnVnTmVONnVPLWFqRE9wV01pVktkOHNIM1dwZXZrc0dIQjVpU0hwb2RDVHBEaDRGSHQ4Z1dwUkNodUViQllKd1NxTUVFMjZHMnI5eVlHYUIyOUhRcy10c2g?oc=5": {
+      "first_seen": "2026-10-24T09:47:21Z",
       "notified": true
     },
     "https://news.google.com/rss/articles/CBMifEFVX3lxTE44b3Q3YW10ZXpIcWhmSy1xRHNFUUJFQnVMMmVST1g3ZzJzdFV0ckFFeE9jQWt1V05zZXJkYThYVEZ2VVN0NC1FeUlEb3BHVzUwVjJkc2JvTTJuZ2RyajhnVE1RMzhyVUIya283ZHZCcURXRFlzNDQ5NGdxQ2M?oc=5": {
@@ -1268,6 +1355,10 @@
       "first_seen": "2026-10-17T08:36:33Z",
       "notified": true
     },
+    "https://news.google.com/rss/articles/CBMikwFBVV95cUxNVlpNMFFWYnFiRHVjT2h6V0w0MTY4QllpNFVHZEJWVHA5enYyX0lhdVJoU2FSd3JvNWpqN1lJcnY2VWFhcVJWdk9ZeHp4RjFmRzJQak9QNlBNcWRpcTdQN2czTmlnNEJqZlA2SGhDV0IyQ0lJWFN0OG1MQW1OOHFVb0hxMFJlNW1SR0t5RGdnSWl6WmfSAZgBQVVfeXFMTjdkb1FRbHFQQmZUT29EUXhvYTNRRk9BOTNGWnVXM2Jlc05aQWY3TXpOX0Rsc1JWX0NaWDRWWE43djlhUFMxZjMxY1ZSZ0pidExmMm80WkJvSC1aUHB1UGlXS1ZxOHVlMWgtOGV4QzlRLTM0czJXQ0ZVMWJ6NHhUUWtFYUdvSGc0bXBhbzc1OTFXQW15MUg2Sl8?oc=5": {
+      "first_seen": "2026-10-24T09:47:21Z",
+      "notified": true
+    },
     "https://news.google.com/rss/articles/CBMikwFBVV95cUxPNjJFRC1nVTFfTmVIYU51Vm9UM2JlRkF1R21DSzc3RTQydDhDTVRSaTVaajczb0pydm41eWkyYVMwbkdUSnhSdllUU0pJUjZtOUxSYjc0S2dTV3J0b05zS2paNlc5UFZCaDFkUDVJZk5rT1hEZGhzRFF5QmlWTTgyQloxcXhobmRQYTZ5b19YTUw0QkU?oc=5": {
       "first_seen": "2026-10-17T08:36:33Z",
       "notified": false
@@ -1355,6 +1446,10 @@
     "https://news.google.com/rss/articles/CBMimAFBVV95cUxOcld2ZUFBM29ROGljV2V0VzkxcTVadC00MjZBNFVsRDJBRjdJNTIyMlc0b0Q1d2ZTUnZtdllYSHhNMkZJbFM4QTlJQktzb0dIQ1RoV29LZkVFZFBqcUstUEJqREtXQmpSM0ktYXhNczBtQ0NyNHVhMHVKZ0NLdmlXeWpJTXIyUUxLcDFLS1luQW5NVE1aUTI1bQ?oc=5": {
       "first_seen": "2026-10-17T08:36:33Z",
       "notified": false
+    },
+    "https://news.google.com/rss/articles/CBMimgFBVV95cUxNNV9HYlJyM21XREdlY2IxUUpyTWk5OTl4emxuZ0paWXRtVk9NdHpFc2pIT05DR052RjhkX3Q0WWE0YlhicEluY3lfcGd1b05Kd3NreXVQLUZ1ajhwOGxjYjctenp1Z3o3elpLcHZOc1p2Z19zQWs0aEhrczZzNzNkbVNOOWh0UWM3allzaHVHWkFxeHdWc2lveUxR?oc=5": {
+      "first_seen": "2026-10-24T09:47:21Z",
+      "notified": true
     },
     "https://news.google.com/rss/articles/CBMimgFBVV95cUxPeVJWLWR1Z2ZMbTF2QklHb0lINGJ1WnJEM3VabExVeXFUWlFnaUEydkNKVXZyQ0tMdkdheDFfdlV4VXJyeFVCd1J2MGc4S2twb3RyREtoT2o5ckNaQ2lUQXdtOGJab2JNWjZoZmJhOUFycGpVazJfT3NVdnp3Y1pVNHdwVUI2d3Z5ZlBEMHBLYUZoQXJ4ckdNODJn?oc=5": {
       "first_seen": "2026-10-17T08:36:33Z",
@@ -1456,9 +1551,17 @@
       "first_seen": "2026-10-17T08:36:33Z",
       "notified": false
     },
+    "https://news.google.com/rss/articles/CBMiogFBVV95cUxQaGNnb0FxOWZvWGlaNi1zd2hIRXcyZU5ibTNYQkNpeTRCSzAyRFRpaVljYm4wWHY0enByYkNlQlh3SXZLODhEZF9CT3g0RDhfYmpocHhCMVNVaUdRanZWRVJ0NzVIZjdnZWNNd2dYTXBlaHAtdHJVb0o3QWRpRUxwX0lnZUhZRWJfS0QwV2dGdlFROF94WkM3alpVTFVvUWp2bHc?oc=5": {
+      "first_seen": "2026-10-24T09:47:21Z",
+      "notified": true
+    },
     "https://news.google.com/rss/articles/CBMiowFBVV95cUxNcll1RHktUURhSEJITEtjbDRLaGIyRmFoSk1KandOUWRvVXhZMHZ4aXFXM3NnX0pQYmFVNEJ3RVBLVVBRczVfMlpLaUtTZlB6ZU9zOG9pQ0w1VV9YWFduRV9wXy1TSC1ZaTJOaTgtSlFXQktoUEFWeDdZdlk3SXo4MzdpMUNaQTFESU9mOUQ1SVB5NkNXNVRLa1Vldmdza2hTcV9Z?oc=5": {
       "first_seen": "2026-10-17T08:36:33Z",
       "notified": false
+    },
+    "https://news.google.com/rss/articles/CBMiowFBVV95cUxPelFZOXExZHRsa1VOYnNSRjZyREcxS1NaSHBxb2hPWTh3ckxZTmdVTmI4SFhjN0FmcDZGdjVfc1N1R2dUTldoLWxDUzREYmlwelB5ckVxNFNDbTc5dkY0ZE44ZHBkcXpJVGMwaDd2QzZuZ3lqZjFZQVNxdWJyTWVvS2dWVmYtM1A4RmpROHFGQ0Q2cVpYcEVZV3dZeU9qVWp3OUsw?oc=5": {
+      "first_seen": "2026-10-24T09:47:21Z",
+      "notified": true
     },
     "https://news.google.com/rss/articles/CBMiowFBVV95cUxQa2tUekoxYjYtSXZXWW44YTYtM1o3MUdqNmZfNVZvNENhc1dCWEY0b2hiZV9PaWYwV3FUMXFRbGhSTGhScjNLbnowbmtXd2FKU0d3SGtrdzNicDBOUGdaY3k5VG9VaXhOWnVRZHEyS3dGbHIzSWp0cDNEZVhTcDFRdUMxaDNFMnl3UnU4MUh2Z1V2NEczREdoblJFWTZCd2tuWG5n?oc=5": {
       "first_seen": "2026-10-17T08:36:33Z",
@@ -1602,6 +1705,10 @@
     },
     "https://news.google.com/rss/articles/CBMitAFBVV95cUxORlJGS1UwMGlwQlNHMTEzMmYtRG84WkhoNW95dUdDZVVHZzY5VWIxa2N1Q20tWG5SZUJyb1d2WTRsTkdxd0ptYVBNdVFjVW5qaUVwZTBTNVNWU2VWczZGRzZxTGZKQTE5aFNfR3E3SEdHRUwtZkJGYjNMU2t5RHlzUFZFZG5SNExhWFBpWUFxMmJNeHVwT3lPV2VmU1FoVGhHQTY5ODlBLUMxeFJ2SlphYThlN0U?oc=5": {
       "first_seen": "2026-10-18T09:53:26Z",
+      "notified": true
+    },
+    "https://news.google.com/rss/articles/CBMitAFBVV95cUxOTGtnTG5KS29qTVZmMDBnVWluX3p3ak92Mk54dlRwTGNyZXl1TGNxYllnOHFfVGpHa2RRVXU5cExaLXg2ZnRPaXN0Y2M3UUV3aDQ2T2xDMEkwTk1uMzV5NF9YSFlqajB6ZVd5akcxX1JhNE9QcDRVeUYzSUtlOU50TmluSktuZ2xKVVBxd3J6elFZblBlZ19idWNQWVFVaXd6MkhUUDlkR1FfazhGQ3ZWamx6Wjc?oc=5": {
+      "first_seen": "2026-10-24T09:47:21Z",
       "notified": true
     },
     "https://news.google.com/rss/articles/CBMitAFBVV95cUxPWVJycE5qZ2Z6cnlicUpCVV83TENJNDU0ZWI0Uy1mLW01RjVvN19qUlA5blZZQUZxRTc3anY5X0VEcGE4RzFvMUZkMEpCTEJqLWNwRS0tc0cxLXREaVk2bGxfbHAzNWYtZE02OTNiU3c5VlZGNnp0cnNQeHdDUktsblBLdFlIMV9Vc01mN2ZTS21mS2xQMzJTWlNQbUFnV0dSWDY2U1BzWG4tbGF4U3R0TUVxaEY?oc=5": {
@@ -1848,6 +1955,14 @@
       "first_seen": "2026-10-23T10:30:09Z",
       "notified": true
     },
+    "https://simonwillison.net/2026/Oct/23/kimi-k31-pro": {
+      "first_seen": "2026-10-24T09:47:21Z",
+      "notified": true
+    },
+    "https://simonwillison.net/2026/Oct/23/quick-study-painter": {
+      "first_seen": "2026-10-24T09:47:21Z",
+      "notified": true
+    },
     "https://simonwillison.net/2026/Oct/6/victoria-kim": {
       "first_seen": "2026-10-17T08:36:33Z",
       "notified": false
@@ -2074,6 +2189,10 @@
     },
     "https://t.me/GDPRru/6599": {
       "first_seen": "2026-10-23T10:30:09Z",
+      "notified": true
+    },
+    "https://t.me/GDPRru/6606": {
+      "first_seen": "2026-10-24T09:47:21Z",
       "notified": true
     },
     "https://t.me/ai_and_law_rus/1141": {
@@ -2326,6 +2445,10 @@
     },
     "https://t.me/lawyer_dataprivacy/772": {
       "first_seen": "2026-10-21T10:34:17Z",
+      "notified": true
+    },
+    "https://t.me/lawyer_dataprivacy/773": {
+      "first_seen": "2026-10-24T09:47:21Z",
       "notified": true
     },
     "https://t.me/privacyexpert/1962": {
@@ -2668,6 +2791,18 @@
       "first_seen": "2026-10-23T10:30:09Z",
       "notified": true
     },
+    "https://techcrunch.com/2026/10/23/from-toast-to-bessemer-who-founders-will-hear-from-at-techcrunch-founder-summit-2026": {
+      "first_seen": "2026-10-24T09:47:21Z",
+      "notified": true
+    },
+    "https://techcrunch.com/2026/10/23/hottest-toy-for-christmas-nvidia-ceo-plays-with-adorable-microduck-robots-20000-sell": {
+      "first_seen": "2026-10-24T09:47:21Z",
+      "notified": true
+    },
+    "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks": {
+      "first_seen": "2026-10-24T09:47:21Z",
+      "notified": true
+    },
     "https://techcrunch.com/podcast/physical-ai-is-more-than-robots-says-the-nvidia-veteran-now-investing-in-it": {
       "first_seen": "2026-10-17T08:36:33Z",
       "notified": true
@@ -2916,6 +3051,10 @@
       "first_seen": "2026-10-17T08:36:33Z",
       "notified": false
     },
+    "https://www.hunton.com/privacy-and-cybersecurity-law-blog/meta-ordered-to-pay-new-mexico-25-billion-fine-for-violations-of-state-consumer-protection-law": {
+      "first_seen": "2026-10-24T09:47:21Z",
+      "notified": true
+    },
     "https://www.lawnext.com/2026/09/3rd-circuit-issues-opinion-in-thomson-reuters-v-ross-case-but-for-now-it-is-sealed.html": {
       "first_seen": "2026-10-17T08:36:33Z",
       "notified": false
@@ -3056,6 +3195,10 @@
       "first_seen": "2026-10-21T10:34:17Z",
       "notified": true
     },
+    "https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/nr-c_261023": {
+      "first_seen": "2026-10-24T09:47:21Z",
+      "notified": true
+    },
     "https://x.com/AnthropicAI/status/2104633259925630995": {
       "first_seen": "2026-10-18T09:53:26Z",
       "notified": true
@@ -3126,6 +3269,10 @@
     },
     "https://x.com/AnthropicAI/status/2113390212911083894": {
       "first_seen": "2026-10-23T10:30:09Z",
+      "notified": true
+    },
+    "https://x.com/AnthropicAI/status/2113626655902126442": {
+      "first_seen": "2026-10-24T09:47:21Z",
       "notified": true
     },
     "https://x.com/EU_EDPB/status/2105201518958068124": {
@@ -3244,6 +3391,10 @@
       "first_seen": "2026-10-22T10:37:38Z",
       "notified": true
     },
+    "https://x.com/OpenAI/status/2113761048520167542": {
+      "first_seen": "2026-10-24T09:47:21Z",
+      "notified": true
+    },
     "https://x.com/maxschrems/status/2102050657263841499": {
       "first_seen": "2026-10-18T09:53:26Z",
       "notified": true
@@ -3338,6 +3489,10 @@
     },
     "https://x.com/random_walker/status/2113321726335410256": {
       "first_seen": "2026-10-23T10:30:09Z",
+      "notified": true
+    },
+    "https://x.com/random_walker/status/2113597344902001047": {
+      "first_seen": "2026-10-24T09:47:21Z",
       "notified": true
     }
   }
