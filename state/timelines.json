@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-11-05T11:25:47Z",
+  "generated_at": "2026-11-05T13:29:16Z",
   "stories": [
     {
       "id": "thomson-ross-copyright",
@@ -127,6 +127,11 @@
               "label": "noyb",
               "kind": "commentary",
               "url": "https://noyb.eu/en/privacy-win-norwegian-authority-fines-microsofts-xandr-eu-85-million"
+            },
+            {
+              "label": "noyb",
+              "kind": "commentary",
+              "url": "https://noyb.eu/en/privacy-win-norwegian-authority-fines-microsofts-xandr-eur-85-million"
             },
             {
               "label": "noyb — резервный поисковый индекс",
