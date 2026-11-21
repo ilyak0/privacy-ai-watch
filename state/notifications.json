@@ -1740,6 +1740,40 @@
         "d2359c3762790e1230e27f3cec91c47f61734ee540a6c0852c3c42d0855d4716",
         "b3d662959a978e8291950d1ee05acf303056bb13c2b6ebc5a1d33ee109becf4f"
       ]
+    },
+    "2026-11-21": {
+      "issue_url": "https://github.com/ilyak0/privacy-ai-watch/issues/35",
+      "markers": [
+        "798f6e559c39e9c0a1a8080544faf9824c7b1d1c2f19936263a646b43492f75c",
+        "def4d594ade23f32984213f262c5b032ee611777bd5e3be8a77a8387ba82e30b",
+        "0322eed9ffd6c2891b4ac6d239a6e0b69b3e505180e0b00daa700a05489bef30",
+        "d870493d91dfaf917926663ee7b28dffbcbf9d58682502307beca2d96adbd998",
+        "b6d2e9e4f6c7b80a8a32bf7a3bc0ef05d7c9a8257d6709ef022c747157b1c170",
+        "9c2b6a47a1d5b36d288bc236d9a63fd55fcfe63b0bc68e792c736ae138db7599",
+        "04fd8701f8a92399719c5707496257c5426786445bc73aeaf167517d215d628b",
+        "3a506c03c1a292adaee01e51e56c7245e4214c4d61d6c16fa985686f9551a7cb",
+        "acb2820089b8e7465f10e321ba68d9349d77d7f74d63191c4e51693f93258384",
+        "98001fcd04fee0535cde680f4d87d257959295cfaa14d1e29deaf5b59d1f4522",
+        "1853ad1f8e9ea467acb1968ee4861fa9abd4d850da79ae471f91bde175e5139e",
+        "861ca51b04b5cf4869c520baccae417328873374f8e3e22cf1f7ff87fd2948e0",
+        "fd3989608ce60c18b74076fbfcbcb20cf0288dfe1406a7317976e90ff3ab3d77",
+        "ae3d03d4bbbaef1ddcce17e5e7780df4ff9c7f9e764447bf56357fc1b400d2c4",
+        "eed16efef20781d9f570037ceeb418fe3512e07feb657718d15454325d3b35d4",
+        "00b368322dacccfc997d20b7604a84cfa09f5d092559ee59d06a8c61e9b7eb51",
+        "3b1287eac33f0c7bc768158130317a0ea697fd9f534b61d526819b7debee2eb1",
+        "89b7bd29d36bdccec59778fb6d93ff634a43a6e1ed1b9c329b9b8b16b030a272",
+        "0d8e213cc0d8372dce87a215fd23412427369685da1892efafdde9948a5803bb",
+        "79b7324f6ff32c68d76fdc1605e0bfb60137e254a8e100a685c72d580f413416",
+        "fb79fe303c1032f972f0c3c4fa52de7eb14db187766b11539f2baa44c3153a99",
+        "7e05f18a131f67784babba1075056945b5a1a3a5d266a41d9191561c0feeee11",
+        "7220e54bdf8a93f9a841b3c0788017f9eeb83f5dc45906f47668bc47b8da5d02",
+        "a9b83e39692acca4f01a1fb715149b1d1176a170e879f0be205125d111a12219",
+        "bc6cd0668a9d5bb9fc16c8d9ceef46eb980502b3795faa931234a55de8295540",
+        "74ed49776c41896bd30897654d6354d34d2f7e3cb7acafbee783b2dae3e75533",
+        "ba6ab5a86cae3958a92a1dcde36e047fac5d9f98044618fbbd8e1c12d38f7442",
+        "2cb8082132a591f208d7e97aa2978dc18e0e8f8b2045adcd15e9dcae8f57480e",
+        "5a66527c096185c51fd377322df730e91bcea12a35f9d15e20d95f26d82fbd91"
+      ]
     }
   },
   "initialized_at": "2026-10-17T08:36:33Z",
@@ -1780,6 +1814,10 @@
       "first_seen": "2026-11-16T13:59:16Z",
       "notified": true
     },
+    "http://government.ru/news/60524": {
+      "first_seen": "2026-11-21T13:42:11Z",
+      "notified": true
+    },
     "http://komitet-nauka.duma.gov.ru/novosti/1cd73ef4-ab7f-4934-92c5-fc7c3aaeb0ae": {
       "first_seen": "2026-10-30T11:37:07Z",
       "notified": true
@@ -1806,6 +1844,10 @@
     },
     "http://publication.pravo.gov.ru/document/0001202610290042": {
       "first_seen": "2026-10-30T11:37:07Z",
+      "notified": true
+    },
+    "http://publication.pravo.gov.ru/document/0001202611200011": {
+      "first_seen": "2026-11-21T13:42:11Z",
       "notified": true
     },
     "http://publication.pravo.gov.ru/document/0300202610300006": {
@@ -1900,8 +1942,16 @@
       "first_seen": "2026-10-18T09:53:26Z",
       "notified": true
     },
+    "https://digital-strategy.ec.europa.eu/en/news/ai-act-advisory-forum-holds-its-second-meeting": {
+      "first_seen": "2026-11-21T13:42:11Z",
+      "notified": true
+    },
     "https://digital-strategy.ec.europa.eu/en/news/ai-adoption-more-doubles-almost-every-eu-strategic-sector": {
       "first_seen": "2026-10-17T08:36:33Z",
+      "notified": true
+    },
+    "https://digital-strategy.ec.europa.eu/en/news/ai-board-holds-its-tenth-meeting": {
+      "first_seen": "2026-11-21T13:42:11Z",
       "notified": true
     },
     "https://digital-strategy.ec.europa.eu/en/news/ai-toolbox-supports-public-administrations-put-apply-ai-strategy-practice": {
@@ -2784,6 +2834,10 @@
       "first_seen": "2026-11-19T14:41:07Z",
       "notified": true
     },
+    "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5iSkxZSmFqUTVfN291SlhwTm5xbmw3dTVEc2VlS1ZGRXlMWWMyU0lvSXF0WFZndWRRMG5md2NJbWMxTkVDcmlYY000ZFJVN2lqMHhDeg?oc=5": {
+      "first_seen": "2026-11-21T13:42:11Z",
+      "notified": true
+    },
     "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9nUVY0WDVRM0ZrUG0tRy1YVk5URU8xd0lmOGpVRVF2X0tOZ0ZqeXNXbkhuVEtSVTNwMlF2TXQ3anBSVmptZUJBdXA1XzlxdTlrX1NSSQ?oc=5": {
       "first_seen": "2026-11-19T14:41:07Z",
       "notified": true
@@ -2880,6 +2934,10 @@
       "first_seen": "2026-10-17T08:36:33Z",
       "notified": false
     },
+    "https://news.google.com/rss/articles/CBMiX0FVX3lxTE91RE9vWmY5X2FHbmgtTDZoT1JNOC1zZFNjR201a01sSE1QVzh5cUVZRXBDdkdqQjloUkJkTjVBVEpXQjZLbEZ5T1hEUUFqTHhOcWNxNkw5MThWQUQyTHpB?oc=5": {
+      "first_seen": "2026-11-21T13:42:11Z",
+      "notified": true
+    },
     "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1HVXFSeE8zYnB2b2ZEQmpXakM1bl85dVBLVkhfZ2F0X3h0b3U1TklaQUpPV1NTVHI1S1Y3d0FBdEVHVmwtUDhSMnZjQXRoTERsNzBtcXotZ2ttZGRC?oc=5": {
       "first_seen": "2026-11-17T14:52:58Z",
       "notified": true
@@ -2968,12 +3026,20 @@
       "first_seen": "2026-10-17T08:36:33Z",
       "notified": false
     },
+    "https://news.google.com/rss/articles/CBMia0FVX3lxTE5WZ2x6eUc0UlNsbG9JRHlkYWZ5ekNWU2Z4QzZHR1VuSmZZWUp3aC1oMEFXSGlGYWNoeWtvenlCbm1VQVFnak9UVFVzRU0tUnljNTNSdkVyamxBbDNVTVNBV1lwcndDZHhWM3pr?oc=5": {
+      "first_seen": "2026-11-21T13:42:11Z",
+      "notified": true
+    },
     "https://news.google.com/rss/articles/CBMia0FVX3lxTE9QOElLbUxveTdzWnNyY3hON042ZHBRdllYeDB6RlBZRjlEeFNLdGM2dUw3Rm1qUnp3bFJRVzdZSHhHVkh2d3FBZ0hBbjBwaTBPTF9fenp1TTdUcVlIODZxZGdPQmpCVzVSZTJ3?oc=5": {
       "first_seen": "2026-10-17T08:36:33Z",
       "notified": false
     },
     "https://news.google.com/rss/articles/CBMia0FVX3lxTFB6bjc4N3p3UmZEZXYtMVNERUlUMTAySnFzMEQ1OWZUYXFYWnJlLVN4V0dOSFJlZ0U4N20zM0M1RGhKazkxN3htY2lWMlVtX3Y3eHlzSlE5UXJUSnpxcWx3LWNGSUFoNDY3RDdN?oc=5": {
       "first_seen": "2026-10-28T11:37:14Z",
+      "notified": true
+    },
+    "https://news.google.com/rss/articles/CBMia0FVX3lxTFBKWEZfTE9uUXpBdjZ6S1BuLU96TlRVR3RWN285XzZ2NV9PdVk3UFB1UjRFMjgydnpRay0xSk9ZNU15clo1djJ6WUk4Nlc3MjBoYUJPaHJwanBOUmxHWExjaFpLdS1paE9ZdW1V?oc=5": {
+      "first_seen": "2026-11-21T13:42:11Z",
       "notified": true
     },
     "https://news.google.com/rss/articles/CBMia0FVX3lxTFBxRERvZWxFa01nakhNQnZwVFZ0cngteWY3WWNGUm9nUzZob0pmdXY1bjJNT3cya1BGQ282OVNrYlkya01zdjdZSlRlYTJXYVM2ZWMxMDNjSENFT3NkcG5RZnlMT0R2OEJqMnhZ?oc=5": {
@@ -4784,6 +4850,10 @@
       "first_seen": "2026-10-28T11:37:14Z",
       "notified": true
     },
+    "https://news.google.com/rss/articles/CBMiygFBVV95cUxOYXhoOUtjTHp2cmx4RVgtRWdNSmFld1NfNlFJdHJXQTh3cTYxXzZlYnVSYUMxcU1aazVFQ090ZmF0dmliOTQ2SjAtdi1tME4yeGlJRlhUNUNtUmpSUUNVaEp1eVZYeVM5RTY5Vmh2cmdweDM5b2szR0pwcnFSYmQ1SVByMFE2MEcwVnZ0Z0tCaGQwVXZWcEhTN0k0enNja3MtUmptTjV6LVRWNjB1bFBIVERYSDBGakRUNWJoTFgzd282S2RnSkc4b2R3?oc=5": {
+      "first_seen": "2026-11-21T13:42:11Z",
+      "notified": true
+    },
     "https://news.google.com/rss/articles/CBMiygFBVV95cUxObVdyNVp3ZFJWZkdJOThUQkJVM2VEU2FJejctdWxDSndEdndwQkVDN0ZwaXNOeFRyWGdoMnVaZjRlY0MxclZ0ekVrcUxZZThieC1FODVtWmZUaHdCSGxId0d0TDBITVVvWlNhWFMyclZBUU43emxjTERSNkVkQm9XRFFGMXYwdjVfUllIWjBSRGVkMDdmbDN4ajV5RnZkdThnYUVtVmkweVJ0WWR0TXVuU3BFbkJCcEhQVm1zbGttci1vZVJiMEsyMmhB?oc=5": {
       "first_seen": "2026-11-04T13:16:35Z",
       "notified": true
@@ -4978,6 +5048,14 @@
     },
     "https://simonwillison.net/2026/Nov/2/llm": {
       "first_seen": "2026-11-03T12:59:41Z",
+      "notified": true
+    },
+    "https://simonwillison.net/2026/Nov/20/levent-alpoge": {
+      "first_seen": "2026-11-21T13:42:11Z",
+      "notified": true
+    },
+    "https://simonwillison.net/2026/Nov/20/ravi-vakil": {
+      "first_seen": "2026-11-21T13:42:11Z",
       "notified": true
     },
     "https://simonwillison.net/2026/Nov/20/token-fraud-is-here-and-its-bad": {
@@ -5488,6 +5566,14 @@
       "first_seen": "2026-11-20T14:20:56Z",
       "notified": true
     },
+    "https://t.me/GDPRru/6647": {
+      "first_seen": "2026-11-21T13:42:11Z",
+      "notified": true
+    },
+    "https://t.me/GDPRru/6648": {
+      "first_seen": "2026-11-21T13:42:11Z",
+      "notified": true
+    },
     "https://t.me/ai_and_law_rus/1141": {
       "first_seen": "2026-10-20T10:24:52Z",
       "notified": true
@@ -5696,6 +5782,10 @@
       "first_seen": "2026-11-20T14:20:56Z",
       "notified": true
     },
+    "https://t.me/ai_and_law_rus/1203": {
+      "first_seen": "2026-11-21T13:42:11Z",
+      "notified": true
+    },
     "https://t.me/ai_safety_digest/213": {
       "first_seen": "2026-10-17T08:36:33Z",
       "notified": false
@@ -5822,6 +5912,10 @@
     },
     "https://t.me/howtocomply_AI/695": {
       "first_seen": "2026-11-20T14:20:56Z",
+      "notified": true
+    },
+    "https://t.me/howtocomply_AI/696": {
+      "first_seen": "2026-11-21T13:42:11Z",
       "notified": true
     },
     "https://t.me/ilovedocs/3677": {
@@ -7628,6 +7722,18 @@
       "first_seen": "2026-11-20T14:20:56Z",
       "notified": true
     },
+    "https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too": {
+      "first_seen": "2026-11-21T13:42:11Z",
+      "notified": true
+    },
+    "https://techcrunch.com/2026/11/20/chips-can-survive-the-space-environment-can-their-financing": {
+      "first_seen": "2026-11-21T13:42:11Z",
+      "notified": true
+    },
+    "https://techcrunch.com/2026/11/20/daniel-ek-backs-ai-researchers-fusion-power-startup-heres-what-theyre-building": {
+      "first_seen": "2026-11-21T13:42:11Z",
+      "notified": true
+    },
     "https://techcrunch.com/podcast/building-on-open-source-ai-hugging-faces-policy-chief-on-the-costs-risks-and-trade-offs": {
       "first_seen": "2026-11-05T13:29:15Z",
       "notified": true
@@ -7642,6 +7748,10 @@
     },
     "https://techcrunch.com/podcast/physical-ai-is-more-than-robots-says-the-nvidia-veteran-now-investing-in-it": {
       "first_seen": "2026-10-17T08:36:33Z",
+      "notified": true
+    },
+    "https://techcrunch.com/podcast/the-fallout-from-nvidias-jensen-huang-scandal-continues": {
+      "first_seen": "2026-11-21T13:42:11Z",
       "notified": true
     },
     "https://techcrunch.com/podcast/the-vulnpocalypse-is-coming-for-the-internets-aging-code-says-wizs-cto": {
@@ -7816,6 +7926,10 @@
       "first_seen": "2026-11-17T14:52:58Z",
       "notified": true
     },
+    "https://www.cnil.fr/fr/48e-gpa": {
+      "first_seen": "2026-11-21T13:42:11Z",
+      "notified": true
+    },
     "https://www.cnil.fr/fr/actualite-du-cepd-adequation-de-la-coree-du-sud-versions-finales-des-bcr-st-et-action-coordonnee-sur": {
       "first_seen": "2026-11-13T13:25:27Z",
       "notified": true
@@ -7838,6 +7952,10 @@
     },
     "https://www.cnil.fr/fr/conservation-des-mots-de-passe-sanction-5-millions-deuros": {
       "first_seen": "2026-11-18T14:32:42Z",
+      "notified": true
+    },
+    "https://www.cnil.fr/fr/gpa-ia-education": {
+      "first_seen": "2026-11-21T13:42:11Z",
       "notified": true
     },
     "https://www.cnil.fr/fr/ia-conversationnelle-la-voix-des-jeunesses": {
@@ -8054,6 +8172,10 @@
     },
     "https://www.hunton.com/privacy-and-cybersecurity-law-blog/california-law-extends-cmia-protections-to-health-care-chatbots-and-enacts-new-guardrails-on-ai-use-in-clinical-care": {
       "first_seen": "2026-10-30T11:37:07Z",
+      "notified": true
+    },
+    "https://www.hunton.com/privacy-and-cybersecurity-law-blog/calprivacy-opens-public-comment-period-on-proposed-data-broker-updates-and-drop-audit-requirements": {
+      "first_seen": "2026-11-21T13:42:11Z",
       "notified": true
     },
     "https://www.hunton.com/privacy-and-cybersecurity-law-blog/calprivacy-proposes-amendments-to-strengthen-opt-out-preference-signal-compliance": {
@@ -8520,6 +8642,10 @@
       "first_seen": "2026-11-20T14:20:56Z",
       "notified": true
     },
+    "https://x.com/AnthropicAI/status/2123822989154369958": {
+      "first_seen": "2026-11-21T13:42:11Z",
+      "notified": true
+    },
     "https://x.com/EU_EDPB/status/2105201518958068124": {
       "first_seen": "2026-10-18T09:53:26Z",
       "notified": true
@@ -8764,6 +8890,18 @@
       "first_seen": "2026-11-19T14:41:07Z",
       "notified": true
     },
+    "https://x.com/OpenAI/status/2123856316187975756": {
+      "first_seen": "2026-11-21T13:42:11Z",
+      "notified": true
+    },
+    "https://x.com/OpenAI/status/2123862344422088794": {
+      "first_seen": "2026-11-21T13:42:11Z",
+      "notified": true
+    },
+    "https://x.com/OpenAI/status/2123899406550528422": {
+      "first_seen": "2026-11-21T13:42:11Z",
+      "notified": true
+    },
     "https://x.com/maxschrems/status/2102050657263841499": {
       "first_seen": "2026-10-18T09:53:26Z",
       "notified": true
@@ -8946,6 +9084,18 @@
     },
     "https://x.com/random_walker/status/2123417257237753877": {
       "first_seen": "2026-11-19T14:41:07Z",
+      "notified": true
+    },
+    "https://x.com/random_walker/status/2123869355431661866": {
+      "first_seen": "2026-11-21T13:42:11Z",
+      "notified": true
+    },
+    "https://x.com/random_walker/status/2123878016090849712": {
+      "first_seen": "2026-11-21T13:42:11Z",
+      "notified": true
+    },
+    "https://x.com/random_walker/status/2123918994918801815": {
+      "first_seen": "2026-11-21T13:42:11Z",
       "notified": true
     }
   },
