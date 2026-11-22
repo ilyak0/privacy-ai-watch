@@ -1774,6 +1774,30 @@
         "2cb8082132a591f208d7e97aa2978dc18e0e8f8b2045adcd15e9dcae8f57480e",
         "5a66527c096185c51fd377322df730e91bcea12a35f9d15e20d95f26d82fbd91"
       ]
+    },
+    "2026-11-22": {
+      "issue_url": "https://github.com/ilyak0/privacy-ai-watch/issues/36",
+      "markers": [
+        "8cc0400198c243757d72384a44a924bf1f0cab4ce71ea47b679ea9d0e7af47f1",
+        "d311aad25511ed2cadd6373bf6dd840dc8beb9d8d785a5c8a9cff566cd512ee8",
+        "f6f5282ad9e3c36becf8337f22dfe98b714cceb5714699a8a4ed52de92759a9a",
+        "f52216bdae320c5247f473be5abc7c369f06a052ffd4102b2fa18fd70bdf58af",
+        "f2e0e504895b9fb3da932c89076199530362516c018728f589609ea191324712",
+        "e78619a438014e50ce93719edc017bd3b5e3044fdcb201d3cb7bea56dd904a03",
+        "32610aaaa4c46a81ef3c459f952b22a5aef81df88edf05fb3fe0dd25b878a959",
+        "f54713977487b6ec70c41440edeeb5793050bd4211bfe6aa6dc8ae26c0a857c9",
+        "71e3b82433c4331ca24b939b5cb53676950dfe90e063832f9024099523dc9be1",
+        "aaa55aaf598950923826598344d69b7cb6cea73bf924c87d342a64c181b6202f",
+        "044fb7804e00ac8eecfab38be8fae4272b61749d695322e323f1abdd1c3601dd",
+        "5af7e90430559a1cc8d2afdbe620ab23d7a2e3871679c1c7897e5ab6f77a8d31",
+        "23b0f59ca8af74f5faaac4f76268bd88c5437470a3cc73bd7d7ba6cd3c1aed59",
+        "02ddf8cb4d35001ab4316bb04419539e0fd27febf7b29f642923f498cc20769d",
+        "54a3f9130639132138246ab831efa3cff16f24845102f221dd5eea98833c8dfc",
+        "4686700ad04c30d85d67ba13c6d75e331734b71e081edfe80888e7f3bacbfdc3",
+        "368e392f324ecad4d8314bfcd45842f59d6681a46d88d24db621b1392f3c784b",
+        "b9d647835a588f5136e072fe209254bd0683da98ba3d0b1673dc415a91148991",
+        "d0295e64ff4ece6a9a0e6333826b0321518896cd2d90e0274cc5a353e107e674"
+      ]
     }
   },
   "initialized_at": "2026-10-17T08:36:33Z",
@@ -2018,6 +2042,10 @@
       "first_seen": "2026-10-17T08:36:33Z",
       "notified": false
     },
+    "https://epic.org/cisa-report-obtained-by-epic-confirms-critical-vulnerabilities-in-u-s-telecommunication-networks": {
+      "first_seen": "2026-11-22T13:35:58Z",
+      "notified": true
+    },
     "https://epic.org/cnet-will-democrats-rein-in-big-tech-it-starts-with-privacy-and-data-centers": {
       "first_seen": "2026-11-12T13:59:02Z",
       "notified": true
@@ -2025,6 +2053,10 @@
     "https://epic.org/congressional-hearing-adds-fuel-to-flock-fire": {
       "first_seen": "2026-10-17T08:36:33Z",
       "notified": false
+    },
+    "https://epic.org/dame-magazine-how-data-brokers-are-putting-stalking-victims-in-danger": {
+      "first_seen": "2026-11-22T13:35:58Z",
+      "notified": true
     },
     "https://epic.org/defending-privacy-has-been-essential-to-the-fight-to-ensure-the-right-to-vote-this-year": {
       "first_seen": "2026-11-05T13:29:15Z",
@@ -2146,6 +2178,10 @@
       "first_seen": "2026-10-29T11:44:18Z",
       "notified": true
     },
+    "https://epic.org/nextgov-fcw-wyden-tillis-plan-holds-on-trumps-cisa-nominee-after-jan-6-remarks": {
+      "first_seen": "2026-11-22T13:35:58Z",
+      "notified": true
+    },
     "https://epic.org/now-is-not-the-time-to-limit-cyber-liability-and-state-enforcement": {
       "first_seen": "2026-11-19T14:41:07Z",
       "notified": true
@@ -2160,6 +2196,14 @@
     },
     "https://epic.org/pluribus-news-advocates-seek-state-guardrails-as-seniors-turn-to-ai-companions": {
       "first_seen": "2026-10-21T10:34:17Z",
+      "notified": true
+    },
+    "https://epic.org/politico-us-knew-of-perilous-telco-vulnerabilities-years-before-salt-typhoon-hacks": {
+      "first_seen": "2026-11-22T13:35:58Z",
+      "notified": true
+    },
+    "https://epic.org/press-release-epic-acquires-signaling-system-seven-ss7-security-assessment-report-after-two-year-foia-battle-2": {
+      "first_seen": "2026-11-22T13:35:58Z",
       "notified": true
     },
     "https://epic.org/press-release-judge-blocks-trump-administration-scheme-to-disenfranchise-voters-2": {
@@ -3062,6 +3106,10 @@
       "first_seen": "2026-10-17T08:36:33Z",
       "notified": true
     },
+    "https://news.google.com/rss/articles/CBMiakFVX3lxTE1fVDFxQWh3NGhqckZnajVkQmJfdURMNVplSlhaZXVaN0JzVG96UnN6LWwwTjh6TGRNMzdNMVZEY1BoR3Y1SUhFLVEydHRXYjczbFQ1RDB0UVY3cVNjcWJRbjFHXy1EZlVpbWfSAXRBVV95cUxQektQcnoyZWJvSEZXSVh3R1dKcjFMSlprYzBpMnBjMmFNN2NCbkc2M0VDWHZMcWZOaGhodmYzU215WHoxalFTWGdnWk5IZ1E1WUtjRTJmbnhQbnNuU05DQzM1MEZCbHozRWJyb2dSWUdhTXFPRA?oc=5": {
+      "first_seen": "2026-11-22T13:35:58Z",
+      "notified": true
+    },
     "https://news.google.com/rss/articles/CBMiakFVX3lxTE9LMjc2UmhucFFjQmVOanN0N1JIWlI0MnpDcTB3MFN5WEF5RXQxVHBDcDd2VGZuQWtQakZCUU9KV3I3dVpLUlZreFJSMjNMUXBlYVhwWnlscURLQ0djaHpwQ3dpY0JiVXRpNUE?oc=5": {
       "first_seen": "2026-10-21T10:34:17Z",
       "notified": true
@@ -3890,6 +3938,10 @@
       "first_seen": "2026-11-15T12:58:34Z",
       "notified": true
     },
+    "https://news.google.com/rss/articles/CBMilwJBVV95cUxOUHF0QXBlR21EMUE2aDIyQ21pdnRubWI1bkcyOGtTMWVia2RZMEoxNUQxb2d5ZGhaOTR6UnplSlc0X3lVbkhpUEJEUWlUNG1zT0I3eXRwREctUUlaOTY0enJoejJoZC1nOTFlV0JrOHJ5WHhqSlAyUlZOSGxPY25KdUhpU0ZybmlPZ0c2by1Ud2F4ZVo4SzgtV0NrbUFacFVtdFY3TWJJc0h2QWxoMlVCZktOdTBOaHAtLXVvTzJIZjRBZXYwR2R1SWRlcGR5MjUxZU44MUEzTDNDRFVHckdOeUlINjlBN2poSy03UWNkWFp4dEc4aXhBOEZBQkFvYmZVZzBPU3RPVjg3ZERMc2RBbFY0NFZJSW8?oc=5": {
+      "first_seen": "2026-11-22T13:35:58Z",
+      "notified": true
+    },
     "https://news.google.com/rss/articles/CBMimAFBVV95cUxNdDJaMVRyMkVEQVBOeld2aUJXcEVydG81WHNLa1VaVU5mYUg2QVV3SHZ5QmotVHg2N3FRRVlLSV9LMUs3eTJURnF1R2RyMk1laXl6TXJUUmVBVXZrYmRibi1HN3lucFVvWjVBRHJvUTRSRFJhbWRXYkdyZDV5cWtJR2ZCRmU4RWs0ODlxQmpKaXU2V3djZDROeQ?oc=5": {
       "first_seen": "2026-10-17T08:36:33Z",
       "notified": false
@@ -4080,6 +4132,10 @@
     },
     "https://news.google.com/rss/articles/CBMinwZBVV95cUxNMnhVYjg4MnJuOEZVLVRxUHgwYUlKU2wxWllSVkhSSHRuX0E5VnV0TVFoczdKX1NfVHRtcjY5Z0RmbGs4Wk1yVEloc3hzNHljMk1wcERSVzUyaVpIeGhHM1M3ZmlLOUtab1FRdUNJak12ODFKR2JlVV9LaDZKUkNGNEFsOTNCTHpZeG9SSWE5TkZSellEZ0ZrWGk2Z09oZGdTY25jQTJiaDhCOVJ2d0owV240UG9SM2lCeXdhYm9UdENaNS1EUTBQNG9ZQWNxQWMtdGxjZUJ2TGxYS2I3LUtsVUpQOHYtYWtoRW10X2xLOWVsQUdtMV82eFdhWE9ENEJfaXEzcjhvZFhlZnVvZ2tWNmRvVjhOaFlWRGw5a1lpOWlROUhBTTBoSXpYdHpfRzNPTWRjRW1CREhDQl8zd1I0YlpaQUhFVU0tU0c1TE5Bd25PR3RVY0lUTDk4Vkg4a1BncGdlMU1ZeEthNFg1VWphSDFrb3lPa3VtdmJqNE8zRmdiSy0zSXdtRS0zVmxzME1VOWVoNkdSNUpzLWJLWjB4OGI3UTJGRUdTeFgxVG9Xd3Bsb0lNY0dLbEtpVGc2UEdqZ2xSZFVSYkhuMkJiUmpBdzhoSjBySmFGdjB0VEZGTTNnSEFjamF4YnpQbk1HYTdQUDdmUElUdWNHMk5DQ2tRV0JDTTVXbXFaa1Q5VDEtQUZnM21URE5jUVludjJBeWljNVVBejR3U292ZHdOSkVXZjBNSHZHUi1RX2pPdVdoYVRPN0FJNE5zTlhBUWY3WG5xVy1WUnlSRTJnNE9neUJnQ1lPMGhwNGZGS3RtWE1RSkg0VXlOUUszMkdKMWE1Rm1DNkg4MFdOa1RVRTExTUxEQTNTVmlOQ0FxTnJrN0RQMFlmRkp0WmNXaUx1UXZhejFiT1pzNTlvYnJES1h5NEx0VHpRNElpOVpnZnBnVHoyX2IyWGhyS1ktZDY2a1FldmdUTnFvQVUtQnI4V29kTnA0cnowc2s2c0RucG51Smh4TlhRUlByYm9WUVhSN1JHTmxKMXdHMkQ5T2N6c0k4Sks0?oc=5": {
       "first_seen": "2026-11-15T12:58:34Z",
+      "notified": true
+    },
+    "https://news.google.com/rss/articles/CBMioAFBVV95cUxNaVVNQnZ6QXo3VDM4UGdJMmpuZ0pqbE10cXA2ZlV5dUUwYXNGLVNpWEE2NVdYOWV6d2ttZ3JfNC04UFRPTVFFSmZnYWNWOUpqNWJXdjB0Y2dSd013N2ZWSVhCSU1lYTZILS1PZzZOZ2RaOVhYNElrc0s1b19FRWNSaUxHWG96dUV0MDJjVVNWWFl1MmxPLUp3dUhQZzhjeDRQ?oc=5": {
+      "first_seen": "2026-11-22T13:35:58Z",
       "notified": true
     },
     "https://news.google.com/rss/articles/CBMioAFBVV95cUxNcFM5ZUo0QUE2ZEJvdzRnNktiNWVlUlAyMlVTeEtkRmZDZUhrM0xrQjhTTmJ2cE1EZHZ0S0MxZEdmMHZhaTlJN21IWE9rM3NPc1I0anZKbGRBcEcwalJIYjBybFNhZVJUZEJ4ZVllVmU4bGdMVnEzQ25EZ0tXZFZTMjhCS2dFeXVGSUptb0I2M3YtZVlhOGgtSDQyQ0p4Rmk0?oc=5": {
@@ -4902,6 +4958,10 @@
       "first_seen": "2026-11-12T13:59:02Z",
       "notified": true
     },
+    "https://news.google.com/rss/articles/CBMizwFBVV95cUxOMUQwNlRVNWZZLTM0aFZsdmFxWUU0WFZsc1NhZFlRM01sSDAtYnQ5ZF9iVDBlaW1veEc0SUJrWTMyQVlZcDV4RmtMN3Nlc1JxXzYwWjRHcHRseV96U3NpMTQxRVkwWHZFY2EzeFR0ajVwaXh0YU5BOFpGby1mN2Q5a1MySDZ0czNsYmRrM1ZGdWVFOFVkdHBZbjA4Uk1sZWJpa2xqNDBmcEVkTzNVZEVxcndqMnRTZFlKazlSS0wzeEk4VVZuY1ROMkxMMkNKQjQ?oc=5": {
+      "first_seen": "2026-11-22T13:35:58Z",
+      "notified": true
+    },
     "https://news.google.com/rss/articles/CBMizwFBVV95cUxOamxCVThzX2ptZXFtWEtkR1ktWkVyVzdLbk5mSXptdWJTbVJ0MHM2c2hDQnp5bUtKc1MtRWpRVi1RYmdyVGRQMXlWNkJFZ0paTW9oMS03Z3h4UDN1ekJQUHJ5UFFvb1NwQzBScGtvRTdCRWgzUC01MzhlOTFJNVVKblVyb1FXRVJDazhMekE4YjVVSlpIaFJqc2hOUWJzb2x5aEJmZzAwa2MwWVFtelFWV1NoYnNGdjl4QUZkNEhqb1FZVVZjTHNhMXZCbXlyeW8?oc=5": {
       "first_seen": "2026-10-31T11:12:58Z",
       "notified": true
@@ -5054,12 +5114,20 @@
       "first_seen": "2026-11-21T13:42:11Z",
       "notified": true
     },
+    "https://simonwillison.net/2026/Nov/20/llm-gemini": {
+      "first_seen": "2026-11-22T13:35:58Z",
+      "notified": true
+    },
     "https://simonwillison.net/2026/Nov/20/ravi-vakil": {
       "first_seen": "2026-11-21T13:42:11Z",
       "notified": true
     },
     "https://simonwillison.net/2026/Nov/20/token-fraud-is-here-and-its-bad": {
       "first_seen": "2026-11-20T14:20:56Z",
+      "notified": true
+    },
+    "https://simonwillison.net/2026/Nov/21/muru": {
+      "first_seen": "2026-11-22T13:35:58Z",
       "notified": true
     },
     "https://simonwillison.net/2026/Nov/3/a-sound-that-leaks-your-exact-location": {
@@ -5784,6 +5852,14 @@
     },
     "https://t.me/ai_and_law_rus/1203": {
       "first_seen": "2026-11-21T13:42:11Z",
+      "notified": true
+    },
+    "https://t.me/ai_and_law_rus/1204": {
+      "first_seen": "2026-11-22T13:35:58Z",
+      "notified": true
+    },
+    "https://t.me/ai_and_law_rus/1205": {
+      "first_seen": "2026-11-22T13:35:58Z",
       "notified": true
     },
     "https://t.me/ai_safety_digest/213": {
@@ -7734,6 +7810,22 @@
       "first_seen": "2026-11-21T13:42:11Z",
       "notified": true
     },
+    "https://techcrunch.com/2026/11/21/a-tale-of-two-nvidias": {
+      "first_seen": "2026-11-22T13:35:58Z",
+      "notified": true
+    },
+    "https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages": {
+      "first_seen": "2026-11-22T13:35:58Z",
+      "notified": true
+    },
+    "https://techcrunch.com/2026/11/21/is-selling-an-ai-version-of-your-face-to-this-microdrama-startup-the-future-of-hollywood": {
+      "first_seen": "2026-11-22T13:35:58Z",
+      "notified": true
+    },
+    "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance": {
+      "first_seen": "2026-11-22T13:35:58Z",
+      "notified": true
+    },
     "https://techcrunch.com/podcast/building-on-open-source-ai-hugging-faces-policy-chief-on-the-costs-risks-and-trade-offs": {
       "first_seen": "2026-11-05T13:29:15Z",
       "notified": true
@@ -9096,6 +9188,14 @@
     },
     "https://x.com/random_walker/status/2123918994918801815": {
       "first_seen": "2026-11-21T13:42:11Z",
+      "notified": true
+    },
+    "https://x.com/random_walker/status/2124156018900779457": {
+      "first_seen": "2026-11-22T13:35:58Z",
+      "notified": true
+    },
+    "https://x.com/random_walker/status/2124474824135258605": {
+      "first_seen": "2026-11-22T13:35:58Z",
       "notified": true
     }
   },
