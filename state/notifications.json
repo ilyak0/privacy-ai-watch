@@ -1798,6 +1798,57 @@
         "b9d647835a588f5136e072fe209254bd0683da98ba3d0b1673dc415a91148991",
         "d0295e64ff4ece6a9a0e6333826b0321518896cd2d90e0274cc5a353e107e674"
       ]
+    },
+    "2026-11-23": {
+      "issue_url": "https://github.com/ilyak0/privacy-ai-watch/issues/37",
+      "markers": [
+        "40bd1a2e7292cbbbdf03b2ff79bf5e4da99812e3b539d0201293212cb104774c",
+        "6bd1cd41bb9f266429072ccd3329afc4b0ea258df331c6cc7d9888344f169f13",
+        "2ac3cb93dbaec7b9eff278183221cdb16f8208b81191232cab98d6fb42902955",
+        "8032bf884a04a9ef327a7f77e1df88030cf543fd74cd0a43e1e10e0faa78d39e",
+        "ff710e2ee32da01d0eb4446700aaccb5e7d081de49fed0bb0829eea507386575",
+        "4dcdd25ba9e264897a846d6f2c867cb40f94e381996e97f674cc844f401a7e68",
+        "9d00fb8cd631e4d8b6ae8fe622d87f1718745f4c8adf5819c8b3082176e468b1",
+        "46cbef70e73bcecb30692bcc157a095f6aa388bd4d9f486127f9a05cd6ea4191",
+        "9e0389fd5d625e03c56251461d7e7e989a7b20850ca7c739cae764d931657e7b",
+        "b0061d7d1ddd066d6c1859c0fcc8a8ba493df89202909fdf1cb44849d606b2cc",
+        "8fcb6b71c68e62a92ae7f27848117db1436eade5deb6afbe3b435f0a243ea6aa",
+        "67feb32a621226e33502f02a2653a7b1170f0acd3ab2fc554f33b9e0603b57bb",
+        "cfdfbc8db45c40c4056aa2b9e5b115923dcbdd7794caee1b79317736fbb6b30e",
+        "f107836b7e6b9f7823f4cd82c5af5707e7bbde8af4f2169eefe0d61bfda50254",
+        "d6502d8e14773ac008d75f2fb549a37d8cdcc3c4ee3c6790d34b7694b6478040",
+        "375d50a0c636207cf37f2c4319d8d15763a0b156f94aa6c19caf46757d605418",
+        "0118330c773b66f5229e8bd097e3d065fb5ff064dcdfeb5ecd9263a84cf1d900",
+        "f5cee2bfadf69147bb6f9bc5bf9f723211434fe4d88eacff93cf455fcd3e182f",
+        "e8288c998f1e3225ee30beec838b4a01b94868f064953cb339cf88c6659ca6c5",
+        "cc5709566a5273897157f1726b8c040187d892bfede65224d2a83605ad78d74e",
+        "98926ca72f55d04aa464d0b6378cb0b8d3d9b1ee0c3d5cca813d22704010d996",
+        "ce151da8cf1a647dbdefe1b4dd195056b51a99307a26f5d02786c0b30059dee7",
+        "314a95073362dfce86c0d85a09386d96d761589e664839598b995307bb5b142f",
+        "1c0a0941559fb71c0777d361d6b22f5a6a02546889bc2c45c4d34a8b344289bb",
+        "048b559eca2d8aad02fc2b418e4e9a47fea3bdd48ff455186257f6f3bb85301f",
+        "009c35650a20ecdc6f952eb151bf08709f0d374758c390fc6e4ed436627c2fab",
+        "f623141117fe3174a17c4868014214e39532882ed49ef1c543dc21f4cf7bb61a",
+        "9c8b0f358df6734fd6a1db1ebad77813952c950dbbbe8090c7ea7834820bf095",
+        "883b69d3f986860bffa5b7f6476b5e6f24020479abf9427d9ce9503ffc1f037d",
+        "53c91719faa27e4211c757fff802e99090c832168f3181941c7a2a539c09f1c7",
+        "29c9de3a1f8674ad7ebd9f4c3dc5793e290947c0b87b146830e68a3f39aa3977",
+        "b01efb145c562a70f25548bbd5b8cb681021772d6ae42a6fd672632e895a907c",
+        "e80bdfefc7b9b5fee342d9fb3b773f3a685b83c974e441a058deee5cb8b74123",
+        "d4930ade082e598485690028c4d4b47a3f2ababa66f7425fc044b7296110736f",
+        "50eaee9a34139795490080825cd4c7ea2f7eb798eecbe072f6a32e3017fb6b13",
+        "71ff2ee8bf23be9b6db78b94e4eaca1ffa2f48ab2ab7c4aba78c8d72717bfa48",
+        "47b2738e2872fd88c166151463e7074b4ab4231ec0a98dc66eca7ebcb1440813",
+        "c168751bce23db1920ad74de666382d75b9e2c59eb39424bb02534724a4f7188",
+        "89fc33d5028ef5021d66b24df0e4b2b0baf02b11b73793000ac8fad05f724399",
+        "413f42e9d5ef478f764fd3a800bcbd3118f3a8d09df1f8777d94f4cd4b610864",
+        "c6490c9f1852bb235cd78fc24ad78b22e5dfc18e0ed91b60cdea519d61104c1d",
+        "d3d181ccf2e1e2b6a6d3a4011a7ce7ada8f18a05ca0de25de8890339f40cc27d",
+        "8a3e32e892dbb7dcd2c69a1bd1a924fe5517381911e3da75b23f8459bf0143f9",
+        "e27e0b0affe927dea636b393d3c95255c57e2a187edbe68d639e194983ebda18",
+        "83c94860dd7e8813c0d035cb453e1627aa3894db7b86b1948135108a42c98862",
+        "4d7d3b6dea2adcfcd8900462b153066a2e0baa8e638b24b6a962e22cd3a4b24e"
+      ]
     }
   },
   "initialized_at": "2026-10-17T08:36:33Z",
@@ -1874,6 +1925,10 @@
       "first_seen": "2026-11-21T13:42:11Z",
       "notified": true
     },
+    "http://publication.pravo.gov.ru/document/0001202611230004": {
+      "first_seen": "2026-11-23T16:28:31Z",
+      "notified": true
+    },
     "http://publication.pravo.gov.ru/document/0300202610300006": {
       "first_seen": "2026-10-30T11:37:07Z",
       "notified": true
@@ -1888,6 +1943,10 @@
     },
     "http://publication.pravo.gov.ru/document/1501202610020003": {
       "first_seen": "2026-10-18T09:53:26Z",
+      "notified": true
+    },
+    "http://publication.pravo.gov.ru/document/1501202611230002": {
+      "first_seen": "2026-11-23T16:28:31Z",
       "notified": true
     },
     "http://publication.pravo.gov.ru/document/2001202610020002": {
@@ -2386,6 +2445,10 @@
       "first_seen": "2026-11-20T14:20:56Z",
       "notified": true
     },
+    "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPNmUtWjdDdHRfWjFmYVYxOTV6ZGpVYU0xeURZT1FfcWx1dmp6LXFwZWtKeUJlNFlBQXhyZTZDRTZhT3ZIZklRWW43MjBnWkNJcXpIZVdkUXpPQWstUzlfZzhzc00zOGRZSkFTdHlXbnk2Q01Pd091Y2RJT0RHdVdWc25xUWFxcFFoZjlMeTQzYXEyMlFTZzFsdW9BN0dRNWZWV1hFTTVjNkM2VHJDN19LaHd2YWsteGhBMUNSVTE0WFJRZERwUWVQd3BHXzEzYVpFTk1z?oc=5": {
+      "first_seen": "2026-11-23T16:28:31Z",
+      "notified": true
+    },
     "https://news.google.com/rss/articles/CBMi0wNBVV95cUxNelhKX1ZCTmNVOTFDN3A1YTZBY2NQYjktdkVPMnBmbERYSE1mXzFic3RhWkdwQmlEcEZCaW1WeE9PZWlibGtDMWF6V3ZXcDlLOVVoS1NaeVdaSGR3amIwX1ZDN1VzaUV1QzVnN0dUTDBlNi1velA5d1VxRE1OT20yM1BmX0JqWUU2aEVKQk5LMzFfTFA4ME82MVAxanB4bUVWUXhMN3ktV2dPZlhXNDhiWkVTTzJ2RzlyeGJOdHl4Y2wwUFFWUUxXb2xYbmUyWnVIVmRvR2dsUnRPa0F5b3Zta1J3emtySUU4YWxSRkEtMmFPTGJObzJfV19wZjI4cGRZX3I5SGgtM2FLbV9GbmtONHVQeW9BOGtOalpBcG00YVdXdTZ1aHZBUFRGUkd1UUdpaVFXWmtKb1I2TnZSck9EZlEtSTJRWXRwaW82NXI1Y2xaVjN4d2pfeFpSMEV5VGdvY0RKeXN5emlfYUNBNUJtTTdGQXlGYVdMLV9lOUI4Y2RzMmhVQldOQXJ1YThFWmtySTF6TlByOWZNeTdBV2lQRnQxeXhLbDg0MktRWmJFVHRQR2x4YVN0Vzg3aklNVk12TzdoZzdMLWE5NGZ3UFRZb3IzSQ?oc=5": {
       "first_seen": "2026-10-30T11:37:07Z",
       "notified": true
@@ -2518,6 +2581,10 @@
       "first_seen": "2026-10-23T10:30:09Z",
       "notified": true
     },
+    "https://news.google.com/rss/articles/CBMi5wJBVV95cUxQWEdVeHlSLU1aQk9zMVlQVTNlaUN6RVBCRDdRaUpEYWd2Q3hBTEltVHViYTBXVUpjekwxbGdZUk5ncWRkRlJkREIyMHhVa2hIU2FOS3BLa2RYS3phbGNmcGhCSXRwMG9lNnQtSzdMLTY0dWVuVms4YVZ1ZTNyeDEzTFdHbFNROG9XMjVCMzFDeEJ1T2pRQ3ZBblVWM0psUTh2Y21waXNBRm5XbklDQUtSNVJmVWpoZURfNUZUMGp4cGNKSEoxc2hybF9KOXN4NndtVmJYQi0xSjQ4ZTdWYWFxS2J4bms4MU1rUWpXZ3pFMUtDbmUtWnJ1NXdwRmcxQUNqMDhUT2tVWmNYSXZFYkJNcEV5ZzlRRVRVMUdWMTBqQ2Vyd3FwMTFkOHRDNkNyTUtLbVhZV05XaUVZaG5JakNZZEVVLWFLV1BzOU40S0RmUzRVVFJoQ3dZbGFwX2hyUlJKSWZwdzFUWQ?oc=5": {
+      "first_seen": "2026-11-23T16:28:31Z",
+      "notified": true
+    },
     "https://news.google.com/rss/articles/CBMi5wJBVV95cUxQejd0clZQc1BCTDNkalAwNnFUTmUtY2RFZ0ZPTW40UnktalVRM0J1STZibnVwV29jSHI4UmczMU1PdnBiZWEwWTJSV0VzaTdDU2FjTW9XYnRWV0I4T2hhbEdNMlAwMFQtLTJ4OFA3ek1PMlpiWjMxQ05aNFotQnZBNk5Gc2ZkUVJBbVN3Y1UtcFBxd2FVOGc0NTNLeHFaNlpGWlZ0M0k2Yzk0YWlqRFZoM2JhOHlhWjZfdFZLdEd4Q0hKYXExTlByajA1WVlmZE5qczJtMFZFbU9QTURlQ0pwV0wyRFJnbjF1djFPRDFRS3FTNHRDNm81YUQ0YXpPRUNhUG5sYW9yZGx6dHZPRlowdUZkandTM29Penpqb0Vpa3RNWDBaY2dtNXVEaTNSUm9NRGlyMXRtOHZ0TnhWdldJTFd1RTdUOHVEZ042ZDQ5X0xVbU1WNWpla0IyRHBtMTV3a0dfbmRxYw?oc=5": {
       "first_seen": "2026-10-27T10:57:21Z",
       "notified": true
@@ -2560,6 +2627,10 @@
     },
     "https://news.google.com/rss/articles/CBMiP0FVX3lxTE9XbHpKaWgxMk91dVpsMG5Sd29HSm1oUWQ1QUlLLWJhUm9fbGxEaWE5VmRySjF4OW5fSTE0ZzV5MA?oc=5": {
       "first_seen": "2026-11-20T14:20:56Z",
+      "notified": true
+    },
+    "https://news.google.com/rss/articles/CBMiP0FVX3lxTE9ZWTBYczE2VURnN0FqUFBlNDF0VVNUcWhoanpTOVVhMUJqU3dfRTRuNF9IclRDMkw2MG9sSE43dw?oc=5": {
+      "first_seen": "2026-11-23T16:28:31Z",
       "notified": true
     },
     "https://news.google.com/rss/articles/CBMiPkFVX3lxTE5nelpRakdaZUxrN2doZWZ6UzVNcDRCQVg2MXQybnF4VnBjeDZvWlNSc0dqMWZtODg3TW9JZ1lR?oc=5": {
@@ -2710,6 +2781,10 @@
       "first_seen": "2026-10-17T08:36:33Z",
       "notified": false
     },
+    "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5NY1p2THJKTnpNZ1FZZ2dHQVNKaFhUTE92RnJ2ZHZZLWg1UGFIMXdEelA5TjZxdWlVSXVHNUlmRm1DMGxwLVdFeFlkdnpWaG8?oc=5": {
+      "first_seen": "2026-11-23T16:28:31Z",
+      "notified": true
+    },
     "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5QNDRjX3RYaGVscklCTjNYVUppQzVhRmFXakhTckZ2Qld6dVVoMk5xb3h6a19DYzdvMWZOSEtDd1FrY1N3cGNwT0Rmcl9xTnc?oc=5": {
       "first_seen": "2026-11-09T14:19:54Z",
       "notified": true
@@ -2790,6 +2865,10 @@
       "first_seen": "2026-10-17T08:36:33Z",
       "notified": false
     },
+    "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5hLUd5dmhyUXg5N1NfNlk5bHRiM1lxeE5yOFpLcEZjazJLUGhSRUxNcGxkWE45NC1VTVgzOVNLeVRnaVhMM0Z4RVkxdWZEUzh4N2NV?oc=5": {
+      "first_seen": "2026-11-23T16:28:31Z",
+      "notified": true
+    },
     "https://news.google.com/rss/articles/CBMiU0FVX3lxTE91dGluRG9KSk5jUWl4c01OV0JUOHd6Tl9EOWVrazZ5aDlIaFEyM2JuX2tVckxBdWIyRTlwMUZOUFdYT3JKOHBfRTFicW5mX1RlWXFZ?oc=5": {
       "first_seen": "2026-11-02T13:49:53Z",
       "notified": true
@@ -2865,6 +2944,10 @@
     "https://news.google.com/rss/articles/CBMiUkFVX3lxTFB6VFl2SV9DWHpQbGlLTFJkZDZYSEpBdEtwb2R0YjNTRURLOWZseXcyUW8yVE9FMFlkOGJwdExJNmNwM2dYQzRSVHM4bzR5S3BKRGfSAVdBVV95cUxPZ05VU25DQnRxTlBibnhPdUFfRU5nOUZiLTFJb2NkUzEwcG1sOTRVN191X2F1WVh4WEUtTDJBaWc4S09fWV9BcTgxY05OREx5Ql9hWHRLLUE?oc=5": {
       "first_seen": "2026-10-17T08:36:33Z",
       "notified": false
+    },
+    "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBZX2xtVVZGbDBrNFVwRVBaclVPTEFVak1qT3ItSVBiYWtzYU1rX2xLOXhjOVVLUnpubUxZRVVmdDlQNEFiMDI3aU1tWFVVOGZJU0E?oc=5": {
+      "first_seen": "2026-11-23T16:28:31Z",
+      "notified": true
     },
     "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1aSUZURHJtYmItOTVFN1VGWUNseC1PUE5iX2lUUnZfUUxHRzlCUVZIVE16eW0yU1FJeXRUdWNHVi1QX01HRGg0NDdEb2VkUlhVZWJoM3lYQQ?oc=5": {
       "first_seen": "2026-10-23T10:30:09Z",
@@ -2984,6 +3067,10 @@
     },
     "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1HVXFSeE8zYnB2b2ZEQmpXakM1bl85dVBLVkhfZ2F0X3h0b3U1TklaQUpPV1NTVHI1S1Y3d0FBdEVHVmwtUDhSMnZjQXRoTERsNzBtcXotZ2ttZGRC?oc=5": {
       "first_seen": "2026-11-17T14:52:58Z",
+      "notified": true
+    },
+    "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5kT1o4U2sxbjMyc00xTjFMbGRwUkw1OE45Um10ZV9ZRUwtWFZuMmtIcTRCaGhrN1dYSHo2ekRDSTlxczQwMjdLWXlBdllCWWxfc1JaVTV1TnNUb1lh?oc=5": {
+      "first_seen": "2026-11-23T16:28:31Z",
       "notified": true
     },
     "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBlMVFOekhZams3eGhQTUJyd3dmbmxtTVZQemo5OWVNYWlWN0dHck42WmVFc0RobFFwRGpYRUk0bVM0TUprczk5b096UndHeG90dUNTOEdFeTU4SnNJ?oc=5": {
@@ -3292,6 +3379,10 @@
     },
     "https://news.google.com/rss/articles/CBMidEFVX3lxTFB0cHMtV2luTVdzYm02c290NFZORTdQX01hb0Y3dFh0SWpfMmJRM0p2aV9LUzBKT203ZnZYRkJhalBIOWhmdnhxeFNZT0doa0tkN3NfVHpqZ05FZ1hESnJudTNwdi02U0pOcE1PUThxcTA4R3NZ?oc=5": {
       "first_seen": "2026-11-12T13:59:02Z",
+      "notified": true
+    },
+    "https://news.google.com/rss/articles/CBMidEFVX3lxTFBPU3NhT1o1a1NybzJnRTJ5M3gwVVFSb0FDVmRveDlXQ2NhMWRZNkRGZnlldFVwcXB2WnkyT2ticDlVR0FQMGlnN2VVbjlSSVdLNjl3QmhNWFBNdkRKNzctSEFvSElhM1lSTm9pWUlYb3JWT1ZI?oc=5": {
+      "first_seen": "2026-11-23T16:28:31Z",
       "notified": true
     },
     "https://news.google.com/rss/articles/CBMidEFVX3lxTFByZ291RXhaSW1NU2N1WW1UZUt4NHl0cVJ4SnRKZ3ROSGVDMWs0S2FUbUJXOWRXMFJkTGVGSi1oVFZKbV84eXhsVXhLeFVEaEpKSmhMYnlocTZkVjBMTGM3SUE0YjZ3VjdSWmFnd0FaN3Y5aUQ40gF0QVVfeXFMUHJnb3VFeFpJbU1TY3VZbVRlS3g0eXRxUnhKdEpndE5IZUMxazRLYVRtQlc5ZFcwUmRMZUZKLWhUVkptXzh5eGxVeEt4VURoSkpKaExieWhxNmRWMExMYzdJQTRiNndWN1JaYWd3QVo3djlpRDg?oc=5": {
@@ -3790,6 +3881,10 @@
       "first_seen": "2026-10-28T11:37:14Z",
       "notified": true
     },
+    "https://news.google.com/rss/articles/CBMikwFBVV95cUxOY0VKS29aWl9EUlFDd0V3U1ZrYU42SGsxX2lSUWFWUV9RSHZlemhSbWc5dzZTZFBlc3Ztczh3dmc4UkNQa0VTSWdWeENBMlhKUXJqS29YR2dXZTBlUnc1emRpWEJDZnBkb3BHR1dnUnhFUFJoQjloYVV4NXJMV0d6QWhyT1RoX2RCQ2VmM0Q2NVZ2SUE?oc=5": {
+      "first_seen": "2026-11-23T16:28:31Z",
+      "notified": true
+    },
     "https://news.google.com/rss/articles/CBMikwFBVV95cUxPNjJFRC1nVTFfTmVIYU51Vm9UM2JlRkF1R21DSzc3RTQydDhDTVRSaTVaajczb0pydm41eWkyYVMwbkdUSnhSdllUU0pJUjZtOUxSYjc0S2dTV3J0b05zS2paNlc5UFZCaDFkUDVJZk5rT1hEZGhzRFF5QmlWTTgyQloxcXhobmRQYTZ5b19YTUw0QkU?oc=5": {
       "first_seen": "2026-10-17T08:36:33Z",
       "notified": false
@@ -3980,6 +4075,10 @@
     },
     "https://news.google.com/rss/articles/CBMimgFBVV95cUxPeVJfY09BWDZQbHMxOWQ4OVJYdXQwSnRybzB0V3ItX0tiZ0FybGVXN1dibnVwcUNkdDlpZFN6ZjNhRGZJdG9GNGh5WVZRR2VVcEZ1M1kwQkNWel9qMXMwd0owd005OHpvWk04UmhvVE4tMEM3ODdTb091Vkg0ZXdDQ242TzlkR28yQlBLZS1zTnpXcXVhaXZDWTVR?oc=5": {
       "first_seen": "2026-10-17T08:36:33Z",
+      "notified": true
+    },
+    "https://news.google.com/rss/articles/CBMimgFBVV95cUxPeW9NWmVjX3FMZV9ETFRIS09TclJOVjJTVHhOYndpRDJMUWY0Q2o4QlJnd1FHUk9VSTJUa25SZVV3OWhqdC10ajI5eFg2T0lkc3VIdlFDNmZGb3hScnFZTWFnQ2J4c1FtcktsVEE5bkxCc2R5dUlhZnNpbnRJX2QwWkNYTzVON182UTRmMVdUc2RjanBmS2ExMkdR?oc=5": {
+      "first_seen": "2026-11-23T16:28:31Z",
       "notified": true
     },
     "https://news.google.com/rss/articles/CBMimgFBVV95cUxQbXNLQjgxbjZNaTZid0owN0tPc3RMNWNLYlFhUFVyU0JuUWc5WVRnZW9ZZDhlN0ZJN05mMGY3M2hob3IzMU9QNF9GWTRYN2lUNHJ1dHY4Tk9KcU9pVUhCNGdoMWk1Wi0xRzluWEpVdzRoUnNRcFMweGZfT00tZXVfX0hSZUVXWlBSVklCS2xSU3FtbU8waE8ycEFn?oc=5": {
@@ -4269,6 +4368,10 @@
     "https://news.google.com/rss/articles/CBMipgFBVV95cUxPbmpZQ29Kem50YlpxY0JRX1lzc3BCNGhZU25VbFFfMlRqSnpnWWRWTWlZRTN1X1lPa2F2bE9xc1JUMVZMcTMxM1NmbmpvdnFsSDFMUUVHalRObXJmNzcxbFlPaEhadVlqRlFHV21QaDJBQm5DNl9hemJ6SzZ1Y3NCM0dpYm1malIzaWFWTXhsb1hrcUQ3Q19MVk1udkZDQlBIY25uYmhR?oc=5": {
       "first_seen": "2026-10-17T08:36:33Z",
       "notified": false
+    },
+    "https://news.google.com/rss/articles/CBMipgFBVV95cUxPcGtJVXRMajJqS2lnNVFCUkhZV0J3RjUwQngyeFNHbHJfdmVxTThVcWUwZF9jYXI2bm9icU0wYWVGU1BVR1FWZXF6YmZrUEZjTkU3WVAtdHlzVGhKZ0pJaEZUbzc5YkRHNFdEd1lIVDA4aElScEh4UWtzWjNKdG5nTUdGUllCdU94YXFna3RIYV9pQnlYSG9iM3JyeDc3eHB3YWxsbGlB?oc=5": {
+      "first_seen": "2026-11-23T16:28:31Z",
+      "notified": true
     },
     "https://news.google.com/rss/articles/CBMipgFBVV95cUxQTVZ0SHBXTHJHZzlDRFhZWnBCclZVS01LdmItRXZGc1hkWW51X3pDOTFTUmE5WXY2T2hBN3E0TXFpR2c0VTI4V3h4RVRhc214LXZ5ZkU5Qmh6VzlPb29lTXNFcUd5VXZiTFpzYUVRdHBVZXdrR0VZelU3YlBOckNwdzh0U3FiTGFOWDlvREIzaVpVRjlxSkp1Vndwd1ZUdzVlZjRxWmxn?oc=5": {
       "first_seen": "2026-10-23T10:30:09Z",
@@ -4726,6 +4829,10 @@
       "first_seen": "2026-11-12T13:59:02Z",
       "notified": true
     },
+    "https://news.google.com/rss/articles/CBMivAFBVV95cUxNblVmZVdQdFBlT3BfOGhSX1F0SWtWcnhxemh5THk1VG1YMjFWdW1tdnlIUXJZNDlubFMtSzE1bXRzX2plX01LQ2taSnVMM0Q4dTViNG44VGtvS01Wdm5IVE95NktKME1RUW5TWjVOa2V0UUZHYzFVWDJhMEhIMXZEallYTE16emNUbVFOQlR5Q1NLUmMxZlBxTGxCVjduTnZ6VVdoQmZBdlRSbTNVLVRteG0weUtZclZvd3NrRQ?oc=5": {
+      "first_seen": "2026-11-23T16:28:31Z",
+      "notified": true
+    },
     "https://news.google.com/rss/articles/CBMivAFBVV95cUxPRkRYWTJRMGFPYUwzYUxGajVUN216Z2ZaQWpwS1RVZlRTZnRVODF4V1BrMGI0dFhwYXdjZjRiU2dBSDJLSVZCZTBfbl8xN2hpRE5HQ1FsTmlILVR3VGFodjdpZUdnTTFhSmN6U0FZYUZYbUY0bVNVQmVfX1BhS1VYQjN3WDVDQXp0TDlXYk82ZTRDcHBNRW95Y2k2NWlQTE1zSnV1ajNqTmJfa0p5SHJ1Vm45Ym9pd2F5T2RuaA?oc=5": {
       "first_seen": "2026-10-21T10:34:17Z",
       "notified": true
@@ -4765,6 +4872,10 @@
     "https://news.google.com/rss/articles/CBMivwFBVV95cUxNeG5YSVp1c3hqUkNkZFJlYTVDLTZLczBWeVdIa204UGtSdlp1czRac1R4OFdxSElTSGlHX1lTR0paWG14alROOTdaOVNGcTFmV2ZMZTY5ZHF2VUNDeTF5UzVwSk9RV05KSEZPWndBRVczVThhYkMtMTMxRnFWWW1iOGpQM25sRUN3MVlCel8zdEZrVWdLZEJpZkE0VXhvS2ZvUXd4QWxPeGNETHA5Qk1oTThhdk5OOWJBQ2o4QmFWSQ?oc=5": {
       "first_seen": "2026-10-17T08:36:33Z",
       "notified": false
+    },
+    "https://news.google.com/rss/articles/CBMivwFBVV95cUxOUXV3eUtUeWlVVng5enpqMUJpaUpnUEVwSV9fcTh5ZDFmVWs1UW1JZ0ctTm05TGMtd2V1WVJPMEYwLUVZMXJGdzhtSlBVNWJ0N3BqQVNOYjVIMHlhNTRDQ1V1SmpsWENFWFljMGRmc3dSWHJPOVFxblJpbzE4RWZ6Mi1VaGRMTncwTHdhQlFPY1RLWWM0TDlJOUV5N0VzeGRFTkV5TGdtYXBTa2hmMjlLR3gwMV9oZDhLNHZHVUQ1MA?oc=5": {
+      "first_seen": "2026-11-23T16:28:31Z",
+      "notified": true
     },
     "https://news.google.com/rss/articles/CBMivwFBVV95cUxPQ0RnOVMydmZoM1Q4bUtQQVV2UU9WdC02dWdmVXBJdFdjei02Zm1OMXctVU5BNE1yRzVKcTQ0Z0FqSW9xaTRERGNsRGxyWnZJazdZd0FJSHJqMXZDZlBtVFI1Y3dvNmFBY3JmampiNTViWWhuZWcxam4tbWZCclZNQTVudEx6a3lqWDZMLTh1MTR2MWVaMXctaldyalVxNXI5cWM4X0RjaXE4WUhuSWdNZDhsMmRuSzVPMVJvbzVJMA?oc=5": {
       "first_seen": "2026-11-13T13:25:27Z",
@@ -5128,6 +5239,10 @@
     },
     "https://simonwillison.net/2026/Nov/21/muru": {
       "first_seen": "2026-11-22T13:35:58Z",
+      "notified": true
+    },
+    "https://simonwillison.net/2026/Nov/22/select-styling": {
+      "first_seen": "2026-11-23T16:28:31Z",
       "notified": true
     },
     "https://simonwillison.net/2026/Nov/3/a-sound-that-leaks-your-exact-location": {
@@ -5642,6 +5757,10 @@
       "first_seen": "2026-11-21T13:42:11Z",
       "notified": true
     },
+    "https://t.me/GDPRru/6649": {
+      "first_seen": "2026-11-23T16:28:31Z",
+      "notified": true
+    },
     "https://t.me/ai_and_law_rus/1141": {
       "first_seen": "2026-10-20T10:24:52Z",
       "notified": true
@@ -5860,6 +5979,10 @@
     },
     "https://t.me/ai_and_law_rus/1205": {
       "first_seen": "2026-11-22T13:35:58Z",
+      "notified": true
+    },
+    "https://t.me/ai_and_law_rus/1206": {
+      "first_seen": "2026-11-23T16:28:31Z",
       "notified": true
     },
     "https://t.me/ai_safety_digest/213": {
@@ -6242,6 +6365,10 @@
       "first_seen": "2026-11-20T14:20:56Z",
       "notified": true
     },
+    "https://t.me/ilovedocs/3746": {
+      "first_seen": "2026-11-23T16:28:31Z",
+      "notified": true
+    },
     "https://t.me/lawyer_dataprivacy/768": {
       "first_seen": "2026-10-17T08:36:33Z",
       "notified": false
@@ -6300,6 +6427,10 @@
     },
     "https://t.me/lawyer_dataprivacy/785": {
       "first_seen": "2026-11-19T14:41:07Z",
+      "notified": true
+    },
+    "https://t.me/lawyer_dataprivacy/786": {
+      "first_seen": "2026-11-23T16:28:31Z",
       "notified": true
     },
     "https://t.me/privacyexpert/1962": {
@@ -6396,6 +6527,18 @@
     },
     "https://t.me/privacyexpert/1988": {
       "first_seen": "2026-11-19T14:41:07Z",
+      "notified": true
+    },
+    "https://t.me/privacyexpert/1989": {
+      "first_seen": "2026-11-23T16:28:31Z",
+      "notified": true
+    },
+    "https://t.me/privacyexpert/1990": {
+      "first_seen": "2026-11-23T16:28:31Z",
+      "notified": true
+    },
+    "https://t.me/privacyexpert/1991": {
+      "first_seen": "2026-11-23T16:28:31Z",
       "notified": true
     },
     "https://techcrunch.com/2026/10/14/figma-announces-new-features-to-define-how-agents-work-on-its-platform": {
@@ -7826,6 +7969,30 @@
       "first_seen": "2026-11-22T13:35:58Z",
       "notified": true
     },
+    "https://techcrunch.com/2026/11/22/how-notable-capital-gic-and-baillie-gifford-bet-big-on-anthropic-before-its-ipo": {
+      "first_seen": "2026-11-23T16:28:31Z",
+      "notified": true
+    },
+    "https://techcrunch.com/2026/11/22/openais-chief-scientist-has-thoughts-on-how-to-limit-ai-development": {
+      "first_seen": "2026-11-23T16:28:31Z",
+      "notified": true
+    },
+    "https://techcrunch.com/2026/11/22/why-data-centers-are-at-the-center-of-the-big-tech-backlash": {
+      "first_seen": "2026-11-23T16:28:31Z",
+      "notified": true
+    },
+    "https://techcrunch.com/2026/11/23/nvidia-reverses-course-and-brings-jensen-huang-back-as-ceo": {
+      "first_seen": "2026-11-23T16:28:31Z",
+      "notified": true
+    },
+    "https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off": {
+      "first_seen": "2026-11-23T16:28:31Z",
+      "notified": true
+    },
+    "https://techcrunch.com/2026/11/23/trump-endorses-jensen-huangs-return-to-nvidia-says-us-has-no-evidence-of-wrongdoing": {
+      "first_seen": "2026-11-23T16:28:31Z",
+      "notified": true
+    },
     "https://techcrunch.com/podcast/building-on-open-source-ai-hugging-faces-policy-chief-on-the-costs-risks-and-trade-offs": {
       "first_seen": "2026-11-05T13:29:15Z",
       "notified": true
@@ -8014,6 +8181,14 @@
       "first_seen": "2026-11-18T14:32:42Z",
       "notified": true
     },
+    "https://www.artificiallawyer.com/2026/11/23/is-going-ai-native-incompatible-with-big-law": {
+      "first_seen": "2026-11-23T16:28:31Z",
+      "notified": true
+    },
+    "https://www.artificiallawyer.com/2026/11/23/right-about-the-law-wrong-for-the-company": {
+      "first_seen": "2026-11-23T16:28:31Z",
+      "notified": true
+    },
     "https://www.cnil.fr/fr/38-sanctions-simplifiees": {
       "first_seen": "2026-11-17T14:52:58Z",
       "notified": true
@@ -8122,6 +8297,14 @@
       "first_seen": "2026-11-09T14:19:54Z",
       "notified": true
     },
+    "https://www.cnil.fr/fr/trophees-des-classes-2026-laureats": {
+      "first_seen": "2026-11-23T16:28:31Z",
+      "notified": true
+    },
+    "https://www.cnil.fr/fr/trophees-des-classes-2027": {
+      "first_seen": "2026-11-23T16:28:31Z",
+      "notified": true
+    },
     "https://www.cnil.fr/fr/violations-de-donnees-personnelles-cas-indemnite": {
       "first_seen": "2026-10-17T08:36:33Z",
       "notified": false
@@ -8202,17 +8385,41 @@
       "first_seen": "2026-10-17T08:36:33Z",
       "notified": false
     },
+    "https://www.edpb.europa.eu/news/edpb-adopts-statement-on-review-of-the-republic-of-korea-adequacy-processor-bcr_en": {
+      "first_seen": "2026-11-23T16:28:31Z",
+      "notified": true
+    },
+    "https://www.edpb.europa.eu/news/edpb-and-dpas-from-countries-and-organisation-with-eu-adequacy-decision-take-stock-of-progress_en": {
+      "first_seen": "2026-11-23T16:28:31Z",
+      "notified": true
+    },
     "https://www.edpb.europa.eu/news/edpb-publishes-statement-on-the-data-protection-challenges-of-smart-glasses_en": {
       "first_seen": "2026-10-17T08:36:33Z",
+      "notified": true
+    },
+    "https://www.edpb.europa.eu/news/edpb-supports-use-of-other-models-of-contractual-clauses-for-onward-transfers-of-personal-data_en": {
+      "first_seen": "2026-11-23T16:28:31Z",
       "notified": true
     },
     "https://www.edpb.europa.eu/news/hellenic-dpa-decision-on-a-data-breach-involving-eetaa-sa-as-processor-for-the-ministry-of_en": {
       "first_seen": "2026-10-17T08:36:33Z",
       "notified": false
     },
+    "https://www.edpb.europa.eu/news/irish-data-protection-commission-fines-mtch-eur-11-million-following-inquiry-into-tinder-users_en": {
+      "first_seen": "2026-11-23T16:28:31Z",
+      "notified": true
+    },
+    "https://www.edpb.europa.eu/news/italian-dpa-fines-a-company-eur-25-500-over-employee-access-rights-and-corporate-email_en": {
+      "first_seen": "2026-11-23T16:28:31Z",
+      "notified": true
+    },
     "https://www.edpb.europa.eu/news/italian-dpa-fines-bbva-eur-5-508-000-for-failing-to-respect-a-customers-objection-to-direct_en": {
       "first_seen": "2026-10-17T08:36:33Z",
       "notified": false
+    },
+    "https://www.edpb.europa.eu/news/italian-dpa-fines-business-school-eur-8-000-for-unlawful-telemarketing-and-failure-to-handle_en": {
+      "first_seen": "2026-11-23T16:28:31Z",
+      "notified": true
     },
     "https://www.edpb.europa.eu/news/italian-dpa-fines-emirates-eur-180-000-for-infringements-concerning-passengers-health-data_en": {
       "first_seen": "2026-10-17T08:36:33Z",
@@ -8222,9 +8429,21 @@
       "first_seen": "2026-10-17T08:36:33Z",
       "notified": false
     },
+    "https://www.edpb.europa.eu/news/italian-dpa-fines-meta-eur-805-million-for-unlawful-access-to-facebook-users-photo-galleries_en": {
+      "first_seen": "2026-11-23T16:28:31Z",
+      "notified": true
+    },
+    "https://www.edpb.europa.eu/news/italian-dpa-fines-radiology-centre-and-it-provider-a-combined-eur-28-000-for-exposing-patient_en": {
+      "first_seen": "2026-11-23T16:28:31Z",
+      "notified": true
+    },
     "https://www.edpb.europa.eu/news/italian-dpa-fines-security-company-eur-39-000-for-violations-concerning-employees-data_en": {
       "first_seen": "2026-10-17T08:36:33Z",
       "notified": false
+    },
+    "https://www.edpb.europa.eu/news/norwegian-dpa-fines-private-individual-for-credit-check-and-publication-of-personal-data_en": {
+      "first_seen": "2026-11-23T16:28:31Z",
+      "notified": true
     },
     "https://www.edpb.europa.eu/news/norwegian-dpa-fines-xandr-eur-8-600-000-for-unlawful-processing-of-personal-data_en": {
       "first_seen": "2026-10-17T08:36:33Z",
@@ -8237,6 +8456,10 @@
     "https://www.edpb.europa.eu/news/the-irish-data-protection-commission-fines-google-403-000-000-eur-following-inquiry_en": {
       "first_seen": "2026-10-17T08:36:33Z",
       "notified": false
+    },
+    "https://www.edpb.europa.eu/news/the-norwegian-data-protection-authority-fines-social-garden-as-for-publishing-personal-data_en": {
+      "first_seen": "2026-11-23T16:28:31Z",
+      "notified": true
     },
     "https://www.hunton.com/privacy-and-cybersecurity-law-blog/california-ag-announces-1-8-million-settlement-with-lyft-for-ccpa-violations": {
       "first_seen": "2026-11-18T14:32:42Z",
@@ -8546,6 +8769,10 @@
       "first_seen": "2026-11-03T12:59:41Z",
       "notified": true
     },
+    "https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/ma_2601123": {
+      "first_seen": "2026-11-23T16:28:31Z",
+      "notified": true
+    },
     "https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/nr-c_260921": {
       "first_seen": "2026-10-17T08:36:33Z",
       "notified": false
@@ -8588,6 +8815,10 @@
     },
     "https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/nr-c_261106": {
       "first_seen": "2026-11-07T11:55:16Z",
+      "notified": true
+    },
+    "https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/nr-c_261123": {
+      "first_seen": "2026-11-23T16:28:31Z",
       "notified": true
     },
     "https://www.priv.gc.ca/en/opc-news/news-and-announcements/2026/nr-c_gpa_261119": {
@@ -9196,6 +9427,10 @@
     },
     "https://x.com/random_walker/status/2124474824135258605": {
       "first_seen": "2026-11-22T13:35:58Z",
+      "notified": true
+    },
+    "https://x.com/random_walker/status/2124886263643754498": {
+      "first_seen": "2026-11-23T16:28:31Z",
       "notified": true
     }
   },
