@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-11-25T00:03:09Z",
+  "generated_at": "2026-11-25T13:24:27Z",
   "stories": [
     {
       "id": "thomson-ross-copyright",
@@ -211,6 +211,21 @@
               "label": "Canada OPC — новости",
               "kind": "primary",
               "url": "https://www.priv.gc.ca/en/opc-news/speeches-and-statements/2026/s-d_260611/"
+            }
+          ]
+        },
+        {
+          "id": "81c495d22e6ee1afe5616111b88f66b17e0c24449189432e01b71980007d8366",
+          "canonical_url": "https://t.me/ai_and_law_rus/1208",
+          "url": "https://t.me/ai_and_law_rus/1208",
+          "title": "🇺🇸 ⚖️ Штаты Орегон и Вирджиния подали иски против SpaceX из-за сексуализированных дипфейков, создаваемых с помощью Grok Орегон и Вирджиния подали иски против SpaceX, в которых обви…",
+          "published_utc": "2026-11-25T07:04:05Z",
+          "first_seen_utc": "2026-11-25T13:23:42Z",
+          "sources": [
+            {
+              "label": "ИИ & Право",
+              "kind": "commentary",
+              "url": "https://t.me/ai_and_law_rus/1208"
             }
           ]
         }
