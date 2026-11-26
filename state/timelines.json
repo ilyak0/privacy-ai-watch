@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-11-26T15:45:49Z",
+  "generated_at": "2026-11-26T23:59:08Z",
   "stories": [
     {
       "id": "thomson-ross-copyright",
@@ -285,6 +285,21 @@
               "label": "РФ — ВС и КС — поиск публикаций",
               "kind": "discovery",
               "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBLSmQ4SnVoMHdmRGtybHdma0RiNm9OM3Z4ZERlQjhiS25XUFVwVlI4U0xSeWcwMGRyVm5RZ2UwUDNReE1US3NTUjlvX2prVTBZVzU2alMtNXk2TkNrazhnVno5T1k4cTVWNWhJeUhB?oc=5"
+            }
+          ]
+        },
+        {
+          "id": "53a6aef720586c9df9289943263cc573542473ba3edd58a12911bcccf2eda4eb",
+          "canonical_url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9tNl9MTmFrQjRQdmJIRVZZZ0VLNUpJa0ZfekhJWl9fU2pYQ2tvc0FEVXFmM3pfRnNjTjU0M1JmVXZtYjA3QjZONHl5UXFWOTZzZFE?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9tNl9MTmFrQjRQdmJIRVZZZ0VLNUpJa0ZfekhJWl9fU2pYQ2tvc0FEVXFmM3pfRnNjTjU0M1JmVXZtYjA3QjZONHl5UXFWOTZzZFE?oc=5",
+          "title": "Центр судебных компетенций в сфере искусственного интеллекта - Верховный Суд Российской Федерации",
+          "published_utc": "2026-11-24T08:00:00Z",
+          "first_seen_utc": "2026-11-26T23:58:22Z",
+          "sources": [
+            {
+              "label": "РФ — ВС и КС — поиск публикаций",
+              "kind": "discovery",
+              "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9tNl9MTmFrQjRQdmJIRVZZZ0VLNUpJa0ZfekhJWl9fU2pYQ2tvc0FEVXFmM3pfRnNjTjU0M1JmVXZtYjA3QjZONHl5UXFWOTZzZFE?oc=5"
             }
           ]
         }
